@@ -150,7 +150,7 @@
     window.speechSynthesis.speak(utter);
   }
 
-  function buildPayload(nome) {
+  function buildPayload() {
     var respostasArray = exam.questoes.map(function (q) {
       return {
         pergunta: q.pergunta,
@@ -158,7 +158,6 @@
       };
     });
     return {
-      aluno: nome,
       prova: exam.titulo,
       data: new Date().toISOString(),
       respostas: respostasArray
@@ -187,14 +186,14 @@
 
   function enviar() {
     el.confirmBox.style.display = "none";
-    var nome = localStorage.getItem("focogentil_nome") || "Aluna";
-    var payload = buildPayload(nome);
+    var payload = buildPayload();
 
     el.btnFinalizar.disabled = true;
     el.btnFinalizar.textContent = "Enviando...";
 
     var apiUrl = (window.FOCOGENTIL_CONFIG && window.FOCOGENTIL_CONFIG.API_URL) || "";
     var isConfigured = apiUrl && apiUrl.indexOf("__API_URL__") === -1;
+    var token = window.FocoGentilAuth ? window.FocoGentilAuth.getToken() : null;
 
     var finish = function () {
       localStorage.removeItem(STORAGE_KEY);
@@ -209,12 +208,30 @@
       return;
     }
 
+    if (!token) {
+      el.btnFinalizar.disabled = false;
+      el.btnFinalizar.textContent = "Finalizar simulado ✓";
+      showStatus("Sua sessão expirou. Vamos te levar de volta para o login (suas respostas continuam salvas aqui).", "error");
+      setTimeout(function () {
+        window.location.href = "login.html";
+      }, 2500);
+      return;
+    }
+
     fetch(apiUrl, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + token
+      },
       body: JSON.stringify(payload)
     })
       .then(function (res) {
+        if (res.status === 401) {
+          var authError = new Error("nao autenticado");
+          authError.isAuthError = true;
+          throw authError;
+        }
         if (!res.ok) throw new Error("Falha no envio (" + res.status + ")");
         finish();
       })
@@ -222,7 +239,14 @@
         console.error(err);
         el.btnFinalizar.disabled = false;
         el.btnFinalizar.textContent = "Finalizar simulado ✓";
-        showStatus("Não consegui enviar agora. Suas respostas continuam salvas neste navegador — pode tentar de novo em instantes.", "error");
+        if (err.isAuthError) {
+          showStatus("Sua sessão expirou. Vamos te levar de volta para o login (suas respostas continuam salvas aqui).", "error");
+          setTimeout(function () {
+            window.location.href = "login.html";
+          }, 2500);
+        } else {
+          showStatus("Não consegui enviar agora. Suas respostas continuam salvas neste navegador — pode tentar de novo em instantes.", "error");
+        }
       });
   }
 

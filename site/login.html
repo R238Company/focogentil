@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foco Gentil</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="brand"><span class="dot"></span> Foco Gentil</div>
+
+  <div class="card">
+    <div class="welcome-art">🔐📘</div>
+    <h1>Entrar</h1>
+    <p>Digite seu usuário e sua senha para começar o simulado.</p>
+
+    <div class="field-group">
+      <label for="usuario">Usuário</label>
+      <input type="text" id="usuario" autocomplete="username" placeholder="Seu usuário">
+    </div>
+
+    <div class="field-group">
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" autocomplete="current-password" placeholder="Sua senha">
+    </div>
+
+    <div class="actions">
+      <div class="left"></div>
+      <div class="right">
+        <button id="btnEntrar">Entrar →</button>
+      </div>
+    </div>
+    <p id="statusMsg" class="status-msg error" style="display:none;"></p>
+  </div>
+
+  <footer class="note">Peça ajuda a um adulto se não souber seu usuário ou senha.</footer>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/auth.js"></script>
+<script>
+var usuarioEl = document.getElementById('usuario');
+var senhaEl = document.getElementById('senha');
+var btnEntrar = document.getElementById('btnEntrar');
+var statusMsg = document.getElementById('statusMsg');
+
+function showError(text) {
+  statusMsg.textContent = text;
+  statusMsg.style.display = text ? 'block' : 'none';
+}
+
+function tryLogin() {
+  var usuario = usuarioEl.value.trim();
+  var senha = senhaEl.value;
+
+  if (!usuario || !senha) {
+    showError('Preencha usuário e senha.');
+    return;
+  }
+
+  showError('');
+  btnEntrar.disabled = true;
+  btnEntrar.textContent = 'Entrando...';
+
+  window.FocoGentilAuth.login(usuario, senha)
+    .then(function () {
+      window.location.href = 'index.html';
+    })
+    .catch(function (err) {
+      showError(err.message || 'Não foi possível entrar.');
+      btnEntrar.disabled = false;
+      btnEntrar.textContent = 'Entrar →';
+    });
+}
+
+btnEntrar.addEventListener('click', tryLogin);
+[usuarioEl, senhaEl].forEach(function (el) {
+  el.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') tryLogin();
+  });
+});
+
+if (window.FocoGentilAuth && window.FocoGentilAuth.isLoggedIn()) {
+  window.location.href = 'index.html';
+}
+</script>
+</body>
+</html>

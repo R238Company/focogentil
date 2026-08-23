@@ -1,7 +1,8 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Description: >
-  Foco Gentil - site estatico (S3 + CloudFront) e endpoint de envio de
-  respostas (API Gateway HTTP API + Lambda) que grava cada tentativa em S3.
+  Foco Gentil - site estatico (S3 + CloudFront), autenticacao (Cognito) e
+  endpoint de envio de respostas (API Gateway HTTP API + Lambda) que grava
+  cada tentativa no DynamoDB (separado por aluno) e no S3 (redundancia).
 
 Resources:
 
@@ -32,6 +33,23 @@ Resources:
         RestrictPublicBuckets: true
       VersioningConfiguration:
         Status: Enabled
+
+  AnswersTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: alunoId
+          AttributeType: S
+        - AttributeName: tentativaId
+          AttributeType: S
+      KeySchema:
+        - AttributeName: alunoId
+          KeyType: HASH
+        - AttributeName: tentativaId
+          KeyType: RANGE
+      SSESpecification:
+        SSEEnabled: true
 
   CloudFrontOAC:
     Type: AWS::CloudFront::OriginAccessControl
@@ -81,6 +99,44 @@ Resources:
               StringEquals:
                 AWS:SourceArn: !Sub "arn:aws:cloudfront::${AWS::AccountId}:distribution/${CloudFrontDistribution.Id}"
 
+  # --- Autenticacao (Cognito) ---------------------------------------------
+
+  UserPool:
+    Type: AWS::Cognito::UserPool
+    Properties:
+      UserPoolName: !Sub "${AWS::StackName}-users"
+      AdminCreateUserConfig:
+        # Sem autocadastro publico - os usuarios (alunos) sao criados a mao
+        # via CLI depois do deploy (ver README).
+        AllowAdminCreateUserOnly: true
+      AutoVerifiedAttributes: []
+      Policies:
+        PasswordPolicy:
+          MinimumLength: 8
+          RequireUppercase: false
+          RequireLowercase: true
+          RequireNumbers: true
+          RequireSymbols: false
+
+  UserPoolClient:
+    Type: AWS::Cognito::UserPoolClient
+    Properties:
+      ClientName: !Sub "${AWS::StackName}-web"
+      UserPoolId: !Ref UserPool
+      GenerateSecret: false
+      ExplicitAuthFlows:
+        - ALLOW_USER_PASSWORD_AUTH
+        - ALLOW_REFRESH_TOKEN_AUTH
+      AccessTokenValidity: 4
+      IdTokenValidity: 4
+      RefreshTokenValidity: 30
+      TokenValidityUnits:
+        AccessToken: hours
+        IdToken: hours
+        RefreshToken: days
+
+  # --- Backend (Lambda + DynamoDB + S3) -----------------------------------
+
   LambdaExecutionRole:
     Type: AWS::IAM::Role
     Properties:
@@ -100,6 +156,9 @@ Resources:
                 Action: s3:PutObject
                 Resource: !Sub "${AnswersBucket.Arn}/respostas/*"
               - Effect: Allow
+                Action: dynamodb:PutItem
+                Resource: !GetAtt AnswersTable.Arn
+              - Effect: Allow
                 Action:
                   - logs:CreateLogGroup
                   - logs:CreateLogStream
@@ -117,6 +176,7 @@ Resources:
       Environment:
         Variables:
           ANSWERS_BUCKET: !Ref AnswersBucket
+          ANSWERS_TABLE: !Ref AnswersTable
       Code:
         ZipFile: |
           import json
@@ -126,16 +186,31 @@ Resources:
           import boto3
 
           s3 = boto3.client("s3")
+          dynamodb = boto3.resource("dynamodb")
+
           BUCKET = os.environ["ANSWERS_BUCKET"]
+          TABLE_NAME = os.environ["ANSWERS_TABLE"]
+          table = dynamodb.Table(TABLE_NAME)
 
 
           def handler(event, context):
+              claims = (
+                  event.get("requestContext", {})
+                  .get("authorizer", {})
+                  .get("jwt", {})
+                  .get("claims", {})
+              )
+              aluno_id = claims.get("sub")
+              aluno_nome = claims.get("cognito:username") or claims.get("username") or "Aluna"
+
+              if not aluno_id:
+                  return _response(401, {"erro": "nao autenticado"})
+
               try:
                   body = json.loads(event.get("body") or "{}")
               except Exception:
                   return _response(400, {"erro": "JSON invalido"})
 
-              aluno = str(body.get("aluno", "Aluna"))[:100]
               prova = str(body.get("prova", "Simulado"))[:200]
               respostas = body.get("respostas")
 
@@ -150,17 +225,25 @@ Resources:
                   resposta = str(item.get("resposta", ""))[:20000]
                   limpo.append({"pergunta": pergunta, "resposta": resposta})
 
+              agora = datetime.datetime.utcnow()
+              tentativa_id = "{}#{}".format(agora.isoformat(), uuid.uuid4())
+
               registro = {
-                  "aluno": aluno,
+                  "aluno": aluno_nome,
                   "prova": prova,
-                  "data": body.get("data") or datetime.datetime.utcnow().isoformat(),
+                  "data": body.get("data") or agora.isoformat(),
                   "respostas": limpo,
               }
 
-              key = "respostas/{}/{}.json".format(
-                  datetime.datetime.utcnow().strftime("%Y-%m-%d"), uuid.uuid4()
+              table.put_item(
+                  Item={
+                      "alunoId": aluno_id,
+                      "tentativaId": tentativa_id,
+                      **registro,
+                  }
               )
 
+              key = "respostas/{}/{}.json".format(agora.strftime("%Y-%m-%d"), uuid.uuid4())
               s3.put_object(
                   Bucket=BUCKET,
                   Key=key,
@@ -178,6 +261,8 @@ Resources:
                   "body": json.dumps(body, ensure_ascii=False),
               }
 
+  # --- API (HTTP API + autorizador JWT do Cognito) ------------------------
+
   HttpApi:
     Type: AWS::ApiGatewayV2::Api
     Properties:
@@ -187,7 +272,20 @@ Resources:
         AllowOrigins:
           - !Sub "https://${CloudFrontDistribution.DomainName}"
         AllowMethods: [POST, OPTIONS]
-        AllowHeaders: [content-type]
+        AllowHeaders: [content-type, authorization]
+
+  CognitoAuthorizer:
+    Type: AWS::ApiGatewayV2::Authorizer
+    Properties:
+      ApiId: !Ref HttpApi
+      AuthorizerType: JWT
+      IdentitySource:
+        - "$request.header.Authorization"
+      Name: !Sub "${AWS::StackName}-cognito-authorizer"
+      JwtConfiguration:
+        Audience:
+          - !Ref UserPoolClient
+        Issuer: !Sub "https://cognito-idp.${AWS::Region}.amazonaws.com/${UserPool}"
 
   LambdaIntegration:
     Type: AWS::ApiGatewayV2::Integration
@@ -203,6 +301,8 @@ Resources:
       ApiId: !Ref HttpApi
       RouteKey: "POST /submit"
       Target: !Sub "integrations/${LambdaIntegration}"
+      AuthorizationType: JWT
+      AuthorizerId: !Ref CognitoAuthorizer
 
   ApiStage:
     Type: AWS::ApiGatewayV2::Stage
@@ -224,9 +324,15 @@ Outputs:
     Value: !Ref SiteBucket
   AnswersBucketName:
     Value: !Ref AnswersBucket
+  AnswersTableName:
+    Value: !Ref AnswersTable
   CloudFrontDomain:
     Value: !GetAtt CloudFrontDistribution.DomainName
   CloudFrontDistributionId:
     Value: !Ref CloudFrontDistribution
   ApiUrl:
     Value: !Sub "https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com/submit"
+  UserPoolId:
+    Value: !Ref UserPool
+  UserPoolClientId:
+    Value: !Ref UserPoolClient

@@ -49,21 +49,30 @@ foreach ($o in $outputs) { $outputMap[$o.OutputKey] = $o.OutputValue }
 
 $siteBucket = $outputMap["SiteBucketName"]
 $answersBucket = $outputMap["AnswersBucketName"]
+$answersTable = $outputMap["AnswersTableName"]
 $cfDomain = $outputMap["CloudFrontDomain"]
 $cfDistId = $outputMap["CloudFrontDistributionId"]
 $apiUrl = $outputMap["ApiUrl"]
+$userPoolId = $outputMap["UserPoolId"]
+$userPoolClientId = $outputMap["UserPoolClientId"]
 
 Write-Host "   Site bucket:      $siteBucket"
 Write-Host "   Answers bucket:   $answersBucket"
+Write-Host "   Answers table:    $answersTable"
 Write-Host "   CloudFront:       $cfDomain"
 Write-Host "   API URL:          $apiUrl"
+Write-Host "   User Pool:        $userPoolId"
+Write-Host "   User Pool Client: $userPoolClientId"
 
-Write-Host "==> Gravando a URL da API em site/js/config.js..." -ForegroundColor Cyan
+Write-Host "==> Gravando a configuracao em site/js/config.js..." -ForegroundColor Cyan
 $configContent = @"
 // Gerado automaticamente por infra/deploy.ps1 - nao edite a mao.
 // Este arquivo NAO vai para o repositorio (veja .gitignore).
 window.FOCOGENTIL_CONFIG = {
-  API_URL: "$apiUrl"
+  API_URL: "$apiUrl",
+  COGNITO_REGION: "$Region",
+  COGNITO_USER_POOL_ID: "$userPoolId",
+  COGNITO_USER_POOL_CLIENT_ID: "$userPoolClientId"
 };
 "@
 Set-Content -Path $configFile -Value $configContent -Encoding utf8
@@ -81,3 +90,7 @@ aws cloudfront create-invalidation --distribution-id $cfDistId --paths "/*" | Ou
 Write-Host ""
 Write-Host "Pronto! O site esta em: https://$cfDomain" -ForegroundColor Green
 Write-Host "(o CloudFront pode levar alguns minutos para propagar na primeira vez)" -ForegroundColor Yellow
+Write-Host ""
+Write-Host "Se ainda nao criou o usuario do aluno no Cognito, rode (troque USUARIO e SENHA):" -ForegroundColor Cyan
+Write-Host "  aws cognito-idp admin-create-user --user-pool-id $userPoolId --username USUARIO --message-action SUPPRESS --region $Region"
+Write-Host "  aws cognito-idp admin-set-user-password --user-pool-id $userPoolId --username USUARIO --password `"SENHA`" --permanent --region $Region"
