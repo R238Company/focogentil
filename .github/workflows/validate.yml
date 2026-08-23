@@ -1,0 +1,31 @@
+name: Validar
+
+on:
+  push:
+    branches: [develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar cfn-lint
+        run: pip install cfn-lint
+
+      - name: Lint dos templates CloudFormation
+        run: cfn-lint infra/template.yaml infra/cicd-bootstrap.yaml
+
+      - name: Validar JSON dos bancos de questoes e simulados
+        run: |
+          set -euo pipefail
+          for f in data/questions/*.json data/exams/*.json site/data/*.json; do
+            python -m json.tool "$f" > /dev/null
+            echo "OK: $f"
+          done
