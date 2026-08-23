@@ -4,8 +4,8 @@
     {
       "id": "lp-04-01",
       "capitulo": "Cap. 04 — Grupo nominal: adjetivo, artigo e numeral",
-      "pergunta": "Explique o que é um adjetivo e dê três exemplos de adjetivos que você usaria para descrever uma pessoa que você admira.",
-      "imagem": null
+      "pergunta": "Observe a imagem do personagem. Escreva três adjetivos que descrevam como ele parece ser, explicando por que você escolheu cada um.",
+      "imagem": "personagem-para-descrever"
     },
     {
       "id": "lp-04-02",
@@ -32,6 +32,12 @@
       "imagem": null
     },
     {
+      "id": "lp-04-06",
+      "capitulo": "Cap. 04 — Grupo nominal: adjetivo, artigo e numeral",
+      "pergunta": "O que é o grau superlativo de um adjetivo? Dê um exemplo (como \"lindo\" → \"lindíssimo\") e explique quando usamos esse recurso.",
+      "imagem": null
+    },
+    {
       "id": "lp-05-01",
       "capitulo": "Cap. 05 — Coesão referencial: pronome",
       "pergunta": "O que é coesão textual e por que ela é importante para um texto ficar claro e fácil de entender?",
@@ -40,8 +46,8 @@
     {
       "id": "lp-05-02",
       "capitulo": "Cap. 05 — Coesão referencial: pronome",
-      "pergunta": "O que são pronomes e qual é a função deles dentro de um texto?",
-      "imagem": null
+      "pergunta": "Observe o esquema com pronomes apontando para as palavras que eles substituem. Explique, com suas palavras, qual é a função dos pronomes em um texto.",
+      "imagem": "esquema-pronomes"
     },
     {
       "id": "lp-05-03",
@@ -83,6 +89,12 @@
       "id": "lp-06-04",
       "capitulo": "Cap. 06 — Pronomes pessoais, possessivos e demonstrativos",
       "pergunta": "Escreva duas frases: uma usando um pronome possessivo e outra usando um pronome demonstrativo. Depois, explique o que cada pronome está indicando na frase.",
+      "imagem": null
+    },
+    {
+      "id": "lp-06-05",
+      "capitulo": "Cap. 06 — Pronomes pessoais, possessivos e demonstrativos",
+      "pergunta": "Qual é a diferença entre pronomes pessoais retos (eu, tu, ele, nós) e pronomes pessoais oblíquos (me, te, o, lhe)? Dê um exemplo de frase com cada tipo.",
       "imagem": null
     },
     {

@@ -7,23 +7,26 @@ Foi criado para uso pessoal (um pai adaptando o material de estudo da própria f
 ## Estrutura
 
 ```
-fontes/              conteúdo didático original (aqui, exemplos de Geografia)
+fontes/              conteúdo didático original (Geografia, Língua Portuguesa)
 data/
   questions/          banco de questões extraídas/adaptadas de cada matéria
-  exams/exam1.json    o simulado atual (20 questões)
-  image_prompts.md    prompts prontos para gerar as imagens de apoio no Grok Imagine
+  exams/               um simulado por matéria (exam1.json = Geografia, exam2.json = Língua Portuguesa)
+  image_prompts.md    prompts prontos para gerar imagens e ícones no Grok Imagine
 site/                 o site em si (HTML/CSS/JS puro, sem build/SDK)
   login.html          tela de login (Cognito)
-  index.html          boas-vindas (exige sessão válida)
+  materias.html       escolha da matéria (depois do login)
+  index.html          boas-vindas da matéria escolhida (exige sessão válida)
   exam.html           simulado, uma questão por vez
-  data/exam1.json     cópia do simulado usada pelo site (mantenha sincronizada com data/exams/)
-  assets/images/       imagens geradas no Grok Imagine entram aqui
+  data/exam*.json     cópias dos simulados usadas pelo site (mantenha sincronizadas com data/exams/)
+  assets/images/       imagens de apoio às questões (Grok Imagine)
+  assets/icons/         ícones de cada matéria, usados em materias.html (Grok Imagine)
   js/auth.js           login/sessão via API pública do Cognito (sem SDK)
+  js/materias.js        catálogo de matérias (nome, ícone, simulado) usado por materias.html/index.html/app.js
   js/config.example.js modelo de configuração (config.js real é gerado pelo deploy e não vai pro git)
 infra/
   template.yaml       CloudFormation: S3, CloudFront, Cognito, DynamoDB, Lambda, API
   lambda/submit_answers/handler.py   código da Lambda (mesma versão embutida no template)
-  deploy.ps1           script de deploy
+  deploy.ps1 / deploy.sh   scripts de deploy (Windows / CI-Linux)
 ```
 
 ## Arquitetura
@@ -74,13 +77,13 @@ aws cognito-idp admin-create-user --user-pool-id <ID> --username <usuario> --mes
 aws cognito-idp admin-set-user-password --user-pool-id <ID> --username <usuario> --password "<senha>" --permanent --region us-east-1
 ```
 
-## Adicionando um novo simulado ou trocando as questões
+## Adicionando uma nova matéria (ou trocando as questões de uma existente)
 
-1. Edite os bancos em `data/questions/*.json` (adicione novas questões extraídas do seu material) ou crie um novo arquivo em `data/exams/`.
-2. Monte o JSON do simulado escolhido (20 questões, com `id`, `materia`, `capitulo`, `pergunta` e `imagem` opcional).
-3. Copie o arquivo para `site/data/exam1.json` (ou aponte `EXAM_URL` em `site/js/app.js` para o novo arquivo).
-4. Se alguma questão pedir imagem, veja `data/image_prompts.md` para o padrão de prompt e onde salvar o arquivo gerado.
-5. Rode `infra/deploy.ps1` de novo para publicar.
+1. Edite os bancos em `data/questions/*.json` (adicione novas questões extraídas do seu material) ou crie um novo arquivo.
+2. Monte o JSON do simulado em `data/exams/` (20 questões, com `id`, `materia`, `capitulo`, `pergunta` e `imagem` opcional) e copie para `site/data/`.
+3. Adicione uma entrada nova em `site/js/materias.js` (`id`, `nome`, `emoji`, `icone`, `examUrl`, `descricao`) — ela aparece automaticamente na tela de escolha de matéria.
+4. Se alguma questão pedir imagem, ou quiser um ícone para a matéria, veja `data/image_prompts.md` para o padrão de prompt e onde salvar o arquivo gerado (`site/assets/images/` ou `site/assets/icons/`). Sem o ícone gerado ainda, a tela usa um emoji como alternativa — nada quebra.
+5. Rode `infra/deploy.ps1` (ou faça merge em `main` — o CI cuida do resto) para publicar.
 
 ## CI/CD
 

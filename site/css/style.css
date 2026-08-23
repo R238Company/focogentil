@@ -322,6 +322,64 @@ footer.note {
 .status-msg.error { color: var(--danger); }
 .status-msg.ok { color: var(--primary-dark); }
 
+.materia-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.materia-card {
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  background: #fffdf8;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: border-color 0.15s ease, transform 0.06s ease;
+}
+
+.materia-card:hover {
+  border-color: var(--primary);
+  background: var(--accent-soft);
+}
+
+.materia-card:active {
+  transform: scale(0.99);
+}
+
+.materia-icon {
+  font-size: 2.6rem;
+  line-height: 1;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.materia-icon img {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.materia-nome {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+
+.materia-desc {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
 @media (max-width: 600px) {
   body { font-size: 18px; }
   .card { padding: 20px 18px; }

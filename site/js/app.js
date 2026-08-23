@@ -1,9 +1,11 @@
 (function () {
   "use strict";
 
-  var EXAM_URL = "data/exam1.json";
-  var STORAGE_KEY = "focogentil_exam1_respostas";
-  var STORAGE_START = "focogentil_exam1_inicio";
+  var materiaId = localStorage.getItem("focogentil_materia_atual");
+  var materia = (typeof getMateria === "function") ? getMateria(materiaId) : null;
+  var EXAM_URL = materia ? materia.examUrl : "data/exam1.json";
+  var STORAGE_KEY = "focogentil_" + (materiaId || "exam1") + "_respostas";
+  var STORAGE_START = "focogentil_" + (materiaId || "exam1") + "_inicio";
 
   var exam = null;
   var current = 0;

@@ -11,36 +11,57 @@
   <div class="brand"><span class="dot"></span> Foco Gentil</div>
 
   <div class="card">
-    <div class="welcome-art">📘✏️🌟</div>
+    <div class="welcome-art" id="welcomeArt">📘✏️🌟</div>
     <h1 id="titulo">Oi! Vamos treinar para a prova?</h1>
-    <p>Aqui você vai responder 20 perguntas de Geografia, uma de cada vez, sem pressa nenhuma. Não existe resposta errada por escrever do seu jeito — o importante é você tentar explicar o que aprendeu, com suas próprias palavras.</p>
+    <p id="descricao"></p>
     <p>Se quiser, você pode clicar no botão de som 🔊 para ouvir a pergunta em voz alta. Suas respostas ficam salvas automaticamente enquanto você escreve, então não tem problema fechar a página e continuar depois.</p>
 
     <div class="actions">
-      <div class="left"><button class="ghost" id="btnSair">Sair</button></div>
+      <div class="left">
+        <button class="ghost" id="btnTrocarMateria">Trocar matéria</button>
+        <button class="ghost" id="btnSair">Sair</button>
+      </div>
       <div class="right">
         <button id="btnComecar">Começar o simulado →</button>
       </div>
     </div>
   </div>
 
-  <footer class="note">Simulado 01 — Geografia</footer>
+  <footer class="note" id="rodape">Foco Gentil</footer>
 </div>
 
 <script src="js/config.js"></script>
 <script src="js/auth.js"></script>
+<script src="js/materias.js"></script>
 <script>
 if (!(window.FocoGentilAuth && window.FocoGentilAuth.isLoggedIn())) {
   window.location.href = 'login.html';
 }
 
+var materiaId = localStorage.getItem('focogentil_materia_atual');
+var materia = materiaId ? getMateria(materiaId) : null;
+
+if (!materia) {
+  window.location.href = 'materias.html';
+}
+
 var nome = window.FocoGentilAuth ? window.FocoGentilAuth.getUsername() : null;
-if (nome) {
-  document.getElementById('titulo').textContent = 'Oi, ' + nome + '! Vamos treinar para a prova?';
+if (materia) {
+  document.getElementById('titulo').textContent =
+    (nome ? 'Oi, ' + nome + '! ' : '') + 'Vamos treinar ' + materia.nome + '?';
+  document.getElementById('descricao').textContent =
+    'Aqui você vai responder ' + materia.descricao.replace(/^\d+ perguntas/, '20 perguntas') +
+    ' Uma de cada vez, sem pressa nenhuma. Não existe resposta errada por escrever do seu jeito — o importante é você tentar explicar o que aprendeu, com suas próprias palavras.';
+  document.getElementById('rodape').textContent = 'Simulado 01 — ' + materia.nome;
+  document.getElementById('welcomeArt').textContent = materia.emoji + ' ✏️ 🌟';
 }
 
 document.getElementById('btnComecar').addEventListener('click', function () {
   window.location.href = 'exam.html';
+});
+
+document.getElementById('btnTrocarMateria').addEventListener('click', function () {
+  window.location.href = 'materias.html';
 });
 
 document.getElementById('btnSair').addEventListener('click', function () {
