@@ -35,7 +35,10 @@ Resources:
               StringEquals:
                 "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"
               StringLike:
-                "token.actions.githubusercontent.com:sub": !Sub "repo:${GitHubOrg}/${GitHubRepo}:ref:refs/heads/${AllowedBranch}"
+                # Wildcard nos nomes de org/repo porque esta conta GitHub usa
+                # "immutable IDs" no claim sub (formato observado via
+                # CloudTrail: "repo:Org@141029718/Repo@1343796206:ref:...").
+                "token.actions.githubusercontent.com:sub": !Sub "repo:${GitHubOrg}*/${GitHubRepo}*:ref:refs/heads/${AllowedBranch}"
       Policies:
         - PolicyName: deployFocoGentilStack
           PolicyDocument:
