@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foco Gentil</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="brand"><span class="dot"></span> Foco Gentil</div>
+
+  <div class="card">
+    <div class="welcome-art">🎯</div>
+    <h1 id="titulo">Qual matéria você quer treinar hoje?</h1>
+    <p>Escolha uma matéria para começar. Você pode trocar depois, quando quiser.</p>
+
+    <div class="materia-grid" id="materiaGrid"></div>
+
+    <div class="actions">
+      <div class="left"><button class="ghost" id="btnSair">Sair</button></div>
+      <div class="right"></div>
+    </div>
+  </div>
+
+  <footer class="note">Foco Gentil</footer>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/materias.js"></script>
+<script>
+if (!(window.FocoGentilAuth && window.FocoGentilAuth.isLoggedIn())) {
+  window.location.href = 'login.html';
+}
+
+var nome = window.FocoGentilAuth ? window.FocoGentilAuth.getUsername() : null;
+if (nome) {
+  document.getElementById('titulo').textContent = 'Oi, ' + nome + '! Qual matéria você quer treinar hoje?';
+}
+
+document.getElementById('btnSair').addEventListener('click', function () {
+  window.FocoGentilAuth.logout();
+  window.location.href = 'login.html';
+});
+
+renderMaterias(document.getElementById('materiaGrid'), function (materiaId) {
+  localStorage.setItem('focogentil_materia_atual', materiaId);
+  window.location.href = 'index.html';
+});
+</script>
+</body>
+</html>

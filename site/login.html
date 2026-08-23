@@ -65,7 +65,7 @@ function tryLogin() {
 
   window.FocoGentilAuth.login(usuario, senha)
     .then(function () {
-      window.location.href = 'index.html';
+      window.location.href = 'materias.html';
     })
     .catch(function (err) {
       showError(err.message || 'Não foi possível entrar.');
@@ -82,7 +82,7 @@ btnEntrar.addEventListener('click', tryLogin);
 });
 
 if (window.FocoGentilAuth && window.FocoGentilAuth.isLoggedIn()) {
-  window.location.href = 'index.html';
+  window.location.href = 'materias.html';
 }
 </script>
 </body>
