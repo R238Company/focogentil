@@ -1,0 +1,113 @@
+{
+  "materia": "Língua Portuguesa",
+  "questoes": [
+    {
+      "id": "lp-04-01",
+      "capitulo": "Cap. 04 — Grupo nominal: adjetivo, artigo e numeral",
+      "pergunta": "Explique o que é um adjetivo e dê três exemplos de adjetivos que você usaria para descrever uma pessoa que você admira.",
+      "imagem": null
+    },
+    {
+      "id": "lp-04-02",
+      "capitulo": "Cap. 04 — Grupo nominal: adjetivo, artigo e numeral",
+      "pergunta": "O que são locuções adjetivas? Dê um exemplo (por exemplo: \"água de chuva\" = \"água pluvial\") e explique o que ele significa.",
+      "imagem": null
+    },
+    {
+      "id": "lp-04-03",
+      "capitulo": "Cap. 04 — Grupo nominal: adjetivo, artigo e numeral",
+      "pergunta": "Qual é a diferença entre artigo definido (o, a, os, as) e artigo indefinido (um, uma, uns, umas)? Escreva uma frase com cada um.",
+      "imagem": null
+    },
+    {
+      "id": "lp-04-04",
+      "capitulo": "Cap. 04 — Grupo nominal: adjetivo, artigo e numeral",
+      "pergunta": "O que são numerais? Cite um exemplo de numeral cardinal, um ordinal, um multiplicativo e um fracionário.",
+      "imagem": null
+    },
+    {
+      "id": "lp-04-05",
+      "capitulo": "Cap. 04 — Grupo nominal: adjetivo, artigo e numeral",
+      "pergunta": "Escreva uma frase usando \"um\" como numeral (quantidade) e outra frase usando \"um\" como artigo indefinido, explicando a diferença entre as duas.",
+      "imagem": null
+    },
+    {
+      "id": "lp-05-01",
+      "capitulo": "Cap. 05 — Coesão referencial: pronome",
+      "pergunta": "O que é coesão textual e por que ela é importante para um texto ficar claro e fácil de entender?",
+      "imagem": null
+    },
+    {
+      "id": "lp-05-02",
+      "capitulo": "Cap. 05 — Coesão referencial: pronome",
+      "pergunta": "O que são pronomes e qual é a função deles dentro de um texto?",
+      "imagem": null
+    },
+    {
+      "id": "lp-05-03",
+      "capitulo": "Cap. 05 — Coesão referencial: pronome",
+      "pergunta": "Reescreva esta frase evitando a repetição, usando pronomes no lugar das palavras repetidas: \"A Ana foi ao parque. No parque, a Ana brincou com o cachorro da Ana.\"",
+      "imagem": null
+    },
+    {
+      "id": "lp-05-04",
+      "capitulo": "Cap. 05 — Coesão referencial: pronome",
+      "pergunta": "Explique a diferença entre pronome substantivo (que substitui um substantivo, como \"ela\" no lugar de \"mãe\") e pronome adjetivo (que acompanha um substantivo, como \"minha\" em \"minha mãe\"), dando um exemplo de cada.",
+      "imagem": null
+    },
+    {
+      "id": "lp-05-05",
+      "capitulo": "Cap. 05 — Coesão referencial: pronome",
+      "pergunta": "O que são pronomes possessivos? Escreva uma frase usando um pronome possessivo para falar sobre algo que é seu.",
+      "imagem": null
+    },
+    {
+      "id": "lp-06-01",
+      "capitulo": "Cap. 06 — Pronomes pessoais, possessivos e demonstrativos",
+      "pergunta": "Quais são as três pessoas do discurso (1ª, 2ª e 3ª pessoa)? Dê um pronome pessoal de exemplo para cada uma delas.",
+      "imagem": null
+    },
+    {
+      "id": "lp-06-02",
+      "capitulo": "Cap. 06 — Pronomes pessoais, possessivos e demonstrativos",
+      "pergunta": "Explique a diferença entre os pronomes demonstrativos \"este\", \"esse\" e \"aquele\", pensando na distância das coisas em relação a quem está falando.",
+      "imagem": null
+    },
+    {
+      "id": "lp-06-03",
+      "capitulo": "Cap. 06 — Pronomes pessoais, possessivos e demonstrativos",
+      "pergunta": "O que são pronomes de tratamento? Dê um exemplo (como \"senhor\" ou \"você\") e explique em que situação podemos usá-lo.",
+      "imagem": null
+    },
+    {
+      "id": "lp-06-04",
+      "capitulo": "Cap. 06 — Pronomes pessoais, possessivos e demonstrativos",
+      "pergunta": "Escreva duas frases: uma usando um pronome possessivo e outra usando um pronome demonstrativo. Depois, explique o que cada pronome está indicando na frase.",
+      "imagem": null
+    },
+    {
+      "id": "lp-07-01",
+      "capitulo": "Cap. 07 — Pronomes relativos, indefinidos e interrogativos",
+      "pergunta": "O que é um pronome relativo? Explique com um exemplo usando a palavra \"que\" (por exemplo: \"O livro que eu li era ótimo\").",
+      "imagem": null
+    },
+    {
+      "id": "lp-07-02",
+      "capitulo": "Cap. 07 — Pronomes relativos, indefinidos e interrogativos",
+      "pergunta": "O que são pronomes indefinidos? Dê dois exemplos (como \"alguém\", \"nada\", \"todo\") e explique o que eles têm em comum.",
+      "imagem": null
+    },
+    {
+      "id": "lp-07-03",
+      "capitulo": "Cap. 07 — Pronomes relativos, indefinidos e interrogativos",
+      "pergunta": "Quais são os principais pronomes interrogativos (quem, que, qual, quanto)? Escreva uma pergunta usando um deles.",
+      "imagem": null
+    },
+    {
+      "id": "lp-07-04",
+      "capitulo": "Cap. 07 — Pronomes relativos, indefinidos e interrogativos",
+      "pergunta": "Explique a diferença entre \"onde\" e \"aonde\", dando um exemplo de frase com cada um.",
+      "imagem": null
+    }
+  ]
+}

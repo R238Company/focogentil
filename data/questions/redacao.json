@@ -1,0 +1,101 @@
+{
+  "materia": "Redação",
+  "questoes": [
+    {
+      "id": "red-03-01",
+      "capitulo": "Cap. 03 — Narrativa de memória e textos biográficos",
+      "pergunta": "Qual é a diferença entre biografia e autobiografia? Dê um exemplo de cada.",
+      "imagem": null
+    },
+    {
+      "id": "red-03-02",
+      "capitulo": "Cap. 03 — Narrativa de memória e textos biográficos",
+      "pergunta": "O que é uma narrativa de memória e o que a diferencia de uma biografia comum?",
+      "imagem": null
+    },
+    {
+      "id": "red-03-03",
+      "capitulo": "Cap. 03 — Narrativa de memória e textos biográficos",
+      "pergunta": "Pense em um acontecimento marcante da sua vida e escreva um parágrafo contando o que aconteceu, como se fosse o início de uma narrativa de memória.",
+      "imagem": null
+    },
+    {
+      "id": "red-03-04",
+      "capitulo": "Cap. 03 — Narrativa de memória e textos biográficos",
+      "pergunta": "O livro \"Eu sou Malala\" é escrito em primeira pessoa (\"eu\"). O que isso significa e por que essa escolha é importante para uma autobiografia?",
+      "imagem": null
+    },
+    {
+      "id": "red-04-01",
+      "capitulo": "Cap. 04 — Prosa e poesia",
+      "pergunta": "Qual é a diferença entre prosa (texto organizado em frases e parágrafos) e poesia (texto organizado em versos e estrofes)? Explique com suas próprias palavras.",
+      "imagem": null
+    },
+    {
+      "id": "red-04-02",
+      "capitulo": "Cap. 04 — Prosa e poesia",
+      "pergunta": "O que é uma fábula e qual é o papel da \"moral\" que costuma aparecer no final dela?",
+      "imagem": null
+    },
+    {
+      "id": "red-04-03",
+      "capitulo": "Cap. 04 — Prosa e poesia",
+      "pergunta": "Leia a moral da fábula \"A cigarra e as formigas\": \"A preguiça é a chave da miséria.\" Você concorda com essa moral? Explique sua opinião com suas palavras.",
+      "imagem": null
+    },
+    {
+      "id": "red-04-04",
+      "capitulo": "Cap. 04 — Prosa e poesia",
+      "pergunta": "Escolha um texto que você já leu (pode ser um conto, uma fábula, uma notícia ou um poema) e explique se ele é um texto literário ou um texto não literário, e por quê.",
+      "imagem": null
+    },
+    {
+      "id": "red-05-01",
+      "capitulo": "Cap. 05 — Poema e poema narrativo",
+      "pergunta": "O que diferencia um poema narrativo (que conta uma história) de um poema comum, que apenas expressa um sentimento ou uma observação?",
+      "imagem": null
+    },
+    {
+      "id": "red-05-02",
+      "capitulo": "Cap. 05 — Poema e poema narrativo",
+      "pergunta": "Leia o poema \"A lua no cinema\", de Paulo Leminski:\n\n\"A lua foi ao cinema, / passava um filme engraçado, / a história de uma estrela / que não tinha namorado. [...] A lua ficou tão triste / com aquela história de amor, / que até hoje a lua insiste: / — Amanheça, por favor!\"\n\nQue sentimento humano a Lua demonstra nesse poema? Como você percebeu isso na leitura?",
+      "imagem": null
+    },
+    {
+      "id": "red-05-03",
+      "capitulo": "Cap. 05 — Poema e poema narrativo",
+      "pergunta": "O que é uma metáfora? Invente e escreva um exemplo de metáfora.",
+      "imagem": null
+    },
+    {
+      "id": "red-05-04",
+      "capitulo": "Cap. 05 — Poema e poema narrativo",
+      "pergunta": "O que é uma personificação (ou prosopopeia)? Dê um exemplo dessa figura de linguagem, dando características humanas a um animal, planta ou objeto.",
+      "imagem": null
+    },
+    {
+      "id": "red-06-01",
+      "capitulo": "Cap. 06 — Poema visual",
+      "pergunta": "O que é um poema visual e o que ele tem de diferente de um poema comum?",
+      "imagem": null
+    },
+    {
+      "id": "red-06-02",
+      "capitulo": "Cap. 06 — Poema visual",
+      "pergunta": "O que é um caligrama? Descreva com suas palavras como ele funciona (dica: pense no poema \"Jacaré letrado\", cujas palavras formam o desenho de um jacaré).",
+      "imagem": null
+    },
+    {
+      "id": "red-06-03",
+      "capitulo": "Cap. 06 — Poema visual",
+      "pergunta": "Qual é a diferença entre linguagem verbal e linguagem não verbal? Dê um exemplo de cada uma.",
+      "imagem": null
+    },
+    {
+      "id": "red-06-04",
+      "capitulo": "Cap. 06 — Poema visual",
+      "pergunta": "Explique a diferença entre sentido denotativo (literal) e sentido conotativo (figurado), dando um exemplo de cada.",
+      "imagem": null
+    }
+  ]
+}

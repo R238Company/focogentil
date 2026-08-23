@@ -1,0 +1,232 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  Foco Gentil - site estatico (S3 + CloudFront) e endpoint de envio de
+  respostas (API Gateway HTTP API + Lambda) que grava cada tentativa em S3.
+
+Resources:
+
+  SiteBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+
+  AnswersBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      VersioningConfiguration:
+        Status: Enabled
+
+  CloudFrontOAC:
+    Type: AWS::CloudFront::OriginAccessControl
+    Properties:
+      OriginAccessControlConfig:
+        Name: !Sub "${AWS::StackName}-oac"
+        OriginAccessControlOriginType: s3
+        SigningBehavior: always
+        SigningProtocol: sigv4
+
+  CloudFrontDistribution:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Enabled: true
+        DefaultRootObject: index.html
+        PriceClass: PriceClass_100
+        HttpVersion: http2
+        Origins:
+          - Id: siteOrigin
+            DomainName: !GetAtt SiteBucket.RegionalDomainName
+            OriginAccessControlId: !GetAtt CloudFrontOAC.Id
+            S3OriginConfig:
+              OriginAccessIdentity: ""
+        DefaultCacheBehavior:
+          TargetOriginId: siteOrigin
+          ViewerProtocolPolicy: redirect-to-https
+          AllowedMethods: [GET, HEAD]
+          CachedMethods: [GET, HEAD]
+          Compress: true
+          # Managed-CachingOptimized
+          CachePolicyId: 658327ea-f89d-4fab-a63d-7e88639e58f6
+
+  SiteBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref SiteBucket
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: cloudfront.amazonaws.com
+            Action: s3:GetObject
+            Resource: !Sub "${SiteBucket.Arn}/*"
+            Condition:
+              StringEquals:
+                AWS:SourceArn: !Sub "arn:aws:cloudfront::${AWS::AccountId}:distribution/${CloudFrontDistribution.Id}"
+
+  LambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: writeAnswers
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: s3:PutObject
+                Resource: !Sub "${AnswersBucket.Arn}/respostas/*"
+              - Effect: Allow
+                Action:
+                  - logs:CreateLogGroup
+                  - logs:CreateLogStream
+                  - logs:PutLogEvents
+                Resource: "arn:aws:logs:*:*:*"
+
+  SubmitAnswersFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      Runtime: python3.12
+      Handler: index.handler
+      Role: !GetAtt LambdaExecutionRole.Arn
+      Timeout: 10
+      MemorySize: 128
+      Environment:
+        Variables:
+          ANSWERS_BUCKET: !Ref AnswersBucket
+      Code:
+        ZipFile: |
+          import json
+          import os
+          import uuid
+          import datetime
+          import boto3
+
+          s3 = boto3.client("s3")
+          BUCKET = os.environ["ANSWERS_BUCKET"]
+
+
+          def handler(event, context):
+              try:
+                  body = json.loads(event.get("body") or "{}")
+              except Exception:
+                  return _response(400, {"erro": "JSON invalido"})
+
+              aluno = str(body.get("aluno", "Aluna"))[:100]
+              prova = str(body.get("prova", "Simulado"))[:200]
+              respostas = body.get("respostas")
+
+              if not isinstance(respostas, list) or not respostas:
+                  return _response(400, {"erro": "respostas ausentes"})
+
+              limpo = []
+              for item in respostas:
+                  if not isinstance(item, dict):
+                      continue
+                  pergunta = str(item.get("pergunta", ""))[:2000]
+                  resposta = str(item.get("resposta", ""))[:20000]
+                  limpo.append({"pergunta": pergunta, "resposta": resposta})
+
+              registro = {
+                  "aluno": aluno,
+                  "prova": prova,
+                  "data": body.get("data") or datetime.datetime.utcnow().isoformat(),
+                  "respostas": limpo,
+              }
+
+              key = "respostas/{}/{}.json".format(
+                  datetime.datetime.utcnow().strftime("%Y-%m-%d"), uuid.uuid4()
+              )
+
+              s3.put_object(
+                  Bucket=BUCKET,
+                  Key=key,
+                  Body=json.dumps(registro, ensure_ascii=False, indent=2).encode("utf-8"),
+                  ContentType="application/json",
+              )
+
+              return _response(200, {"ok": True})
+
+
+          def _response(status, body):
+              return {
+                  "statusCode": status,
+                  "headers": {"Content-Type": "application/json"},
+                  "body": json.dumps(body, ensure_ascii=False),
+              }
+
+  HttpApi:
+    Type: AWS::ApiGatewayV2::Api
+    Properties:
+      Name: !Sub "${AWS::StackName}-api"
+      ProtocolType: HTTP
+      CorsConfiguration:
+        AllowOrigins:
+          - !Sub "https://${CloudFrontDistribution.DomainName}"
+        AllowMethods: [POST, OPTIONS]
+        AllowHeaders: [content-type]
+
+  LambdaIntegration:
+    Type: AWS::ApiGatewayV2::Integration
+    Properties:
+      ApiId: !Ref HttpApi
+      IntegrationType: AWS_PROXY
+      IntegrationUri: !GetAtt SubmitAnswersFunction.Arn
+      PayloadFormatVersion: "2.0"
+
+  SubmitRoute:
+    Type: AWS::ApiGatewayV2::Route
+    Properties:
+      ApiId: !Ref HttpApi
+      RouteKey: "POST /submit"
+      Target: !Sub "integrations/${LambdaIntegration}"
+
+  ApiStage:
+    Type: AWS::ApiGatewayV2::Stage
+    Properties:
+      ApiId: !Ref HttpApi
+      StageName: "$default"
+      AutoDeploy: true
+
+  LambdaPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName: !Ref SubmitAnswersFunction
+      Principal: apigateway.amazonaws.com
+      SourceArn: !Sub "arn:aws:execute-api:${AWS::Region}:${AWS::AccountId}:${HttpApi}/*/*/submit"
+
+Outputs:
+  SiteBucketName:
+    Value: !Ref SiteBucket
+  AnswersBucketName:
+    Value: !Ref AnswersBucket
+  CloudFrontDomain:
+    Value: !GetAtt CloudFrontDistribution.DomainName
+  CloudFrontDistributionId:
+    Value: !Ref CloudFrontDistribution
+  ApiUrl:
+    Value: !Sub "https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com/submit"

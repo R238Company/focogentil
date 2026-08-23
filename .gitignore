@@ -1,0 +1,35 @@
+# Arquivos internos de ferramentas de IA
+.claude/
+
+# Segredos e variaveis de ambiente - nunca commitar
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*
+.aws/
+
+# Logs de deploy (contem nomes de recursos internos da conta AWS)
+infra/*.log
+
+# Config gerado pelo deploy - contem a URL real da API de cada implantacao
+site/js/config.js
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+
+# Node (caso algum tooling futuro use)
+node_modules/
+
+# Python (caso algum script auxiliar use)
+__pycache__/
+*.pyc
+.venv/
+venv/

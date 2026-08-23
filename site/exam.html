@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foco Gentil</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="brand"><span class="dot"></span> Foco Gentil</div>
+
+  <div class="progress-wrap">
+    <div class="progress-label">
+      <span id="progressoTexto">Questão 1 de 20</span>
+      <span class="timer" id="tempoDecorrido">0 min</span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" id="progressoFill" style="width:5%"></div></div>
+  </div>
+
+  <div class="card">
+    <span class="tag" id="materiaTag">Geografia</span>
+    <div id="capituloTag" class="hint" style="margin-top:-10px; margin-bottom:14px;"></div>
+
+    <img id="questaoImg" class="question-img" style="display:none;" alt="Imagem de apoio para a questão">
+
+    <button class="speak-btn" id="btnOuvir">🔊 Ouvir a pergunta</button>
+
+    <div class="question-text" id="perguntaTexto">Carregando...</div>
+
+    <textarea id="respostaTexto" placeholder="Escreva sua resposta aqui, com calma..."></textarea>
+    <p class="hint">Escreva do seu jeito. Pode ser um parágrafo curto ou longo — o que importa é você tentar explicar com suas palavras.</p>
+
+    <div class="actions">
+      <div class="left">
+        <button class="ghost" id="btnAnterior">← Anterior</button>
+      </div>
+      <div class="right">
+        <button class="secondary" id="btnProxima" style="display:none;">Próxima →</button>
+        <button id="btnFinalizar" style="display:none;">Finalizar simulado ✓</button>
+      </div>
+    </div>
+
+    <p class="status-msg" id="statusMsg" style="display:none;"></p>
+
+    <div id="confirmBox" class="card" style="display:none; margin-top:18px; background:#eef7fc; border-color:var(--accent);">
+      <p id="confirmMsg" style="margin-bottom:14px;"></p>
+      <div class="actions">
+        <div class="left"><button class="ghost" id="btnConfirmCancelar">Voltar e revisar</button></div>
+        <div class="right"><button id="btnConfirmEnviar">Enviar mesmo assim</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dots" id="dots"></div>
+
+  <footer class="note">Suas respostas são salvas automaticamente no seu navegador enquanto você responde.</footer>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "id": "exam1",
+  "titulo": "Simulado 01 — Geografia",
+  "descricao": "20 questões dissertativas de Geografia (capítulos 07 a 10).",
+  "questoes": [
+    { "id": "geo-07-01", "materia": "Geografia", "capitulo": "Cap. 07 — As águas do planeta", "pergunta": "Descreva o ciclo hidrológico (ciclo da água) e explique como ele pode ser diferente entre o ambiente urbano (cidade) e o ambiente rural (campo).", "imagem": null },
+    { "id": "geo-07-02", "materia": "Geografia", "capitulo": "Cap. 07 — As águas do planeta", "pergunta": "Observe o mapa dos oceanos do planeta e localize os cinco oceanos, destacando uma característica de cada um.", "imagem": "mapa-oceanos" },
+    { "id": "geo-07-03", "materia": "Geografia", "capitulo": "Cap. 07 — As águas do planeta", "pergunta": "Observe o esquema de um rio e nomeie e descreva as diferentes partes que o compõem: nascente, leito, afluentes, meandro e foz.", "imagem": "diagrama-rio" },
+    { "id": "geo-07-05", "materia": "Geografia", "capitulo": "Cap. 07 — As águas do planeta", "pergunta": "Classifique o Rio Amazonas de acordo com: a) sazonalidade (perene, intermitente ou efêmero); b) regime de alimentação (pluvial, nival ou misto); c) relevo (planalto ou planície).", "imagem": null },
+    { "id": "geo-07-07", "materia": "Geografia", "capitulo": "Cap. 07 — As águas do planeta", "pergunta": "Identifique e escreva o nome da região hidrográfica que abastece o estado em que você mora, citando também o nome do rio principal dessa região.", "imagem": null },
+    { "id": "geo-07-09", "materia": "Geografia", "capitulo": "Cap. 07 — As águas do planeta", "pergunta": "Observe a imagem de uma praia poluída por lixo plástico. a) Qual problema ambiental é retratado na imagem? b) Descreva as principais causas e consequências desse problema para os ecossistemas aquáticos.", "imagem": "praia-poluida" },
+    { "id": "geo-08-01", "materia": "Geografia", "capitulo": "Cap. 08 — Os movimentos da Terra", "pergunta": "Defina o que é órbita e explique por que os planetas descrevem uma órbita ao redor do Sol.", "imagem": null },
+    { "id": "geo-08-02", "materia": "Geografia", "capitulo": "Cap. 08 — Os movimentos da Terra", "pergunta": "O que é o ano bissexto e por que ele existe?", "imagem": null },
+    { "id": "geo-08-03", "materia": "Geografia", "capitulo": "Cap. 08 — Os movimentos da Terra", "pergunta": "Diferencie o movimento de rotação do movimento de translação da Terra, explicando as consequências de cada um.", "imagem": null },
+    { "id": "geo-08-04", "materia": "Geografia", "capitulo": "Cap. 08 — Os movimentos da Terra", "pergunta": "a) Como a luz solar incide sobre o planeta durante um equinócio? Qual é a diferença para a incidência da luz solar durante um solstício? b) Em quais épocas do ano acontecem os solstícios e os equinócios?", "imagem": null },
+    { "id": "geo-09-01", "materia": "Geografia", "capitulo": "Cap. 09 — Introdução à Climatologia", "pergunta": "Explique como se forma uma frente fria e quais consequências ela pode causar no tempo atmosférico de uma região.", "imagem": null },
+    { "id": "geo-09-02", "materia": "Geografia", "capitulo": "Cap. 09 — Introdução à Climatologia", "pergunta": "Por que a atmosfera da Terra é dividida em diferentes camadas? Qual camada é considerada a mais importante para a vida humana? Justifique.", "imagem": null },
+    { "id": "geo-09-03", "materia": "Geografia", "capitulo": "Cap. 09 — Introdução à Climatologia", "pergunta": "Como podemos diferenciar o que é tempo atmosférico e o que é clima?", "imagem": null },
+    { "id": "geo-09-05", "materia": "Geografia", "capitulo": "Cap. 09 — Introdução à Climatologia", "pergunta": "O que acontece quando uma massa de ar quente e uma massa de ar frio se encontram?", "imagem": null },
+    { "id": "geo-09-06", "materia": "Geografia", "capitulo": "Cap. 09 — Introdução à Climatologia", "pergunta": "Como a ação humana contribui para o aumento do efeito estufa e quais são as consequências do aumento da temperatura média do planeta?", "imagem": null },
+    { "id": "geo-09-09", "materia": "Geografia", "capitulo": "Cap. 09 — Introdução à Climatologia", "pergunta": "O que é a camada de ozônio? Qual é a sua função para a sobrevivência dos seres vivos no planeta Terra?", "imagem": null },
+    { "id": "geo-10-01", "materia": "Geografia", "capitulo": "Cap. 10 — Clima e vegetação", "pergunta": "Relacione os quatro tipos de florestas (equatorial, tropical, temperada e boreal) às suas respectivas características de clima e localização.", "imagem": null },
+    { "id": "geo-10-03", "materia": "Geografia", "capitulo": "Cap. 10 — Clima e vegetação", "pergunta": "Dos tipos de floresta existentes no planeta, qual não pode ser encontrado no Brasil? Por quê?", "imagem": null },
+    { "id": "geo-10-06", "materia": "Geografia", "capitulo": "Cap. 10 — Clima e vegetação", "pergunta": "Observe a imagem de uma queimada em uma floresta. Cite dois problemas ambientais que podem ser causados por esse tipo de ação humana.", "imagem": "queimada-floresta" },
+    { "id": "geo-10-07", "materia": "Geografia", "capitulo": "Cap. 10 — Clima e vegetação", "pergunta": "O que é o Código Florestal Brasileiro e qual é a sua importância para a proteção das florestas e da vegetação nativa?", "imagem": null }
+  ]
+}

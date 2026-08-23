@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foco Gentil</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="brand"><span class="dot"></span> Foco Gentil</div>
+
+  <div class="card">
+    <div class="welcome-art">📘✏️🌟</div>
+    <h1>Oi! Vamos treinar para a prova?</h1>
+    <p>Aqui você vai responder 20 perguntas de Geografia, uma de cada vez, sem pressa nenhuma. Não existe resposta errada por escrever do seu jeito — o importante é você tentar explicar o que aprendeu, com suas próprias palavras.</p>
+    <p>Se quiser, você pode clicar no botão de som 🔊 para ouvir a pergunta em voz alta. Suas respostas ficam salvas automaticamente enquanto você escreve, então não tem problema fechar a página e continuar depois.</p>
+
+    <div class="field-group">
+      <label for="nome">Como você se chama?</label>
+      <input type="text" id="nome" placeholder="Digite seu nome aqui" autocomplete="off">
+    </div>
+
+    <div class="actions">
+      <div class="left"></div>
+      <div class="right">
+        <button id="btnComecar">Começar o simulado →</button>
+      </div>
+    </div>
+    <p id="erroNome" class="status-msg error" style="display:none;">Escreva seu nome antes de começar :)</p>
+  </div>
+
+  <footer class="note">Simulado 01 — Geografia</footer>
+</div>
+
+<script>
+document.getElementById('btnComecar').addEventListener('click', function () {
+  var nome = document.getElementById('nome').value.trim();
+  var erro = document.getElementById('erroNome');
+  if (!nome) {
+    erro.style.display = 'block';
+    return;
+  }
+  erro.style.display = 'none';
+  localStorage.setItem('focogentil_nome', nome);
+  window.location.href = 'exam.html';
+});
+
+document.getElementById('nome').addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') document.getElementById('btnComecar').click();
+});
+
+var savedName = localStorage.getItem('focogentil_nome');
+if (savedName) document.getElementById('nome').value = savedName;
+</script>
+</body>
+</html>
