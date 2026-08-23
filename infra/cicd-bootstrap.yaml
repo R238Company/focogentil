@@ -1,0 +1,98 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  Bootstrap de CI/CD do Foco Gentil: role IAM que o GitHub Actions assume via
+  OIDC (sem chaves de acesso de longa duracao) para fazer deploy da stack
+  principal (infra/template.yaml) quando ha push na branch main. Depende de
+  um provedor OIDC do GitHub ja existente na conta
+  (token.actions.githubusercontent.com) - nao cria um novo, so referencia.
+
+Parameters:
+  GitHubOrg:
+    Type: String
+    Description: Organizacao/usuario dono do repositorio no GitHub.
+  GitHubRepo:
+    Type: String
+    Description: Nome do repositorio no GitHub.
+  AllowedBranch:
+    Type: String
+    Default: main
+    Description: Unica branch autorizada a assumir esta role (via OIDC sub claim).
+
+Resources:
+
+  GitHubActionsDeployRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub "${GitHubRepo}-github-actions-deploy"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Federated: !Sub "arn:aws:iam::${AWS::AccountId}:oidc-provider/token.actions.githubusercontent.com"
+            Action: sts:AssumeRoleWithWebIdentity
+            Condition:
+              StringEquals:
+                "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"
+              StringLike:
+                "token.actions.githubusercontent.com:sub": !Sub "repo:${GitHubOrg}/${GitHubRepo}:ref:refs/heads/${AllowedBranch}"
+      Policies:
+        - PolicyName: deployFocoGentilStack
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              # Orquestracao da stack (CloudFormation gerencia os recursos
+              # abaixo, mas quem efetivamente os cria/atualiza e' a propria
+              # role que chama a API - por isso ela precisa de permissao
+              # nos servicos, nao so em "cloudformation:*").
+              - Sid: CloudFormation
+                Effect: Allow
+                Action:
+                  - cloudformation:CreateStack
+                  - cloudformation:UpdateStack
+                  - cloudformation:DescribeStacks
+                  - cloudformation:DescribeStackEvents
+                  - cloudformation:DescribeStackResource
+                  - cloudformation:DescribeStackResources
+                  - cloudformation:ListStackResources
+                  - cloudformation:GetTemplate
+                  - cloudformation:CreateChangeSet
+                  - cloudformation:DescribeChangeSet
+                  - cloudformation:ExecuteChangeSet
+                  - cloudformation:DeleteChangeSet
+                Resource: "*"
+              - Sid: SiteAndAnswersData
+                Effect: Allow
+                Action:
+                  - s3:*
+                  - cloudfront:*
+                  - dynamodb:*
+                  - cognito-idp:*
+                  - lambda:*
+                  - apigateway:*
+                  - logs:*
+                Resource: "*"
+                # Nomes fisicos (bucket, distribuicao, tabela, etc.) sao
+                # atribuidos pelo CloudFormation no momento do deploy, entao
+                # nao da para restringir por ARN exato de antemao. O escopo
+                # real de seguranca aqui e': so esses servicos, nada mais
+                # (sem ec2, sem iam de outras roles, sem acesso a outras
+                # contas), e a role so pode ser assumida a partir da branch
+                # main deste repositorio especifico.
+              - Sid: IamForLambdaExecutionRole
+                Effect: Allow
+                Action:
+                  - iam:CreateRole
+                  - iam:DeleteRole
+                  - iam:GetRole
+                  - iam:PutRolePolicy
+                  - iam:DeleteRolePolicy
+                  - iam:GetRolePolicy
+                  - iam:PassRole
+                  - iam:TagRole
+                  - iam:UntagRole
+                Resource: !Sub "arn:aws:iam::${AWS::AccountId}:role/*-LambdaExecutionRole-*"
+
+Outputs:
+  DeployRoleArn:
+    Value: !GetAtt GitHubActionsDeployRole.Arn

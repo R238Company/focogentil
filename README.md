@@ -82,6 +82,25 @@ aws cognito-idp admin-set-user-password --user-pool-id <ID> --username <usuario>
 4. Se alguma questão pedir imagem, veja `data/image_prompts.md` para o padrão de prompt e onde salvar o arquivo gerado.
 5. Rode `infra/deploy.ps1` de novo para publicar.
 
+## CI/CD
+
+Fluxo de branches: trabalho acontece em `develop`, e o merge em `main` implanta automaticamente.
+
+- **`develop` → PR para `main`**: workflow [`validate.yml`](.github/workflows/validate.yml) roda `cfn-lint` nos templates CloudFormation e valida o JSON dos bancos de questões/simulados. Não precisa de credenciais AWS (só lint local, sem custo, roda até em PRs de fora).
+- **Push/merge em `main`**: workflow [`deploy.yml`](.github/workflows/deploy.yml) assume uma IAM Role via **OIDC** (sem chave de acesso armazenada em lugar nenhum) e roda [`infra/deploy.sh`](infra/deploy.sh) — o mesmo passo a passo do `deploy.ps1`, mas em bash: `cloudformation deploy` → grava `site/js/config.js` → `s3 sync` → invalida o CloudFront.
+
+A role que o GitHub Actions assume é criada por um template separado, [`infra/cicd-bootstrap.yaml`](infra/cicd-bootstrap.yaml) (deploy único, manual, feito uma vez fora do pipeline — é o "ovo antes da galinha": a role que faz deploy automatizado não pode ser criada pelo próprio pipeline automatizado). A confiança é restrita à branch `main` deste repositório específico via a claim `sub` do token OIDC — nenhuma outra branch, PR ou repositório consegue assumir essa role.
+
+```bash
+aws cloudformation deploy \
+  --template-file infra/cicd-bootstrap.yaml \
+  --stack-name focogentil-cicd-bootstrap \
+  --capabilities CAPABILITY_NAMED_IAM \
+  --parameter-overrides GitHubOrg=<org> GitHubRepo=<repo> AllowedBranch=main
+```
+
+A ARN da role resultante (não é segredo — a segurança vem da condição OIDC, não de sigilo) fica salva como variável do repositório (`Settings → Secrets and variables → Actions → Variables`): `AWS_DEPLOY_ROLE_ARN`, `AWS_REGION`, `AWS_STACK_NAME`.
+
 ## Segurança
 
 - Nenhuma credencial AWS fica no repositório — o deploy usa as credenciais já configuradas no seu `aws configure` local.

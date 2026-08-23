@@ -1,0 +1,31 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+# Necessario para o passo de OIDC conseguir pedir um token de identidade.
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configurar credenciais AWS (OIDC, sem chaves de acesso)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_DEPLOY_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION || 'us-east-1' }}
+
+      - name: Deploy (CloudFormation + S3 + CloudFront)
+        run: |
+          chmod +x infra/deploy.sh
+          infra/deploy.sh
+        env:
+          STACK_NAME: ${{ vars.AWS_STACK_NAME || 'luiza-simulados' }}
+          AWS_REGION: ${{ vars.AWS_REGION || 'us-east-1' }}
