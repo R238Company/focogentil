@@ -57,6 +57,7 @@ Resources:
                   - cloudformation:DescribeStackEvents
                   - cloudformation:DescribeStackResource
                   - cloudformation:DescribeStackResources
+                  - cloudformation:GetTemplateSummary
                   - cloudformation:ListStackResources
                   - cloudformation:GetTemplate
                   - cloudformation:CreateChangeSet
