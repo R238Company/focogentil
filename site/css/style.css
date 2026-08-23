@@ -89,7 +89,7 @@ label {
   margin-bottom: 8px;
 }
 
-input[type="text"] {
+input[type="text"], input[type="password"] {
   width: 100%;
   font: inherit;
   padding: 14px 16px;
@@ -99,7 +99,7 @@ input[type="text"] {
   color: var(--ink);
 }
 
-input[type="text"]:focus, textarea:focus, button:focus, a.btn:focus {
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus, button:focus, a.btn:focus {
   outline: 3px solid var(--focus);
   outline-offset: 2px;
 }
