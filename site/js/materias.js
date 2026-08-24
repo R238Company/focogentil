@@ -18,6 +18,14 @@ window.FOCOGENTIL_MATERIAS = [
     icone: "assets/icons/lingua_portuguesa.jpg",
     examUrl: "data/exam2.json",
     descricao: "20 perguntas sobre adjetivos, artigos e pronomes."
+  },
+  {
+    id: "livro_eugenia",
+    nome: "As Memórias de Eugênia",
+    emoji: "🌳",
+    icone: "assets/icons/livro_eugenia.jpg",
+    examUrl: "data/exam3.json",
+    descricao: "8 perguntas sobre o livro As Memórias de Eugênia."
   }
 ];
 
