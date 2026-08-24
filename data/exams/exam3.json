@@ -1,0 +1,15 @@
+{
+  "id": "exam3",
+  "titulo": "Simulado 01 — As Memórias de Eugênia",
+  "descricao": "8 questões dissertativas sobre o livro As Memórias de Eugênia, de Marcos Bagno.",
+  "questoes": [
+    { "id": "eug-01", "materia": "As Memórias de Eugênia", "capitulo": "Livro: As Memórias de Eugênia (Marcos Bagno)", "pergunta": "Quem é a narradora de \"As Memórias de Eugênia\" e por que ela recebeu esse nome? Explique com suas palavras.", "imagem": null },
+    { "id": "eug-02", "materia": "As Memórias de Eugênia", "capitulo": "Livro: As Memórias de Eugênia (Marcos Bagno)", "pergunta": "A história acompanha várias gerações de mulheres de uma mesma família. Cite pelo menos três delas e explique o que você entendeu sobre a relação entre essas personagens.", "imagem": null },
+    { "id": "eug-03", "materia": "As Memórias de Eugênia", "capitulo": "Livro: As Memórias de Eugênia (Marcos Bagno)", "pergunta": "Sempre que nascia uma criança na família, a árvore Eugênia fazia um gesto especial. Descreva esse gesto e explique o que ele revela sobre o sentimento da árvore pelas pessoas daquela família.", "imagem": null },
+    { "id": "eug-04", "materia": "As Memórias de Eugênia", "capitulo": "Livro: As Memórias de Eugênia (Marcos Bagno)", "pergunta": "A narrativa do livro se divide em duas partes com tons diferentes: uma mais romântica e outra com temas mais políticos e ambientais. Descreva, com suas palavras, do que trata cada uma dessas partes.", "imagem": null },
+    { "id": "eug-05", "materia": "As Memórias de Eugênia", "capitulo": "Livro: As Memórias de Eugênia (Marcos Bagno)", "pergunta": "Um dos temas centrais do livro é a transformação da cidade ao longo do tempo. Como esse crescimento urbano afeta a árvore Eugênia e o espaço onde ela vive?", "imagem": null },
+    { "id": "eug-06", "materia": "As Memórias de Eugênia", "capitulo": "Livro: As Memórias de Eugênia (Marcos Bagno)", "pergunta": "O livro também fala sobre a força e a independência das mulheres da família. Escolha uma das personagens femininas da história e explique de que forma ela representa esse tema.", "imagem": null },
+    { "id": "eug-07", "materia": "As Memórias de Eugênia", "capitulo": "Livro: As Memórias de Eugênia (Marcos Bagno)", "pergunta": "\"As Memórias de Eugênia\", de Marcos Bagno, foi reconhecido com um importante prêmio literário brasileiro. Pesquise ou lembre-se qual foi esse prêmio e explique o que esse reconhecimento diz sobre a qualidade da obra.", "imagem": null },
+    { "id": "eug-08", "materia": "As Memórias de Eugênia", "capitulo": "Livro: As Memórias de Eugênia (Marcos Bagno)", "pergunta": "Na sua opinião, por que o autor escolheu contar essa história pela perspectiva de uma árvore, e não de uma pessoa? Que efeito essa escolha narrativa traz para a leitura?", "imagem": null }
+  ]
+}
