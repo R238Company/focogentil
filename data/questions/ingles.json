@@ -25,116 +25,6 @@
     },
     {
       "id": "ing-02",
-      "capitulo": "Preposições de tempo (in/on/at)",
-      "pergunta": "Choose the CORRECT alternative to complete the sentence:\n\nWe have English ____ Monday.",
-      "tipo": "alternativa",
-      "correta": "A",
-      "opcoes": [
-        {
-          "letra": "A",
-          "texto": "on"
-        },
-        {
-          "letra": "B",
-          "texto": "at"
-        },
-        {
-          "letra": "C",
-          "texto": "in"
-        }
-      ],
-      "imagem": null
-    },
-    {
-      "id": "ing-03",
-      "capitulo": "Preposições de tempo (in/on/at)",
-      "pergunta": "Choose the CORRECT alternative to complete the sentence:\n\nOur vacation is ____ June.",
-      "tipo": "alternativa",
-      "correta": "C",
-      "opcoes": [
-        {
-          "letra": "A",
-          "texto": "on"
-        },
-        {
-          "letra": "B",
-          "texto": "at"
-        },
-        {
-          "letra": "C",
-          "texto": "in"
-        }
-      ],
-      "imagem": null
-    },
-    {
-      "id": "ing-04",
-      "capitulo": "Preposições de tempo (in/on/at)",
-      "pergunta": "Choose the CORRECT alternative to complete the sentence:\n\nP.E. is ____ Friday.",
-      "tipo": "alternativa",
-      "correta": "A",
-      "opcoes": [
-        {
-          "letra": "A",
-          "texto": "on"
-        },
-        {
-          "letra": "B",
-          "texto": "at"
-        },
-        {
-          "letra": "C",
-          "texto": "in"
-        }
-      ],
-      "imagem": null
-    },
-    {
-      "id": "ing-05",
-      "capitulo": "Preposições de tempo (in/on/at)",
-      "pergunta": "Choose the CORRECT alternative to complete the sentence:\n\nOur English class is ____ Monday ____ 8:00.",
-      "tipo": "alternativa",
-      "correta": "B",
-      "opcoes": [
-        {
-          "letra": "A",
-          "texto": "in / on"
-        },
-        {
-          "letra": "B",
-          "texto": "on / at"
-        },
-        {
-          "letra": "C",
-          "texto": "at / on"
-        }
-      ],
-      "imagem": null
-    },
-    {
-      "id": "ing-06",
-      "capitulo": "Vocabulário escolar",
-      "pergunta": "Choose the CORRECT alternative to answer the question:\n\nWhere can you borrow books and read quietly at school?",
-      "tipo": "alternativa",
-      "correta": "B",
-      "opcoes": [
-        {
-          "letra": "A",
-          "texto": "Playground"
-        },
-        {
-          "letra": "B",
-          "texto": "Library"
-        },
-        {
-          "letra": "C",
-          "texto": "Cafeteria"
-        }
-      ],
-      "imagem": null
-    },
-    {
-      "id": "ing-07",
       "capitulo": "Vocabulário escolar",
       "pergunta": "Choose the CORRECT alternative to answer the sentence:\n\nWe learn about numbers, calculations and problem-solving in this subject.",
       "tipo": "alternativa",
@@ -156,7 +46,7 @@
       "imagem": null
     },
     {
-      "id": "ing-08",
+      "id": "ing-03",
       "capitulo": "Compreensão de diálogo: gostos e matérias",
       "texto": "Joe: I love Science because I like learning about nature.\nMel: I enjoy IT because I want to work with computers.\nJoe: I don't like Art because I'm bad at drawing.\nMel: I hate Music because I can't play an instrument.",
       "pergunta": "Who likes Science?",
@@ -179,7 +69,7 @@
       "imagem": null
     },
     {
-      "id": "ing-09",
+      "id": "ing-04",
       "capitulo": "Compreensão de diálogo: gostos e matérias",
       "texto": "Joe: I love Science because I like learning about nature.\nMel: I enjoy IT because I want to work with computers.\nJoe: I don't like Art because I'm bad at drawing.\nMel: I hate Music because I can't play an instrument.",
       "pergunta": "Who likes IT?",
@@ -202,7 +92,7 @@
       "imagem": null
     },
     {
-      "id": "ing-10",
+      "id": "ing-05",
       "capitulo": "Compreensão de diálogo: gostos e matérias",
       "texto": "Joe: I love Science because I like learning about nature.\nMel: I enjoy IT because I want to work with computers.\nJoe: I don't like Art because I'm bad at drawing.\nMel: I hate Music because I can't play an instrument.",
       "pergunta": "Who doesn't like Art?",
@@ -225,7 +115,7 @@
       "imagem": null
     },
     {
-      "id": "ing-11",
+      "id": "ing-06",
       "capitulo": "Compreensão de diálogo: gostos e matérias",
       "texto": "Joe: I love Science because I like learning about nature.\nMel: I enjoy IT because I want to work with computers.\nJoe: I don't like Art because I'm bad at drawing.\nMel: I hate Music because I can't play an instrument.",
       "pergunta": "Who doesn't like Music?",
@@ -248,242 +138,7 @@
       "imagem": null
     },
     {
-      "id": "ing-12",
-      "capitulo": "Vocabulário: lugares da escola e suas funções",
-      "pergunta": "Where do you eat snacks and lunch?",
-      "tipo": "alternativa",
-      "correta": "B",
-      "opcoes": [
-        {
-          "letra": "A",
-          "texto": "Gym"
-        },
-        {
-          "letra": "B",
-          "texto": "Cafeteria"
-        },
-        {
-          "letra": "C",
-          "texto": "Lab"
-        },
-        {
-          "letra": "D",
-          "texto": "Office"
-        }
-      ],
-      "imagem": null
-    },
-    {
-      "id": "ing-13",
-      "capitulo": "Vocabulário: lugares da escola e suas funções",
-      "pergunta": "Where do you play sports?",
-      "tipo": "alternativa",
-      "correta": "C",
-      "opcoes": [
-        {
-          "letra": "A",
-          "texto": "Classroom"
-        },
-        {
-          "letra": "B",
-          "texto": "Auditorium"
-        },
-        {
-          "letra": "C",
-          "texto": "Gym"
-        },
-        {
-          "letra": "D",
-          "texto": "Restroom"
-        }
-      ],
-      "imagem": null
-    },
-    {
-      "id": "ing-14",
-      "capitulo": "Vocabulário: lugares da escola e suas funções",
-      "pergunta": "Where do you wash your hands?",
-      "tipo": "alternativa",
-      "correta": "A",
-      "opcoes": [
-        {
-          "letra": "A",
-          "texto": "Restroom"
-        },
-        {
-          "letra": "B",
-          "texto": "Hall"
-        },
-        {
-          "letra": "C",
-          "texto": "Office"
-        },
-        {
-          "letra": "D",
-          "texto": "Cafeteria"
-        }
-      ],
-      "imagem": null
-    },
-    {
-      "id": "ing-15",
-      "capitulo": "Vocabulário: lugares da escola e suas funções",
-      "pergunta": "Where do you walk from classroom to classroom?",
-      "tipo": "alternativa",
-      "correta": "B",
-      "opcoes": [
-        {
-          "letra": "A",
-          "texto": "Lab"
-        },
-        {
-          "letra": "B",
-          "texto": "Hall"
-        },
-        {
-          "letra": "C",
-          "texto": "Gym"
-        },
-        {
-          "letra": "D",
-          "texto": "Auditorium"
-        }
-      ],
-      "imagem": null
-    },
-    {
-      "id": "ing-16",
-      "capitulo": "Vocabulário: lugares da escola e suas funções",
-      "pergunta": "Where can you watch a movie or a presentation?",
-      "tipo": "alternativa",
-      "correta": "A",
-      "opcoes": [
-        {
-          "letra": "A",
-          "texto": "Auditorium"
-        },
-        {
-          "letra": "B",
-          "texto": "Classroom"
-        },
-        {
-          "letra": "C",
-          "texto": "Cafeteria"
-        },
-        {
-          "letra": "D",
-          "texto": "Restroom"
-        }
-      ],
-      "imagem": null
-    },
-    {
-      "id": "ing-17",
-      "capitulo": "Vocabulário: lugares da escola e suas funções",
-      "pergunta": "Where can you make experiments?",
-      "tipo": "alternativa",
-      "correta": "C",
-      "opcoes": [
-        {
-          "letra": "A",
-          "texto": "Office"
-        },
-        {
-          "letra": "B",
-          "texto": "Hall"
-        },
-        {
-          "letra": "C",
-          "texto": "Lab"
-        },
-        {
-          "letra": "D",
-          "texto": "Gym"
-        }
-      ],
-      "imagem": null
-    },
-    {
-      "id": "ing-18",
-      "capitulo": "Vocabulário: lugares da escola e suas funções",
-      "pergunta": "Where can you talk to the coordinator or principal?",
-      "tipo": "alternativa",
-      "correta": "A",
-      "opcoes": [
-        {
-          "letra": "A",
-          "texto": "Office"
-        },
-        {
-          "letra": "B",
-          "texto": "Classroom"
-        },
-        {
-          "letra": "C",
-          "texto": "Cafeteria"
-        },
-        {
-          "letra": "D",
-          "texto": "Auditorium"
-        }
-      ],
-      "imagem": null
-    },
-    {
-      "id": "ing-19",
-      "capitulo": "Vocabulário: lugares da escola e suas funções",
-      "pergunta": "Where do you have your classes?",
-      "tipo": "alternativa",
-      "correta": "B",
-      "opcoes": [
-        {
-          "letra": "A",
-          "texto": "Hall"
-        },
-        {
-          "letra": "B",
-          "texto": "Classroom"
-        },
-        {
-          "letra": "C",
-          "texto": "Gym"
-        },
-        {
-          "letra": "D",
-          "texto": "Lab"
-        }
-      ],
-      "imagem": null
-    },
-    {
-      "id": "ing-20",
-      "capitulo": "Leitura: rotina escolar (texto lacunado)",
-      "texto": "My name is Peter. I'm 14 years old and I go to Hamlet School 1.____ weekdays.\n\nMy classes start 2.____ 8:30 AM.\n\nMy favorite 3.____ are Geography and 4.____, but I don't really like 5.____. I'm not interested in the past events.\n\nAt school, I usually spend time in the 6.____ because I love science.\n\nI also go to the 7.____ on Mondays for P.E. class.\n\nWe have many rules at school. We 8.____ wear our school uniform every day. We 9.____ wear jeans at school.\n\nWe have to arrive on time, but we don't have to stay after school unless there is an activity.\n\nOur summer vacation is 10.____ June and July. I love spending this time traveling!",
-      "pergunta": "Choose the option that completes ALL the blanks correctly:",
-      "tipo": "alternativa",
-      "correta": "D",
-      "opcoes": [
-        {
-          "letra": "A",
-          "texto": "1. at / 2. in / 3. auditorium / 4. Science / 5. IT / 6. library / 7. gym / 8. must / 9. must / 10. on"
-        },
-        {
-          "letra": "B",
-          "texto": "1. in / 2. at / 3. subjects / 4. History / 5. History / 6. lab / 7. cafeteria / 8. must / 9. can / 10. at"
-        },
-        {
-          "letra": "C",
-          "texto": "1. on / 2. on / 3. classrooms / 4. IT / 5. Art / 6. cafeteria / 7. lab / 8. mustn't / 9. mustn't / 10. on"
-        },
-        {
-          "letra": "D",
-          "texto": "1. on / 2. at / 3. subjects / 4. Science / 5. History / 6. lab / 7. gym / 8. must / 9. don't have to / 10. in"
-        }
-      ],
-      "imagem": null
-    },
-    {
-      "id": "ing-21",
+      "id": "ing-07",
       "capitulo": "Regras da escola (must/mustn't)",
       "pergunta": "Choose the correct sentence about school rules:",
       "tipo": "alternativa",
@@ -509,8 +164,60 @@
       "imagem": null
     },
     {
-      "id": "ing-22",
+      "id": "ing-08",
       "capitulo": "Leitura de horário escolar (schedule)",
+      "tabela": {
+        "cabecalho": [
+          "Day",
+          "8:00",
+          "9:00",
+          "10:00",
+          "10:20",
+          "10:40"
+        ],
+        "linhas": [
+          [
+            "Monday",
+            "English",
+            "Math",
+            "Art",
+            "BREAK",
+            "Science"
+          ],
+          [
+            "Tuesday",
+            "Science",
+            "History",
+            "PE",
+            "BREAK",
+            "English"
+          ],
+          [
+            "Wednesday",
+            "Geography",
+            "IT",
+            "English",
+            "BREAK",
+            "Math"
+          ],
+          [
+            "Thursday",
+            "Math",
+            "Science",
+            "History",
+            "BREAK",
+            "Art"
+          ],
+          [
+            "Friday",
+            "PE",
+            "Art",
+            "Geography",
+            "BREAK",
+            "IT"
+          ]
+        ]
+      },
       "pergunta": "Look at the school schedule. Which statement is correct?",
       "tipo": "alternativa",
       "correta": "A",
@@ -532,137 +239,20 @@
           "texto": "Students have IT on Monday at 9:00."
         }
       ],
-      "imagem": null,
-      "tabela": {
-        "cabecalho": [
-          "Day",
-          "8:00",
-          "9:00",
-          "10:00",
-          "10:20",
-          "10:40"
-        ],
-        "linhas": [
-          [
-            "Monday",
-            "English",
-            "Math",
-            "Art",
-            "BREAK",
-            "Science"
-          ],
-          [
-            "Tuesday",
-            "Science",
-            "History",
-            "PE",
-            "BREAK",
-            "English"
-          ],
-          [
-            "Wednesday",
-            "Geography",
-            "IT",
-            "English",
-            "BREAK",
-            "Math"
-          ],
-          [
-            "Thursday",
-            "Math",
-            "Science",
-            "History",
-            "BREAK",
-            "Art"
-          ],
-          [
-            "Friday",
-            "PE",
-            "Art",
-            "Geography",
-            "BREAK",
-            "IT"
-          ]
-        ]
-      }
+      "imagem": null
     },
     {
-      "id": "ing-23",
-      "capitulo": "Leitura de horário escolar (schedule)",
-      "pergunta": "Look at the school schedule again. Which statement is correct?",
-      "tipo": "alternativa",
-      "correta": "A",
-      "opcoes": [
-        {
-          "letra": "A",
-          "texto": "The students have Science classes on Mondays, Tuesdays and Thursdays."
-        },
-        {
-          "letra": "B",
-          "texto": "The students have English classes on Mondays, Wednesdays and Fridays."
-        },
-        {
-          "letra": "C",
-          "texto": "The students have a break at 11 o'clock and lunch at 12:30."
-        },
-        {
-          "letra": "D",
-          "texto": "The students have P.E. classes on Tuesdays and Fridays at 4 o'clock."
-        }
-      ],
-      "imagem": null,
-      "tabela": {
-        "cabecalho": [
-          "Day",
-          "8:00",
-          "9:00",
-          "10:00",
-          "10:20",
-          "10:40"
-        ],
-        "linhas": [
-          [
-            "Monday",
-            "English",
-            "Math",
-            "Art",
-            "BREAK",
-            "Science"
-          ],
-          [
-            "Tuesday",
-            "Science",
-            "History",
-            "PE",
-            "BREAK",
-            "English"
-          ],
-          [
-            "Wednesday",
-            "Geography",
-            "IT",
-            "English",
-            "BREAK",
-            "Math"
-          ],
-          [
-            "Thursday",
-            "Math",
-            "Science",
-            "History",
-            "BREAK",
-            "Art"
-          ],
-          [
-            "Friday",
-            "PE",
-            "Art",
-            "Geography",
-            "BREAK",
-            "IT"
-          ]
-        ]
-      }
+      "id": "ing-09",
+      "capitulo": "Vocabulário: lugares da escola e suas funções",
+      "pergunta": "Name THREE places at school (for example: cafeteria, library, gym, lab, office, auditorium, classroom, hall, restroom) and explain, in English, what you do in each one.",
+      "imagem": null
+    },
+    {
+      "id": "ing-10",
+      "capitulo": "Leitura: rotina escolar e regras (must / don't have to)",
+      "texto": "My name is Peter. I'm 14 years old and I go to Hamlet School on weekdays.\n\nMy classes start at 8:30 AM.\n\nMy favorite subjects are Geography and Science, but I don't really like History. I'm not interested in the past events.\n\nAt school, I usually spend time in the lab because I love science.\n\nI also go to the gym on Mondays for P.E. class.\n\nWe have many rules at school. We must wear our school uniform every day. We don't have to wear jeans at school.\n\nWe have to arrive on time, but we don't have to stay after school unless there is an activity.\n\nOur summer vacation is in June and July. I love spending this time traveling!",
+      "pergunta": "Read the text about Peter's school routine. According to the text, what rule does Peter mention about the school uniform, and what rule does he mention about wearing jeans?",
+      "imagem": null
     }
   ]
 }
