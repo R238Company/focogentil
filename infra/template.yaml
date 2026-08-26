@@ -156,7 +156,10 @@ Resources:
                 Action: s3:PutObject
                 Resource: !Sub "${AnswersBucket.Arn}/respostas/*"
               - Effect: Allow
-                Action: dynamodb:PutItem
+                Action:
+                  - dynamodb:PutItem
+                  - dynamodb:GetItem
+                  - dynamodb:DeleteItem
                 Resource: !GetAtt AnswersTable.Arn
               - Effect: Allow
                 Action:
@@ -206,6 +209,35 @@ Resources:
               if not aluno_id:
                   return _response(401, {"erro": "nao autenticado"})
 
+              route = event.get("routeKey", "")
+
+              if route == "PUT /progresso":
+                  return _salvar_rascunho(event, aluno_id)
+              if route == "GET /progresso":
+                  return _carregar_rascunho(event, aluno_id)
+              return _submeter(event, aluno_id, aluno_nome)
+
+
+          def _materia_id(origem):
+              return str(origem.get("materiaId") or "exam1")[:100]
+
+
+          def _limpar_respostas(respostas, com_id):
+              limpo = []
+              for item in respostas or []:
+                  if not isinstance(item, dict):
+                      continue
+                  entrada = {
+                      "pergunta": str(item.get("pergunta", ""))[:2000],
+                      "resposta": str(item.get("resposta", ""))[:20000],
+                  }
+                  if com_id:
+                      entrada["id"] = str(item.get("id", ""))[:100]
+                  limpo.append(entrada)
+              return limpo
+
+
+          def _submeter(event, aluno_id, aluno_nome):
               try:
                   body = json.loads(event.get("body") or "{}")
               except Exception:
@@ -217,13 +249,7 @@ Resources:
               if not isinstance(respostas, list) or not respostas:
                   return _response(400, {"erro": "respostas ausentes"})
 
-              limpo = []
-              for item in respostas:
-                  if not isinstance(item, dict):
-                      continue
-                  pergunta = str(item.get("pergunta", ""))[:2000]
-                  resposta = str(item.get("resposta", ""))[:20000]
-                  limpo.append({"pergunta": pergunta, "resposta": resposta})
+              limpo = _limpar_respostas(respostas, com_id=False)
 
               agora = datetime.datetime.utcnow()
               tentativa_id = "{}#{}".format(agora.isoformat(), uuid.uuid4())
@@ -251,7 +277,64 @@ Resources:
                   ContentType="application/json",
               )
 
+              if body.get("materiaId"):
+                  table.delete_item(
+                      Key={
+                          "alunoId": aluno_id,
+                          "tentativaId": "RASCUNHO#" + _materia_id(body),
+                      }
+                  )
+
               return _response(200, {"ok": True})
+
+
+          def _salvar_rascunho(event, aluno_id):
+              try:
+                  body = json.loads(event.get("body") or "{}")
+              except Exception:
+                  return _response(400, {"erro": "JSON invalido"})
+
+              materia_id = _materia_id(body)
+              respostas = _limpar_respostas(body.get("respostas"), com_id=True)
+              current = body.get("current")
+              current = current if isinstance(current, int) else 0
+              agora = datetime.datetime.utcnow().isoformat()
+
+              table.put_item(
+                  Item={
+                      "alunoId": aluno_id,
+                      "tentativaId": "RASCUNHO#" + materia_id,
+                      "materiaId": materia_id,
+                      "prova": str(body.get("prova", ""))[:200],
+                      "current": current,
+                      "respostas": respostas,
+                      "atualizadoEm": agora,
+                  }
+              )
+
+              return _response(200, {"ok": True, "atualizadoEm": agora})
+
+
+          def _carregar_rascunho(event, aluno_id):
+              params = event.get("queryStringParameters") or {}
+              materia_id = _materia_id(params)
+
+              item = table.get_item(
+                  Key={
+                      "alunoId": aluno_id,
+                      "tentativaId": "RASCUNHO#" + materia_id,
+                  }
+              ).get("Item")
+
+              if not item:
+                  return _response(200, {"existe": False})
+
+              return _response(200, {
+                  "existe": True,
+                  "current": int(item.get("current", 0)),
+                  "respostas": item.get("respostas", []),
+                  "atualizadoEm": item.get("atualizadoEm"),
+              })
 
 
           def _response(status, body):
@@ -271,7 +354,7 @@ Resources:
       CorsConfiguration:
         AllowOrigins:
           - !Sub "https://${CloudFrontDistribution.DomainName}"
-        AllowMethods: [POST, OPTIONS]
+        AllowMethods: [GET, POST, PUT, OPTIONS]
         AllowHeaders: [content-type, authorization]
 
   CognitoAuthorizer:
@@ -304,6 +387,24 @@ Resources:
       AuthorizationType: JWT
       AuthorizerId: !Ref CognitoAuthorizer
 
+  SalvarProgressoRoute:
+    Type: AWS::ApiGatewayV2::Route
+    Properties:
+      ApiId: !Ref HttpApi
+      RouteKey: "PUT /progresso"
+      Target: !Sub "integrations/${LambdaIntegration}"
+      AuthorizationType: JWT
+      AuthorizerId: !Ref CognitoAuthorizer
+
+  CarregarProgressoRoute:
+    Type: AWS::ApiGatewayV2::Route
+    Properties:
+      ApiId: !Ref HttpApi
+      RouteKey: "GET /progresso"
+      Target: !Sub "integrations/${LambdaIntegration}"
+      AuthorizationType: JWT
+      AuthorizerId: !Ref CognitoAuthorizer
+
   ApiStage:
     Type: AWS::ApiGatewayV2::Stage
     Properties:
@@ -317,7 +418,7 @@ Resources:
       Action: lambda:InvokeFunction
       FunctionName: !Ref SubmitAnswersFunction
       Principal: apigateway.amazonaws.com
-      SourceArn: !Sub "arn:aws:execute-api:${AWS::Region}:${AWS::AccountId}:${HttpApi}/*/*/submit"
+      SourceArn: !Sub "arn:aws:execute-api:${AWS::Region}:${AWS::AccountId}:${HttpApi}/*/*/*"
 
 Outputs:
   SiteBucketName:
