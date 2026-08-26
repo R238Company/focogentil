@@ -26,6 +26,14 @@ window.FOCOGENTIL_MATERIAS = [
     icone: "assets/icons/livro_eugenia.jpg",
     examUrl: "data/exam3.json",
     descricao: "8 perguntas sobre o livro As Memórias de Eugênia."
+  },
+  {
+    id: "ciencias_solo",
+    nome: "Ciências — Solo",
+    emoji: "🌱",
+    icone: "assets/icons/ciencias_solo.jpg",
+    examUrl: "data/exam4.json",
+    descricao: "20 perguntas sobre formação, tipos e conservação do solo."
   }
 ];
 
