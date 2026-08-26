@@ -70,6 +70,16 @@ Usados na tela de escolha de matéria (depois do login), como um ícone quadrado
 **Prompt:**
 > Ícone quadrado estilo flat design, minimalista, para um app infantil: um livro aberto colorido com um lápis apoiado sobre ele (ou saindo de dentro dele), centralizado sobre um fundo em gradiente suave de azul pastel, cantos levemente arredondados, sem texto, sem sombras pesadas, traços limpos e poucos detalhes, visual amigável e acolhedor — mesmo estilo do ícone de Geografia, para os dois ficarem parecidos lado a lado.
 
+## 9. ciencias_solo.jpg
+**Prompt:**
+> Ícone quadrado estilo flat design, minimalista, para um app infantil: uma pequena muda de planta brotando de uma camada de terra marrom estilizada (com uma linha indicando a camada de solo), centralizada sobre um fundo em gradiente suave verde-pastel, cantos levemente arredondados, sem texto, sem sombras pesadas, traços limpos e poucos detalhes, visual amigável e acolhedor — mesmo estilo dos ícones de Geografia e Língua Portuguesa, para ficarem parecidos lado a lado.
+
+---
+
+## Ciências — Solo (Simulado 01)
+
+Sem imagens de apoio por enquanto (todas as questões usam `"imagem": null`). Se quiser adicionar depois, siga o passo a passo abaixo — boas candidatas seriam uma imagem mostrando as camadas do solo (perfil do solo) e uma comparando encosta com e sem vegetação (deslizamento).
+
 ---
 
 ## Como adicionar imagens em simulados futuros
