@@ -22,7 +22,7 @@
       "materia": "Ciências — Solo",
       "capitulo": "Formação do solo",
       "pergunta": "O solo se forma lentamente a partir da alteração das rochas. Explique, com suas palavras, o que acontece com a rocha até ela se transformar em solo.",
-      "imagem": null
+      "imagem": "perfil-do-solo"
     },
     {
       "id": "solo-04",
@@ -64,7 +64,7 @@
       "materia": "Ciências — Solo",
       "capitulo": "Deslizamentos de terra",
       "pergunta": "Morros e encostas desmatados, sem árvores e sem raízes para segurar a terra, correm mais risco durante temporadas de chuva forte. Explique por que o desmatamento em encostas aumenta o risco de deslizamentos de terra.",
-      "imagem": null
+      "imagem": "encosta-com-sem-vegetacao"
     },
     {
       "id": "solo-10",
@@ -132,7 +132,7 @@
       "materia": "Ciências — Solo",
       "capitulo": "Formação do solo",
       "pergunta": "Assinale a alternativa CORRETA sobre a formação do solo.",
-      "imagem": null,
+      "imagem": "perfil-do-solo",
       "tipo": "alternativa",
       "opcoes": [
         {
@@ -294,7 +294,7 @@
       "materia": "Ciências — Solo",
       "capitulo": "Deslizamentos de terra",
       "pergunta": "Assinale a alternativa CORRETA sobre deslizamentos de terra.",
-      "imagem": null,
+      "imagem": "encosta-com-sem-vegetacao",
       "tipo": "alternativa",
       "opcoes": [
         {

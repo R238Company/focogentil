@@ -78,7 +78,19 @@ Usados na tela de escolha de matéria (depois do login), como um ícone quadrado
 
 ## Ciências — Solo (Simulado 01)
 
-Sem imagens de apoio por enquanto (todas as questões usam `"imagem": null`). Se quiser adicionar depois, siga o passo a passo abaixo — boas candidatas seriam uma imagem mostrando as camadas do solo (perfil do solo) e uma comparando encosta com e sem vegetação (deslizamento).
+## 10. perfil-do-solo.jpg
+**Questão:** solo-03 e solo-13 — formação do solo a partir da rocha.
+
+**Prompt:**
+> Ilustração simples e colorida, estilo livro didático infantil, mostrando um corte transversal (perfil) do solo visto de lado, com camadas empilhadas de baixo para cima: rocha-mãe cinza na base, depois uma camada de rocha fragmentada em pedaços menores, depois uma camada de terra marrom com partículas, e no topo uma fina camada escura de matéria orgânica com uma pequena planta crescendo. Cada camada em uma cor diferente e bem distinta, sem etiquetas de texto, traços limpos, fundo simples, sem excesso de detalhes, adequada para uma criança de 11 anos.
+
+## 11. encosta-com-sem-vegetacao.jpg
+**Questão:** solo-09 e solo-19 — desmatamento em encostas e risco de deslizamento.
+
+**Prompt:**
+> Ilustração simples e colorida, estilo livro didático infantil, dividida ao meio: do lado esquerdo um morro com vegetação e árvores, com raízes visíveis segurando a terra firme; do lado direito o mesmo morro sem nenhuma árvore, com a terra solta escorregando ladeira abaixo, mostrando o contraste entre os dois cenários. Cores vivas mas não assustadoras, tom educativo e leve, sem aspecto de desastre chocante, traços limpos, sem excesso de detalhes, adequada para uma criança de 11 anos.
+
+Depois de gerar e salvar os arquivos, atualize `"imagem": null` para `"imagem": "perfil-do-solo"` (questões solo-03 e solo-13) e `"imagem": "encosta-com-sem-vegetacao"` (questões solo-09 e solo-19) em `data/questions/ciencias_solo.json`, `data/exams/exam4.json` e `site/data/exam4.json`.
 
 ---
 

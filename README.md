@@ -51,10 +51,11 @@ Abra `http://localhost:8765/login.html`. Sem `site/js/config.js` (gerado só pel
 ## Como funciona o envio das respostas
 
 1. O(a) estudante faz login em `login.html` (usuário/senha do Cognito).
-2. Responde uma questão por vez em `exam.html`; cada resposta é salva automaticamente no `localStorage` do navegador.
-3. Ao finalizar, o site faz um `POST` autenticado (`Authorization: Bearer <token>`) para a API com `{ prova, data, respostas: [{ pergunta, resposta }, ...] }`.
-4. A Lambda valida o token (feito pelo API Gateway antes mesmo dela rodar), identifica o aluno pelo `sub` do token, e grava a tentativa no DynamoDB e no S3.
-5. A correção não é automática — os dados ficam guardados para serem lidos/corrigidos depois.
+2. Responde uma questão por vez em `exam.html`; cada resposta é salva automaticamente no `localStorage` do navegador, e ao avançar/voltar de pergunta (ou fechar a aba) também é enviada para a API (`PUT /progresso`), que grava um rascunho em andamento no DynamoDB por aluno+matéria.
+3. Ao abrir o simulado, o site busca esse rascunho na API (`GET /progresso`) e usa o que tiver mais respostas entre o local e o remoto — assim dá pra trocar de dispositivo e continuar de onde parou.
+4. Ao finalizar, o site faz um `POST` autenticado (`Authorization: Bearer <token>`) para a API com `{ prova, materiaId, data, respostas: [{ pergunta, resposta }, ...] }`.
+5. A Lambda valida o token (feito pelo API Gateway antes mesmo dela rodar), identifica o aluno pelo `sub` do token, grava a tentativa no DynamoDB e no S3, e apaga o rascunho em andamento dessa matéria.
+6. A correção não é automática — os dados ficam guardados para serem lidos/corrigidos depois.
 
 ## Deploy na AWS
 
