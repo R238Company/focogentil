@@ -34,6 +34,14 @@ window.FOCOGENTIL_MATERIAS = [
     icone: "assets/icons/ciencias_solo.jpg",
     examUrl: "data/exam4.json",
     descricao: "20 perguntas sobre formação, tipos e conservação do solo."
+  },
+  {
+    id: "ingles",
+    nome: "Inglês — Time for School",
+    emoji: "🇬🇧",
+    icone: "assets/icons/ingles.jpg",
+    examUrl: "data/exam5.json",
+    descricao: "10 perguntas sobre a rotina escolar, com must/mustn't, can/can't e have to."
   }
 ];
 
