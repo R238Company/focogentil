@@ -69,6 +69,34 @@
         { "letra": "D", "texto": "in / can" }
       ],
       "imagem": null
+    },
+    {
+      "id": "ing-11",
+      "capitulo": "Revisão: must/have to (obrigação e ausência de obrigação)",
+      "pergunta": "Choose the CORRECT alternative to complete the sentence:\n\nMy sister ____ wake up early on Saturdays, because there's no school.",
+      "tipo": "alternativa",
+      "correta": "B",
+      "opcoes": [
+        { "letra": "A", "texto": "must" },
+        { "letra": "B", "texto": "doesn't have to" },
+        { "letra": "C", "texto": "can't" },
+        { "letra": "D", "texto": "has to" }
+      ],
+      "imagem": null
+    },
+    {
+      "id": "ing-12",
+      "capitulo": "Revisão: mustn't (proibição)",
+      "pergunta": "Choose the CORRECT alternative to complete the sentence:\n\nStudents ____ run in the hallways, it's dangerous.",
+      "tipo": "alternativa",
+      "correta": "C",
+      "opcoes": [
+        { "letra": "A", "texto": "can" },
+        { "letra": "B", "texto": "have to" },
+        { "letra": "C", "texto": "mustn't" },
+        { "letra": "D", "texto": "don't have to" }
+      ],
+      "imagem": null
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "exam5",
   "titulo": "Simulado — Inglês: Time for School",
-  "descricao": "10 questões sobre o texto \"Marina's School Day\" (9 dissertativas + 1 de múltipla escolha, com botão de seleção).",
+  "descricao": "12 questões sobre o texto \"Marina's School Day\" (9 dissertativas + 3 de múltipla escolha, com botão de seleção).",
   "questoes": [
     {
       "id": "ing-01",
@@ -80,6 +80,36 @@
         { "letra": "D", "texto": "in / can" }
       ],
       "correta": "A"
+    },
+    {
+      "id": "ing-11",
+      "materia": "Inglês — Time for School",
+      "capitulo": "Revisão: must/have to (obrigação e ausência de obrigação)",
+      "pergunta": "Choose the CORRECT alternative to complete the sentence:\n\nMy sister ____ wake up early on Saturdays, because there's no school.",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        { "letra": "A", "texto": "must" },
+        { "letra": "B", "texto": "doesn't have to" },
+        { "letra": "C", "texto": "can't" },
+        { "letra": "D", "texto": "has to" }
+      ],
+      "correta": "B"
+    },
+    {
+      "id": "ing-12",
+      "materia": "Inglês — Time for School",
+      "capitulo": "Revisão: mustn't (proibição)",
+      "pergunta": "Choose the CORRECT alternative to complete the sentence:\n\nStudents ____ run in the hallways, it's dangerous.",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        { "letra": "A", "texto": "can" },
+        { "letra": "B", "texto": "have to" },
+        { "letra": "C", "texto": "mustn't" },
+        { "letra": "D", "texto": "don't have to" }
+      ],
+      "correta": "C"
     }
   ]
 }
