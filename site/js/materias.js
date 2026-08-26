@@ -41,7 +41,7 @@ window.FOCOGENTIL_MATERIAS = [
     emoji: "🇬🇧",
     icone: "assets/icons/ingles.jpg",
     examUrl: "data/exam5.json",
-    descricao: "23 perguntas de múltipla escolha revisando preposições, must/mustn't, vocabulário escolar e leitura de horários."
+    descricao: "10 perguntas (8 de múltipla escolha e 2 dissertativas) revisando preposições, must/mustn't, vocabulário escolar e leitura de horários."
   }
 ];
 
