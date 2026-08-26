@@ -22,7 +22,7 @@
       "materia": "Ciências — Solo",
       "capitulo": "Formação do solo",
       "pergunta": "O solo se forma lentamente a partir da alteração das rochas. Explique, com suas palavras, o que acontece com a rocha até ela se transformar em solo.",
-      "imagem": null
+      "imagem": "perfil-do-solo"
     },
     {
       "id": "solo-04",
@@ -64,7 +64,7 @@
       "materia": "Ciências — Solo",
       "capitulo": "Deslizamentos de terra",
       "pergunta": "Morros e encostas desmatados, sem árvores e sem raízes para segurar a terra, correm mais risco durante temporadas de chuva forte. Explique por que o desmatamento em encostas aumenta o risco de deslizamentos de terra.",
-      "imagem": null
+      "imagem": "encosta-com-sem-vegetacao"
     },
     {
       "id": "solo-10",
@@ -92,7 +92,7 @@
       "materia": "Ciências — Solo",
       "capitulo": "Formação do solo",
       "pergunta": "Leia as alternativas e escreva a letra da que está CORRETA, explicando por que as outras estão erradas.\nA) O solo se forma instantaneamente, em poucos dias.\nB) O solo se forma a partir da fragmentação das rochas ao longo do tempo, com a ação da água, do vento e dos seres vivos.\nC) O solo é formado apenas pela água do mar.\nD) As rochas não têm nenhuma relação com a formação do solo.",
-      "imagem": null
+      "imagem": "perfil-do-solo"
     },
     {
       "id": "solo-14",
@@ -134,7 +134,7 @@
       "materia": "Ciências — Solo",
       "capitulo": "Deslizamentos de terra",
       "pergunta": "Leia as alternativas e escreva a letra da que está CORRETA sobre deslizamentos de terra, explicando por que as outras estão erradas.\nA) Encostas com vegetação preservada têm menor risco de deslizamento do que encostas desmatadas.\nB) O desmatamento em encostas diminui o risco de deslizamentos.\nC) A vegetação não tem nenhuma relação com a estabilidade do solo em encostas.\nD) Deslizamentos de terra só acontecem em locais planos.",
-      "imagem": null
+      "imagem": "encosta-com-sem-vegetacao"
     },
     {
       "id": "solo-20",
