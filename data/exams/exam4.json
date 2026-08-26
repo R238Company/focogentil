@@ -1,7 +1,7 @@
 {
   "id": "exam4",
   "titulo": "Simulado — Solo: formação, tipos e conservação",
-  "descricao": "20 questões sobre solo (10 dissertativas + 10 de múltipla escolha, para escrever a letra certa e justificar).",
+  "descricao": "20 questões sobre solo (10 dissertativas + 10 de múltipla escolha, com botão de seleção).",
   "questoes": [
     {
       "id": "solo-01",
@@ -77,71 +77,271 @@
       "id": "solo-11",
       "materia": "Ciências — Solo",
       "capitulo": "Composição do solo",
-      "pergunta": "Leia as alternativas e escreva a letra da que está CORRETA, explicando por que as outras estão erradas.\nA) O solo é formado apenas por rochas e metais.\nB) O solo é formado por partículas minerais, matéria orgânica, água, ar e organismos vivos.\nC) O solo é formado apenas por água e ar.\nD) O solo é formado apenas por plantas e animais.",
-      "imagem": null
+      "pergunta": "Assinale a alternativa CORRETA sobre a composição do solo.",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "O solo é formado apenas por rochas e metais."
+        },
+        {
+          "letra": "B",
+          "texto": "O solo é formado por partículas minerais, matéria orgânica, água, ar e organismos vivos."
+        },
+        {
+          "letra": "C",
+          "texto": "O solo é formado apenas por água e ar."
+        },
+        {
+          "letra": "D",
+          "texto": "O solo é formado apenas por plantas e animais."
+        }
+      ],
+      "correta": "B"
     },
     {
       "id": "solo-12",
       "materia": "Ciências — Solo",
       "capitulo": "Importância do solo",
-      "pergunta": "Leia as alternativas e escreva a letra da que está CORRETA, explicando por que as outras estão erradas.\nA) O solo serve apenas para construir casas.\nB) O solo permite o crescimento das plantas, armazena água e sustenta os ecossistemas.\nC) O solo não tem relação com a agricultura.\nD) O solo é usado somente para fabricar objetos de vidro.",
-      "imagem": null
+      "pergunta": "Assinale a alternativa CORRETA sobre a importância do solo.",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "O solo serve apenas para construir casas."
+        },
+        {
+          "letra": "B",
+          "texto": "O solo permite o crescimento das plantas, armazena água e sustenta os ecossistemas."
+        },
+        {
+          "letra": "C",
+          "texto": "O solo não tem relação com a agricultura."
+        },
+        {
+          "letra": "D",
+          "texto": "O solo é usado somente para fabricar objetos de vidro."
+        }
+      ],
+      "correta": "B"
     },
     {
       "id": "solo-13",
       "materia": "Ciências — Solo",
       "capitulo": "Formação do solo",
-      "pergunta": "Leia as alternativas e escreva a letra da que está CORRETA, explicando por que as outras estão erradas.\nA) O solo se forma instantaneamente, em poucos dias.\nB) O solo se forma a partir da fragmentação das rochas ao longo do tempo, com a ação da água, do vento e dos seres vivos.\nC) O solo é formado apenas pela água do mar.\nD) As rochas não têm nenhuma relação com a formação do solo.",
-      "imagem": null
+      "pergunta": "Assinale a alternativa CORRETA sobre a formação do solo.",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "O solo se forma instantaneamente, em poucos dias."
+        },
+        {
+          "letra": "B",
+          "texto": "O solo se forma a partir da fragmentação das rochas ao longo do tempo, com a ação da água, do vento e dos seres vivos."
+        },
+        {
+          "letra": "C",
+          "texto": "O solo é formado apenas pela água do mar."
+        },
+        {
+          "letra": "D",
+          "texto": "As rochas não têm nenhuma relação com a formação do solo."
+        }
+      ],
+      "correta": "B"
     },
     {
       "id": "solo-14",
       "materia": "Ciências — Solo",
       "capitulo": "Fatores da formação do solo",
-      "pergunta": "Leia as alternativas e escreva a letra da que está CORRETA, explicando por que as outras estão erradas.\nA) Apenas o vento participa da formação do solo.\nB) Água, vento, variação de temperatura, seres vivos e tempo participam da formação do solo.\nC) Somente os seres humanos formam o solo.\nD) A cor do céu é o principal fator na formação do solo.",
-      "imagem": null
+      "pergunta": "Assinale a alternativa CORRETA sobre os fatores que participam da formação do solo.",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Apenas o vento participa da formação do solo."
+        },
+        {
+          "letra": "B",
+          "texto": "Água, vento, variação de temperatura, seres vivos e tempo participam da formação do solo."
+        },
+        {
+          "letra": "C",
+          "texto": "Somente os seres humanos formam o solo."
+        },
+        {
+          "letra": "D",
+          "texto": "A cor do céu é o principal fator na formação do solo."
+        }
+      ],
+      "correta": "B"
     },
     {
       "id": "solo-15",
       "materia": "Ciências — Solo",
       "capitulo": "Tipos de solo",
-      "pergunta": "Leia as alternativas e escreva a letra da que está CORRETA, explicando por que as outras estão erradas.\nA) Existe apenas um tipo de solo em todo o planeta.\nB) Os tipos de solo, como arenoso, argiloso, humoso e pedregoso, têm características diferentes entre si.\nC) Todos os tipos de solo têm exatamente a mesma composição.\nD) O solo humoso é exatamente igual ao solo arenoso.",
-      "imagem": null
+      "pergunta": "Assinale a alternativa CORRETA sobre os tipos de solo.",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Existe apenas um tipo de solo em todo o planeta."
+        },
+        {
+          "letra": "B",
+          "texto": "Os tipos de solo, como arenoso, argiloso, humoso e pedregoso, têm características diferentes entre si."
+        },
+        {
+          "letra": "C",
+          "texto": "Todos os tipos de solo têm exatamente a mesma composição."
+        },
+        {
+          "letra": "D",
+          "texto": "O solo humoso é exatamente igual ao solo arenoso."
+        }
+      ],
+      "correta": "B"
     },
     {
       "id": "solo-16",
       "materia": "Ciências — Solo",
       "capitulo": "Desmatamento, erosão e assoreamento",
-      "pergunta": "Em uma região, uma área de floresta foi desmatada para dar lugar a uma plantação. Depois de fortes chuvas, o rio próximo ficou raso e cheio de sedimentos. Leia as alternativas e escreva a letra da que explica CORRETAMENTE o que aconteceu, explicando por que as outras estão erradas.\nA) O desmatamento deixou o solo sem proteção, a chuva causou erosão e os sedimentos foram levados até o rio, causando assoreamento.\nB) O desmatamento não tem nenhuma relação com o que aconteceu no rio.\nC) O rio ficou raso porque o solo daquela região foi impermeabilizado.\nD) A plantação impediu totalmente a erosão do solo.",
-      "imagem": null
+      "pergunta": "Em uma região, uma área de floresta foi desmatada para dar lugar a uma plantação. Depois de fortes chuvas, o rio próximo ficou raso e cheio de sedimentos. Assinale a alternativa que explica CORRETAMENTE o que aconteceu.",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "O desmatamento deixou o solo sem proteção, a chuva causou erosão e os sedimentos foram levados até o rio, causando assoreamento."
+        },
+        {
+          "letra": "B",
+          "texto": "O desmatamento não tem nenhuma relação com o que aconteceu no rio."
+        },
+        {
+          "letra": "C",
+          "texto": "O rio ficou raso porque o solo daquela região foi impermeabilizado."
+        },
+        {
+          "letra": "D",
+          "texto": "A plantação impediu totalmente a erosão do solo."
+        }
+      ],
+      "correta": "A"
     },
     {
       "id": "solo-17",
       "materia": "Ciências — Solo",
       "capitulo": "Impermeabilização do solo e enchentes",
-      "pergunta": "Leia as alternativas e escreva a letra da que está CORRETA sobre a impermeabilização do solo, explicando por que as outras estão erradas.\nA) Ruas e calçadas de concreto facilitam a infiltração da água no solo.\nB) Quando o solo é impermeabilizado, a água da chuva escoa mais pela superfície, o que pode causar enchentes.\nC) A impermeabilização do solo não tem nenhuma relação com enchentes.\nD) O solo impermeabilizado absorve mais água do que o solo natural.",
-      "imagem": null
+      "pergunta": "Assinale a alternativa CORRETA sobre a impermeabilização do solo.",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Ruas e calçadas de concreto facilitam a infiltração da água no solo."
+        },
+        {
+          "letra": "B",
+          "texto": "Quando o solo é impermeabilizado, a água da chuva escoa mais pela superfície, o que pode causar enchentes."
+        },
+        {
+          "letra": "C",
+          "texto": "A impermeabilização do solo não tem nenhuma relação com enchentes."
+        },
+        {
+          "letra": "D",
+          "texto": "O solo impermeabilizado absorve mais água do que o solo natural."
+        }
+      ],
+      "correta": "B"
     },
     {
       "id": "solo-18",
       "materia": "Ciências — Solo",
       "capitulo": "Queimadas",
-      "pergunta": "Leia as alternativas e escreva a letra da que está CORRETA sobre os efeitos das queimadas no solo, explicando por que as outras estão erradas.\nA) As queimadas destroem a vegetação e a matéria orgânica do solo, deixando-o mais exposto e frágil.\nB) As queimadas sempre melhoram a qualidade do solo.\nC) As queimadas não têm nenhum efeito sobre o solo.\nD) As queimadas aumentam a quantidade de organismos vivos no solo.",
-      "imagem": null
+      "pergunta": "Assinale a alternativa CORRETA sobre os efeitos das queimadas no solo.",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "As queimadas destroem a vegetação e a matéria orgânica do solo, deixando-o mais exposto e frágil."
+        },
+        {
+          "letra": "B",
+          "texto": "As queimadas sempre melhoram a qualidade do solo."
+        },
+        {
+          "letra": "C",
+          "texto": "As queimadas não têm nenhum efeito sobre o solo."
+        },
+        {
+          "letra": "D",
+          "texto": "As queimadas aumentam a quantidade de organismos vivos no solo."
+        }
+      ],
+      "correta": "A"
     },
     {
       "id": "solo-19",
       "materia": "Ciências — Solo",
       "capitulo": "Deslizamentos de terra",
-      "pergunta": "Leia as alternativas e escreva a letra da que está CORRETA sobre deslizamentos de terra, explicando por que as outras estão erradas.\nA) Encostas com vegetação preservada têm menor risco de deslizamento do que encostas desmatadas.\nB) O desmatamento em encostas diminui o risco de deslizamentos.\nC) A vegetação não tem nenhuma relação com a estabilidade do solo em encostas.\nD) Deslizamentos de terra só acontecem em locais planos.",
-      "imagem": null
+      "pergunta": "Assinale a alternativa CORRETA sobre deslizamentos de terra.",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Encostas com vegetação preservada têm menor risco de deslizamento do que encostas desmatadas."
+        },
+        {
+          "letra": "B",
+          "texto": "O desmatamento em encostas diminui o risco de deslizamentos."
+        },
+        {
+          "letra": "C",
+          "texto": "A vegetação não tem nenhuma relação com a estabilidade do solo em encostas."
+        },
+        {
+          "letra": "D",
+          "texto": "Deslizamentos de terra só acontecem em locais planos."
+        }
+      ],
+      "correta": "A"
     },
     {
       "id": "solo-20",
       "materia": "Ciências — Solo",
       "capitulo": "Conservação do solo",
-      "pergunta": "Leia as alternativas e escreva a letra da que está CORRETA sobre a conservação do solo, explicando por que as outras estão erradas.\nA) Não existem medidas capazes de evitar a erosão do solo.\nB) Manter a vegetação e evitar queimadas e desmatamento são medidas que ajudam a conservar o solo.\nC) Desmatar áreas de floresta ajuda a proteger o solo.\nD) Impermeabilizar todo o solo é uma boa forma de conservá-lo.",
-      "imagem": null
+      "pergunta": "Assinale a alternativa CORRETA sobre a conservação do solo.",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Não existem medidas capazes de evitar a erosão do solo."
+        },
+        {
+          "letra": "B",
+          "texto": "Manter a vegetação e evitar queimadas e desmatamento são medidas que ajudam a conservar o solo."
+        },
+        {
+          "letra": "C",
+          "texto": "Desmatar áreas de floresta ajuda a proteger o solo."
+        },
+        {
+          "letra": "D",
+          "texto": "Impermeabilizar todo o solo é uma boa forma de conservá-lo."
+        }
+      ],
+      "correta": "B"
     }
   ]
 }

@@ -254,6 +254,50 @@ button:disabled {
   margin-top: 8px;
 }
 
+.opcoes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.opcao-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 18px;
+  background: #fffdf8;
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 0;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.opcao-item:hover {
+  border-color: var(--primary);
+  background: var(--accent-soft);
+}
+
+.opcao-item.selected {
+  border-color: var(--primary);
+  background: var(--accent-soft);
+}
+
+.opcao-item input[type="radio"] {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+.opcao-item span {
+  line-height: 1.6;
+}
+
 .dots {
   display: flex;
   flex-wrap: wrap;
