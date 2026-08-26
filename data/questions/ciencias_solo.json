@@ -17,7 +17,7 @@
       "id": "solo-03",
       "capitulo": "Formação do solo",
       "pergunta": "O solo se forma lentamente a partir da alteração das rochas. Explique, com suas palavras, o que acontece com a rocha até ela se transformar em solo.",
-      "imagem": null
+      "imagem": "perfil-do-solo"
     },
     {
       "id": "solo-04",
@@ -53,7 +53,7 @@
       "id": "solo-09",
       "capitulo": "Deslizamentos de terra",
       "pergunta": "Morros e encostas desmatados, sem árvores e sem raízes para segurar a terra, correm mais risco durante temporadas de chuva forte. Explique por que o desmatamento em encostas aumenta o risco de deslizamentos de terra.",
-      "imagem": null
+      "imagem": "encosta-com-sem-vegetacao"
     },
     {
       "id": "solo-10",
@@ -101,7 +101,7 @@
         { "letra": "C", "texto": "O solo é formado apenas pela água do mar." },
         { "letra": "D", "texto": "As rochas não têm nenhuma relação com a formação do solo." }
       ],
-      "imagem": null
+      "imagem": "perfil-do-solo"
     },
     {
       "id": "solo-14",
@@ -185,7 +185,7 @@
         { "letra": "C", "texto": "A vegetação não tem nenhuma relação com a estabilidade do solo em encostas." },
         { "letra": "D", "texto": "Deslizamentos de terra só acontecem em locais planos." }
       ],
-      "imagem": null
+      "imagem": "encosta-com-sem-vegetacao"
     },
     {
       "id": "solo-20",
