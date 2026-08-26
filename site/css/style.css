@@ -217,6 +217,41 @@ button:disabled {
   margin-bottom: 14px;
 }
 
+.reading-text {
+  background: var(--accent-soft);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin-bottom: 18px;
+}
+
+.reading-text-label {
+  display: block;
+  color: var(--primary-dark);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+.reading-text-body {
+  color: var(--ink);
+  font-size: 1.05rem;
+  font-style: italic;
+  white-space: pre-wrap;
+}
+
+.question-label {
+  display: block;
+  color: var(--primary-dark);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
 .question-text {
   font-size: 1.25rem;
   font-weight: 500;
