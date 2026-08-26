@@ -20,6 +20,9 @@
     materiaTag: document.getElementById("materiaTag"),
     capituloTag: document.getElementById("capituloTag"),
     questaoImg: document.getElementById("questaoImg"),
+    textoApoio: document.getElementById("textoApoio"),
+    textoApoioBody: document.getElementById("textoApoioBody"),
+    perguntaLabel: document.getElementById("perguntaLabel"),
     perguntaTexto: document.getElementById("perguntaTexto"),
     respostaTexto: document.getElementById("respostaTexto"),
     hintDissertativa: document.getElementById("hintDissertativa"),
@@ -227,6 +230,15 @@
     el.capituloTag.textContent = q.capitulo;
     el.perguntaTexto.textContent = q.pergunta;
 
+    if (q.texto) {
+      el.textoApoioBody.textContent = q.texto;
+      el.textoApoio.style.display = "block";
+      el.perguntaLabel.style.display = "block";
+    } else {
+      el.textoApoio.style.display = "none";
+      el.perguntaLabel.style.display = "none";
+    }
+
     if (isAlternativa(q)) {
       el.respostaTexto.style.display = "none";
       el.hintDissertativa.style.display = "none";
@@ -291,7 +303,7 @@
     }
     window.speechSynthesis.cancel();
     var q = exam.questoes[current];
-    var textoFala = q.pergunta;
+    var textoFala = q.texto ? q.texto + ". " + q.pergunta : q.pergunta;
     if (isAlternativa(q)) {
       textoFala += ". " + q.opcoes.map(opcaoTexto).join(". ");
     }
