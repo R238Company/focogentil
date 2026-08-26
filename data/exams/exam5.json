@@ -8,14 +8,14 @@
       "materia": "Inglês — Time for School",
       "capitulo": "Preposições de tempo (in/on/at)",
       "texto": "Marina studies at Nacional School. She is in the 6th grade. On Mondays, she has Math at 8 o'clock, in the morning, in her classroom. After Math, she has Science in the science lab.\n\nAt school, students must wear their uniform every day, but they mustn't use their cell phones during class. In the library, students can read books and study quietly, but they can't talk loudly or eat snacks there.\n\nAt lunchtime, everyone has to go to the cafeteria, but they don't have to bring their own food, because the school serves lunch for the students.\n\nOn Fridays, Marina has Art class in the art room, and she loves painting there. After school, she has to do her homework before she can play with her friends.",
-      "pergunta": "What subject does Marina have on Mondays, and at what time?",
+      "pergunta": "Choose the CORRECT alternative to answer the question:\n\nWhat subject does Marina have on Mondays, and at what time?",
       "imagem": null,
       "tipo": "alternativa",
       "opcoes": [
-        { "letra": "A", "texto": "Science, at 8 o'clock" },
-        { "letra": "B", "texto": "Math, at 8 o'clock" },
-        { "letra": "C", "texto": "Art, at 9 o'clock" },
-        { "letra": "D", "texto": "Math, at 9 o'clock" }
+        { "letra": "A", "texto": "She has Science, at 8 o'clock." },
+        { "letra": "B", "texto": "She has Math, at 8 o'clock." },
+        { "letra": "C", "texto": "She has Art, at 9 o'clock." },
+        { "letra": "D", "texto": "She has Math, at 9 o'clock." }
       ],
       "correta": "B"
     },
@@ -24,14 +24,14 @@
       "materia": "Inglês — Time for School",
       "capitulo": "Vocabulário de matérias e espaços escolares",
       "texto": "Marina studies at Nacional School. She is in the 6th grade. On Mondays, she has Math at 8 o'clock, in the morning, in her classroom. After Math, she has Science in the science lab.\n\nAt school, students must wear their uniform every day, but they mustn't use their cell phones during class. In the library, students can read books and study quietly, but they can't talk loudly or eat snacks there.\n\nAt lunchtime, everyone has to go to the cafeteria, but they don't have to bring their own food, because the school serves lunch for the students.\n\nOn Fridays, Marina has Art class in the art room, and she loves painting there. After school, she has to do her homework before she can play with her friends.",
-      "pergunta": "Where does Marina have Science class?",
+      "pergunta": "Choose the CORRECT alternative to answer the question:\n\nWhere does Marina have Science class?",
       "imagem": null,
       "tipo": "alternativa",
       "opcoes": [
-        { "letra": "A", "texto": "In the classroom" },
-        { "letra": "B", "texto": "In the library" },
-        { "letra": "C", "texto": "In the science lab" },
-        { "letra": "D", "texto": "In the art room" }
+        { "letra": "A", "texto": "She has Science in the classroom." },
+        { "letra": "B", "texto": "She has Science in the library." },
+        { "letra": "C", "texto": "She has Science in the science lab." },
+        { "letra": "D", "texto": "She has Science in the art room." }
       ],
       "correta": "C"
     },
@@ -40,14 +40,14 @@
       "materia": "Inglês — Time for School",
       "capitulo": "Must (obrigação)",
       "texto": "Marina studies at Nacional School. She is in the 6th grade. On Mondays, she has Math at 8 o'clock, in the morning, in her classroom. After Math, she has Science in the science lab.\n\nAt school, students must wear their uniform every day, but they mustn't use their cell phones during class. In the library, students can read books and study quietly, but they can't talk loudly or eat snacks there.\n\nAt lunchtime, everyone has to go to the cafeteria, but they don't have to bring their own food, because the school serves lunch for the students.\n\nOn Fridays, Marina has Art class in the art room, and she loves painting there. After school, she has to do her homework before she can play with her friends.",
-      "pergunta": "What must all students wear at school every day?",
+      "pergunta": "Choose the CORRECT alternative to answer the question:\n\nWhat must all students wear at school every day?",
       "imagem": null,
       "tipo": "alternativa",
       "opcoes": [
-        { "letra": "A", "texto": "A backpack" },
-        { "letra": "B", "texto": "Their uniform" },
-        { "letra": "C", "texto": "A hat" },
-        { "letra": "D", "texto": "Sports shoes" }
+        { "letra": "A", "texto": "Students must wear a backpack." },
+        { "letra": "B", "texto": "Students must wear their uniform." },
+        { "letra": "C", "texto": "Students must wear a hat." },
+        { "letra": "D", "texto": "Students must wear sports shoes." }
       ],
       "correta": "B"
     },
@@ -56,14 +56,14 @@
       "materia": "Inglês — Time for School",
       "capitulo": "Mustn't (proibição)",
       "texto": "Marina studies at Nacional School. She is in the 6th grade. On Mondays, she has Math at 8 o'clock, in the morning, in her classroom. After Math, she has Science in the science lab.\n\nAt school, students must wear their uniform every day, but they mustn't use their cell phones during class. In the library, students can read books and study quietly, but they can't talk loudly or eat snacks there.\n\nAt lunchtime, everyone has to go to the cafeteria, but they don't have to bring their own food, because the school serves lunch for the students.\n\nOn Fridays, Marina has Art class in the art room, and she loves painting there. After school, she has to do her homework before she can play with her friends.",
-      "pergunta": "What mustn't students do during class?",
+      "pergunta": "Choose the CORRECT alternative to answer the question:\n\nWhat mustn't students do during class?",
       "imagem": null,
       "tipo": "alternativa",
       "opcoes": [
-        { "letra": "A", "texto": "Wear their uniform" },
-        { "letra": "B", "texto": "Read books" },
-        { "letra": "C", "texto": "Use their cell phones" },
-        { "letra": "D", "texto": "Do homework" }
+        { "letra": "A", "texto": "They mustn't wear their uniform." },
+        { "letra": "B", "texto": "They mustn't read books." },
+        { "letra": "C", "texto": "They mustn't use their cell phones." },
+        { "letra": "D", "texto": "They mustn't do homework." }
       ],
       "correta": "C"
     },
@@ -72,14 +72,14 @@
       "materia": "Inglês — Time for School",
       "capitulo": "Can/Can't (permissão)",
       "texto": "Marina studies at Nacional School. She is in the 6th grade. On Mondays, she has Math at 8 o'clock, in the morning, in her classroom. After Math, she has Science in the science lab.\n\nAt school, students must wear their uniform every day, but they mustn't use their cell phones during class. In the library, students can read books and study quietly, but they can't talk loudly or eat snacks there.\n\nAt lunchtime, everyone has to go to the cafeteria, but they don't have to bring their own food, because the school serves lunch for the students.\n\nOn Fridays, Marina has Art class in the art room, and she loves painting there. After school, she has to do her homework before she can play with her friends.",
-      "pergunta": "According to the text, what CAN'T students do in the library?",
+      "pergunta": "Choose the CORRECT alternative to answer the question:\n\nWhat can't students do in the library?",
       "imagem": null,
       "tipo": "alternativa",
       "opcoes": [
-        { "letra": "A", "texto": "Read books" },
-        { "letra": "B", "texto": "Study quietly" },
-        { "letra": "C", "texto": "Talk loudly or eat snacks" },
-        { "letra": "D", "texto": "Borrow books" }
+        { "letra": "A", "texto": "They can't read books." },
+        { "letra": "B", "texto": "They can't study quietly." },
+        { "letra": "C", "texto": "They can't talk loudly or eat snacks." },
+        { "letra": "D", "texto": "They can't borrow books." }
       ],
       "correta": "C"
     },
@@ -88,14 +88,14 @@
       "materia": "Inglês — Time for School",
       "capitulo": "Have to (obrigação)",
       "texto": "Marina studies at Nacional School. She is in the 6th grade. On Mondays, she has Math at 8 o'clock, in the morning, in her classroom. After Math, she has Science in the science lab.\n\nAt school, students must wear their uniform every day, but they mustn't use their cell phones during class. In the library, students can read books and study quietly, but they can't talk loudly or eat snacks there.\n\nAt lunchtime, everyone has to go to the cafeteria, but they don't have to bring their own food, because the school serves lunch for the students.\n\nOn Fridays, Marina has Art class in the art room, and she loves painting there. After school, she has to do her homework before she can play with her friends.",
-      "pergunta": "Where do the students have to go at lunchtime?",
+      "pergunta": "Choose the CORRECT alternative to answer the question:\n\nWhere do the students have to go at lunchtime?",
       "imagem": null,
       "tipo": "alternativa",
       "opcoes": [
-        { "letra": "A", "texto": "To the library" },
-        { "letra": "B", "texto": "To the cafeteria" },
-        { "letra": "C", "texto": "To the classroom" },
-        { "letra": "D", "texto": "To the art room" }
+        { "letra": "A", "texto": "They have to go to the library." },
+        { "letra": "B", "texto": "They have to go to the cafeteria." },
+        { "letra": "C", "texto": "They have to go to the classroom." },
+        { "letra": "D", "texto": "They have to go to the art room." }
       ],
       "correta": "B"
     },
@@ -104,14 +104,14 @@
       "materia": "Inglês — Time for School",
       "capitulo": "Don't have to (ausência de obrigação)",
       "texto": "Marina studies at Nacional School. She is in the 6th grade. On Mondays, she has Math at 8 o'clock, in the morning, in her classroom. After Math, she has Science in the science lab.\n\nAt school, students must wear their uniform every day, but they mustn't use their cell phones during class. In the library, students can read books and study quietly, but they can't talk loudly or eat snacks there.\n\nAt lunchtime, everyone has to go to the cafeteria, but they don't have to bring their own food, because the school serves lunch for the students.\n\nOn Fridays, Marina has Art class in the art room, and she loves painting there. After school, she has to do her homework before she can play with her friends.",
-      "pergunta": "Why don't the students have to bring their own food to school?",
+      "pergunta": "Choose the CORRECT alternative to answer the question:\n\nWhy don't the students have to bring their own food to school?",
       "imagem": null,
       "tipo": "alternativa",
       "opcoes": [
-        { "letra": "A", "texto": "Because they are not hungry" },
-        { "letra": "B", "texto": "Because the school serves lunch for the students" },
-        { "letra": "C", "texto": "Because they eat at home" },
-        { "letra": "D", "texto": "Because food is not allowed at school" }
+        { "letra": "A", "texto": "Because they are not hungry." },
+        { "letra": "B", "texto": "Because the school serves lunch for the students." },
+        { "letra": "C", "texto": "Because they eat at home." },
+        { "letra": "D", "texto": "Because food is not allowed at school." }
       ],
       "correta": "B"
     },
@@ -120,14 +120,14 @@
       "materia": "Inglês — Time for School",
       "capitulo": "Vocabulário de matérias e preposições de tempo",
       "texto": "Marina studies at Nacional School. She is in the 6th grade. On Mondays, she has Math at 8 o'clock, in the morning, in her classroom. After Math, she has Science in the science lab.\n\nAt school, students must wear their uniform every day, but they mustn't use their cell phones during class. In the library, students can read books and study quietly, but they can't talk loudly or eat snacks there.\n\nAt lunchtime, everyone has to go to the cafeteria, but they don't have to bring their own food, because the school serves lunch for the students.\n\nOn Fridays, Marina has Art class in the art room, and she loves painting there. After school, she has to do her homework before she can play with her friends.",
-      "pergunta": "What subject does Marina have on Fridays, and where does she have it?",
+      "pergunta": "Choose the CORRECT alternative to answer the question:\n\nWhat subject does Marina have on Fridays, and where does she have it?",
       "imagem": null,
       "tipo": "alternativa",
       "opcoes": [
-        { "letra": "A", "texto": "Math, in the classroom" },
-        { "letra": "B", "texto": "Science, in the science lab" },
-        { "letra": "C", "texto": "Art, in the art room" },
-        { "letra": "D", "texto": "English, in the library" }
+        { "letra": "A", "texto": "She has Math, in the classroom." },
+        { "letra": "B", "texto": "She has Science, in the science lab." },
+        { "letra": "C", "texto": "She has Art, in the art room." },
+        { "letra": "D", "texto": "She has English, in the library." }
       ],
       "correta": "C"
     },
@@ -136,14 +136,14 @@
       "materia": "Inglês — Time for School",
       "capitulo": "Have to / Can (obrigação e permissão)",
       "texto": "Marina studies at Nacional School. She is in the 6th grade. On Mondays, she has Math at 8 o'clock, in the morning, in her classroom. After Math, she has Science in the science lab.\n\nAt school, students must wear their uniform every day, but they mustn't use their cell phones during class. In the library, students can read books and study quietly, but they can't talk loudly or eat snacks there.\n\nAt lunchtime, everyone has to go to the cafeteria, but they don't have to bring their own food, because the school serves lunch for the students.\n\nOn Fridays, Marina has Art class in the art room, and she loves painting there. After school, she has to do her homework before she can play with her friends.",
-      "pergunta": "What does Marina have to do after school, before she can play with her friends?",
+      "pergunta": "Choose the CORRECT alternative to answer the question:\n\nWhat does Marina have to do after school, before she can play with her friends?",
       "imagem": null,
       "tipo": "alternativa",
       "opcoes": [
-        { "letra": "A", "texto": "Wear her uniform" },
-        { "letra": "B", "texto": "Do her homework" },
-        { "letra": "C", "texto": "Go to the cafeteria" },
-        { "letra": "D", "texto": "Study in the library" }
+        { "letra": "A", "texto": "She has to wear her uniform." },
+        { "letra": "B", "texto": "She has to do her homework." },
+        { "letra": "C", "texto": "She has to go to the cafeteria." },
+        { "letra": "D", "texto": "She has to study in the library." }
       ],
       "correta": "B"
     },
