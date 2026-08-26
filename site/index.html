@@ -50,7 +50,7 @@ if (materia) {
   document.getElementById('titulo').textContent =
     (nome ? 'Oi, ' + nome + '! ' : '') + 'Vamos treinar ' + materia.nome + '?';
   document.getElementById('descricao').textContent =
-    'Aqui você vai responder ' + materia.descricao.replace(/^\d+ perguntas/, '20 perguntas') +
+    'Aqui você vai responder ' + materia.descricao +
     ' Uma de cada vez, sem pressa nenhuma. Não existe resposta errada por escrever do seu jeito — o importante é você tentar explicar o que aprendeu, com suas próprias palavras.';
   document.getElementById('rodape').textContent = 'Simulado 01 — ' + materia.nome;
   document.getElementById('welcomeArt').textContent = materia.emoji + ' ✏️ 🌟';

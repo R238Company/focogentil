@@ -1,0 +1,74 @@
+{
+  "materia": "Inglês — Time for School",
+  "textoBase": "Marina studies at Nacional School. She is in the 6th grade. On Mondays, she has Math at 8 o'clock, in the morning, in her classroom. After Math, she has Science in the science lab.\n\nAt school, students must wear their uniform every day, but they mustn't use their cell phones during class. In the library, students can read books and study quietly, but they can't talk loudly or eat snacks there.\n\nAt lunchtime, everyone has to go to the cafeteria, but they don't have to bring their own food, because the school serves lunch for the students.\n\nOn Fridays, Marina has Art class in the art room, and she loves painting there. After school, she has to do her homework before she can play with her friends.",
+  "questoes": [
+    {
+      "id": "ing-01",
+      "capitulo": "Preposições de tempo (in/on/at)",
+      "pergunta": "What subject does Marina have on Mondays, and at what time?",
+      "imagem": null
+    },
+    {
+      "id": "ing-02",
+      "capitulo": "Vocabulário de matérias e espaços escolares",
+      "pergunta": "Where does Marina have Science class?",
+      "imagem": null
+    },
+    {
+      "id": "ing-03",
+      "capitulo": "Must (obrigação)",
+      "pergunta": "What must all students wear at school every day?",
+      "imagem": null
+    },
+    {
+      "id": "ing-04",
+      "capitulo": "Mustn't (proibição)",
+      "pergunta": "What mustn't students do during class?",
+      "imagem": null
+    },
+    {
+      "id": "ing-05",
+      "capitulo": "Can/Can't (permissão)",
+      "pergunta": "What can students do in the library? And what can't they do there?",
+      "imagem": null
+    },
+    {
+      "id": "ing-06",
+      "capitulo": "Have to (obrigação)",
+      "pergunta": "Where do the students have to go at lunchtime?",
+      "imagem": null
+    },
+    {
+      "id": "ing-07",
+      "capitulo": "Don't have to (ausência de obrigação)",
+      "pergunta": "Why don't the students have to bring their own food to school?",
+      "imagem": null
+    },
+    {
+      "id": "ing-08",
+      "capitulo": "Vocabulário de matérias e preposições de tempo",
+      "pergunta": "What subject does Marina have on Fridays, and where does she have it?",
+      "imagem": null
+    },
+    {
+      "id": "ing-09",
+      "capitulo": "Have to / Can (obrigação e permissão)",
+      "pergunta": "What does Marina have to do after school, before she can play with her friends?",
+      "imagem": null
+    },
+    {
+      "id": "ing-10",
+      "capitulo": "Revisão: preposições e verbos modais",
+      "pergunta": "Choose the CORRECT alternative to complete the sentence:\n\nWe are ____ Math class right now, so you ____ use your cell phone.",
+      "tipo": "alternativa",
+      "correta": "A",
+      "opcoes": [
+        { "letra": "A", "texto": "in / must not" },
+        { "letra": "B", "texto": "at / can" },
+        { "letra": "C", "texto": "on / have to" },
+        { "letra": "D", "texto": "in / can" }
+      ],
+      "imagem": null
+    }
+  ]
+}
