@@ -41,7 +41,7 @@ window.FOCOGENTIL_MATERIAS = [
     emoji: "🇬🇧",
     icone: "assets/icons/ingles.jpg",
     examUrl: "data/exam5.json",
-    descricao: "12 perguntas sobre a rotina escolar, com must/mustn't, can/can't e have to."
+    descricao: "12 perguntas de múltipla escolha sobre a rotina escolar, com must/mustn't, can/can't e have to."
   }
 ];
 
