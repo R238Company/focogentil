@@ -22,6 +22,8 @@
     questaoImg: document.getElementById("questaoImg"),
     textoApoio: document.getElementById("textoApoio"),
     textoApoioBody: document.getElementById("textoApoioBody"),
+    tabelaApoio: document.getElementById("tabelaApoio"),
+    tabelaApoioTable: document.getElementById("tabelaApoioTable"),
     perguntaLabel: document.getElementById("perguntaLabel"),
     perguntaTexto: document.getElementById("perguntaTexto"),
     respostaTexto: document.getElementById("respostaTexto"),
@@ -224,6 +226,32 @@
     });
   }
 
+  function buildTabela(tabela) {
+    el.tabelaApoioTable.innerHTML = "";
+
+    var thead = document.createElement("thead");
+    var headRow = document.createElement("tr");
+    tabela.cabecalho.forEach(function (texto) {
+      var th = document.createElement("th");
+      th.textContent = texto;
+      headRow.appendChild(th);
+    });
+    thead.appendChild(headRow);
+    el.tabelaApoioTable.appendChild(thead);
+
+    var tbody = document.createElement("tbody");
+    tabela.linhas.forEach(function (linha) {
+      var tr = document.createElement("tr");
+      linha.forEach(function (texto) {
+        var td = document.createElement("td");
+        td.textContent = texto;
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+    el.tabelaApoioTable.appendChild(tbody);
+  }
+
   function render() {
     var q = exam.questoes[current];
     el.materiaTag.textContent = q.materia;
@@ -233,11 +261,18 @@
     if (q.texto) {
       el.textoApoioBody.textContent = q.texto;
       el.textoApoio.style.display = "block";
-      el.perguntaLabel.style.display = "block";
     } else {
       el.textoApoio.style.display = "none";
-      el.perguntaLabel.style.display = "none";
     }
+
+    if (q.tabela) {
+      buildTabela(q.tabela);
+      el.tabelaApoio.style.display = "block";
+    } else {
+      el.tabelaApoio.style.display = "none";
+    }
+
+    el.perguntaLabel.style.display = (q.texto || q.tabela) ? "block" : "none";
 
     if (isAlternativa(q)) {
       el.respostaTexto.style.display = "none";
@@ -303,7 +338,15 @@
     }
     window.speechSynthesis.cancel();
     var q = exam.questoes[current];
-    var textoFala = q.texto ? q.texto + ". " + q.pergunta : q.pergunta;
+    var textoFala = q.pergunta;
+    if (q.texto) {
+      textoFala = q.texto + ". " + textoFala;
+    } else if (q.tabela) {
+      var tabelaFala = q.tabela.linhas
+        .map(function (linha) { return linha.join(", "); })
+        .join(". ");
+      textoFala = tabelaFala + ". " + textoFala;
+    }
     if (isAlternativa(q)) {
       textoFala += ". " + q.opcoes.map(opcaoTexto).join(". ");
     }

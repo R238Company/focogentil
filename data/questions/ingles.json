@@ -511,7 +511,6 @@
     {
       "id": "ing-22",
       "capitulo": "Leitura de horário escolar (schedule)",
-      "texto": "School schedule:\n\nMONDAY — 8:00 English · 9:00 Math · 10:00 Art · 10:20 BREAK · 10:40 Science\nTUESDAY — 8:00 Science · 9:00 History · 10:00 PE · 10:20 BREAK · 10:40 English\nWEDNESDAY — 8:00 Geography · 9:00 IT · 10:00 English · 10:20 BREAK · 10:40 Math\nTHURSDAY — 8:00 Math · 9:00 Science · 10:00 History · 10:20 BREAK · 10:40 Art\nFRIDAY — 8:00 PE · 9:00 Art · 10:00 Geography · 10:20 BREAK · 10:40 IT",
       "pergunta": "Look at the school schedule. Which statement is correct?",
       "tipo": "alternativa",
       "correta": "A",
@@ -533,12 +532,63 @@
           "texto": "Students have IT on Monday at 9:00."
         }
       ],
-      "imagem": null
+      "imagem": null,
+      "tabela": {
+        "cabecalho": [
+          "Day",
+          "8:00",
+          "9:00",
+          "10:00",
+          "10:20",
+          "10:40"
+        ],
+        "linhas": [
+          [
+            "Monday",
+            "English",
+            "Math",
+            "Art",
+            "BREAK",
+            "Science"
+          ],
+          [
+            "Tuesday",
+            "Science",
+            "History",
+            "PE",
+            "BREAK",
+            "English"
+          ],
+          [
+            "Wednesday",
+            "Geography",
+            "IT",
+            "English",
+            "BREAK",
+            "Math"
+          ],
+          [
+            "Thursday",
+            "Math",
+            "Science",
+            "History",
+            "BREAK",
+            "Art"
+          ],
+          [
+            "Friday",
+            "PE",
+            "Art",
+            "Geography",
+            "BREAK",
+            "IT"
+          ]
+        ]
+      }
     },
     {
       "id": "ing-23",
       "capitulo": "Leitura de horário escolar (schedule)",
-      "texto": "School schedule:\n\nMONDAY — 8:00 English · 9:00 Math · 10:00 Art · 10:20 BREAK · 10:40 Science\nTUESDAY — 8:00 Science · 9:00 History · 10:00 PE · 10:20 BREAK · 10:40 English\nWEDNESDAY — 8:00 Geography · 9:00 IT · 10:00 English · 10:20 BREAK · 10:40 Math\nTHURSDAY — 8:00 Math · 9:00 Science · 10:00 History · 10:20 BREAK · 10:40 Art\nFRIDAY — 8:00 PE · 9:00 Art · 10:00 Geography · 10:20 BREAK · 10:40 IT",
       "pergunta": "Look at the school schedule again. Which statement is correct?",
       "tipo": "alternativa",
       "correta": "A",
@@ -560,7 +610,59 @@
           "texto": "The students have P.E. classes on Tuesdays and Fridays at 4 o'clock."
         }
       ],
-      "imagem": null
+      "imagem": null,
+      "tabela": {
+        "cabecalho": [
+          "Day",
+          "8:00",
+          "9:00",
+          "10:00",
+          "10:20",
+          "10:40"
+        ],
+        "linhas": [
+          [
+            "Monday",
+            "English",
+            "Math",
+            "Art",
+            "BREAK",
+            "Science"
+          ],
+          [
+            "Tuesday",
+            "Science",
+            "History",
+            "PE",
+            "BREAK",
+            "English"
+          ],
+          [
+            "Wednesday",
+            "Geography",
+            "IT",
+            "English",
+            "BREAK",
+            "Math"
+          ],
+          [
+            "Thursday",
+            "Math",
+            "Science",
+            "History",
+            "BREAK",
+            "Art"
+          ],
+          [
+            "Friday",
+            "PE",
+            "Art",
+            "Geography",
+            "BREAK",
+            "IT"
+          ]
+        ]
+      }
     }
   ]
 }
