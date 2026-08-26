@@ -37,11 +37,11 @@ window.FOCOGENTIL_MATERIAS = [
   },
   {
     id: "ingles",
-    nome: "Inglês — Time for School",
+    nome: "Inglês — ST2 Review (Unit 4)",
     emoji: "🇬🇧",
     icone: "assets/icons/ingles.jpg",
     examUrl: "data/exam5.json",
-    descricao: "12 perguntas sobre a rotina escolar, com must/mustn't, can/can't e have to."
+    descricao: "23 perguntas de múltipla escolha revisando preposições, must/mustn't, vocabulário escolar e leitura de horários."
   }
 ];
 

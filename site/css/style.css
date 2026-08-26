@@ -242,6 +242,45 @@ button:disabled {
   white-space: pre-wrap;
 }
 
+.reading-table-wrap {
+  background: var(--accent-soft);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin-bottom: 18px;
+}
+
+.reading-table-scroll {
+  overflow-x: auto;
+}
+
+.reading-table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 480px;
+  font-size: 0.95rem;
+}
+
+.reading-table th,
+.reading-table td {
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.reading-table th {
+  background: var(--accent);
+  color: #1f5c80;
+  font-weight: 700;
+}
+
+.reading-table td:first-child,
+.reading-table th:first-child {
+  text-align: left;
+  font-weight: 600;
+}
+
 .question-label {
   display: block;
   color: var(--primary-dark);
