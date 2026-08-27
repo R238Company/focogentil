@@ -42,6 +42,14 @@ window.FOCOGENTIL_MATERIAS = [
     icone: "assets/icons/ingles.jpg",
     examUrl: "data/exam5.json",
     descricao: "10 perguntas (8 de múltipla escolha e 2 dissertativas) revisando preposições, must/mustn't, vocabulário escolar e leitura de horários."
+  },
+  {
+    id: "historia",
+    nome: "História — China Antiga",
+    emoji: "🏛️",
+    icone: "assets/icons/historia.jpg",
+    examUrl: "data/exam6.json",
+    descricao: "20 perguntas (10 de múltipla escolha e 10 dissertativas) sobre a China Antiga: rios, dinastias, Shi Huangdi e a cultura chinesa."
   }
 ];
 
