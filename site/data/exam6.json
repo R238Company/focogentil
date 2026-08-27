@@ -1,0 +1,357 @@
+{
+  "id": "exam6",
+  "titulo": "Simulado — História: China Antiga (ST2)",
+  "descricao": "20 questões sobre a China Antiga (10 de múltipla escolha e 10 dissertativas), com base no roteiro de estudos da ST2.",
+  "questoes": [
+    {
+      "id": "his-01",
+      "materia": "História — China Antiga (ST2)",
+      "capitulo": "Localização e rios da China Antiga",
+      "texto": "Os primeiros povos chineses se estabeleceram às margens do Rio Amarelo, cujas cheias eram aproveitadas para a agricultura e para o abastecimento de água. Esse rio nasce no Planalto do Tibete e, depois de percorrer cerca de 5,5 mil quilômetros, deságua no Mar Amarelo, na parte leste do país. O Yangtzé, ou Rio Azul, é o rio mais extenso da China, e o Amarelo é o segundo mais longo.",
+      "pergunta": "Segundo o texto, por que os primeiros povos chineses escolheram viver às margens do Rio Amarelo?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Porque o rio nascia no Planalto do Tibete, considerado um local sagrado pelos chineses."
+        },
+        {
+          "letra": "B",
+          "texto": "Porque as cheias do rio eram aproveitadas para irrigar plantações e fornecer água à população."
+        },
+        {
+          "letra": "C",
+          "texto": "Porque o rio desaguava no Mar Amarelo, o que facilitava o comércio marítimo com outros povos."
+        },
+        {
+          "letra": "D",
+          "texto": "Porque o Rio Amarelo era o rio mais extenso de todo o território chinês."
+        }
+      ],
+      "correta": "B"
+    },
+    {
+      "id": "his-02",
+      "materia": "História — China Antiga (ST2)",
+      "capitulo": "As três primeiras dinastias chinesas",
+      "texto": "A partir do processo de unificação concretizado por Yü, formou-se a Dinastia Xia, a primeira dinastia chinesa. A Dinastia Xia foi sucedida pela Dinastia Shang, que governou o território chinês entre os séculos XVII a.C. e XI a.C., aproximadamente. Foi sucedida pela Dinastia Zhou (também conhecida como Chou), que ficou no poder até o século III a.C.",
+      "pergunta": "De acordo com o texto, qual foi a ordem correta das três primeiras dinastias chinesas?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Zhou, Shang, Xia."
+        },
+        {
+          "letra": "B",
+          "texto": "Xia, Zhou, Shang."
+        },
+        {
+          "letra": "C",
+          "texto": "Xia, Shang, Zhou."
+        },
+        {
+          "letra": "D",
+          "texto": "Shang, Xia, Zhou."
+        }
+      ],
+      "correta": "C"
+    },
+    {
+      "id": "his-03",
+      "materia": "História — China Antiga (ST2)",
+      "capitulo": "O Período dos Reinos Combatentes e a ascensão do Reino Qin",
+      "texto": "Entre os anos de 475 a.C. e 221 a.C., os Estados chineses entraram em guerra pelo controle da região, período conhecido como Reinos Combatentes. Os conflitos só terminaram em 221 a.C., ano em que um dos Estados se sobressaiu: o Reino Qin. Os soldados da cavalaria e do exército desse reino lutavam com armas de ferro (uma novidade para a época), o que lhes conferia superioridade em relação aos adversários.",
+      "pergunta": "Segundo o texto, o que explica a vitória do Reino Qin sobre os demais Estados durante o Período dos Reinos Combatentes?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "O Reino Qin tinha o maior número de soldados entre todos os reinos em conflito."
+        },
+        {
+          "letra": "B",
+          "texto": "O Reino Qin contava com o apoio militar de povos estrangeiros vindos da Mongólia."
+        },
+        {
+          "letra": "C",
+          "texto": "O Reino Qin usava armas de ferro, uma novidade que dava vantagem militar ao seu exército."
+        },
+        {
+          "letra": "D",
+          "texto": "O Reino Qin já havia concluído a construção da Muralha da China antes dos outros reinos."
+        }
+      ],
+      "correta": "C"
+    },
+    {
+      "id": "his-04",
+      "materia": "História — China Antiga (ST2)",
+      "capitulo": "As medidas administrativas de Shi Huangdi",
+      "texto": "Shi Huangdi centralizou a administração do território, dividiu a China em 36 províncias e mantinha funcionários escolhidos por ele próprio em cada uma. Ele também unificou o sistema de pesos e medidas, o que permitia que as diferentes províncias negociassem entre si adotando os mesmos padrões. Além disso, uniformizou o sistema de escrita, já que os registros variavam entre as províncias, e criou impostos e leis válidos para todo o território.",
+      "pergunta": "De acordo com o texto, qual das alternativas descreve corretamente uma medida tomada por Shi Huangdi para administrar o Império Chinês?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Ele dividiu o território em províncias, mas manteve pesos e medidas diferentes em cada uma delas."
+        },
+        {
+          "letra": "B",
+          "texto": "Ele unificou o sistema de pesos e medidas e o sistema de escrita, facilitando a integração entre as províncias."
+        },
+        {
+          "letra": "C",
+          "texto": "Ele aboliu a cobrança de impostos em todo o território para agradar a população recém-conquistada."
+        },
+        {
+          "letra": "D",
+          "texto": "Ele manteve os antigos reis derrotados no comando das províncias que haviam governado antes."
+        }
+      ],
+      "correta": "B"
+    },
+    {
+      "id": "his-05",
+      "materia": "História — China Antiga (ST2)",
+      "capitulo": "O exército de terracota",
+      "texto": "Quando os arqueólogos escavaram o mausoléu de Shi Huangdi, encontraram 6 mil esculturas de soldados feitas em terracota, além de estátuas de arqueiros, cavalos e carruagens de bronze. De acordo com a cultura do período imperial, esse exército teria a tarefa de proteger o imperador após a sua morte.",
+      "pergunta": "Segundo o texto, qual era a função do exército de terracota, de acordo com a cultura do período imperial chinês?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Servir apenas como decoração do palácio imperial enquanto Shi Huangdi estava vivo."
+        },
+        {
+          "letra": "B",
+          "texto": "Proteger o imperador Shi Huangdi depois da sua morte."
+        },
+        {
+          "letra": "C",
+          "texto": "Funcionar como réplicas usadas no treinamento dos soldados reais."
+        },
+        {
+          "letra": "D",
+          "texto": "Representar os inimigos que haviam sido derrotados pelo imperador em batalha."
+        }
+      ],
+      "correta": "B"
+    },
+    {
+      "id": "his-06",
+      "materia": "História — China Antiga (ST2)",
+      "capitulo": "Economia e organização dos camponeses",
+      "texto": "Na China Antiga, a maioria das terras cultiváveis pertencia aos nobres. Os camponeses arrendavam as terras e pagavam pelo uso com uma parte do que era produzido e com serviços prestados ao proprietário. Também se exigia que os camponeses pagassem impostos ao governo e que, por pelo menos um mês por ano, prestassem serviços de manutenção e construção de obras públicas.",
+      "pergunta": "De acordo com o texto, como os camponeses pagavam pelo uso das terras que arrendavam dos nobres?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Apenas em dinheiro, pago diretamente ao governo imperial."
+        },
+        {
+          "letra": "B",
+          "texto": "Com uma parte da produção agrícola e com serviços prestados ao proprietário da terra."
+        },
+        {
+          "letra": "C",
+          "texto": "Trabalhando exclusivamente na construção da Muralha da China."
+        },
+        {
+          "letra": "D",
+          "texto": "Entregando parte de suas terras aos filhos dos nobres após cada colheita."
+        }
+      ],
+      "correta": "B"
+    },
+    {
+      "id": "his-07",
+      "materia": "História — China Antiga (ST2)",
+      "capitulo": "A origem da escrita chinesa",
+      "texto": "Estudos de vestígios encontrados na região do Vale do Rio Amarelo concluíram que as inscrições feitas em ossos de animais e em carapaças de tartaruga representavam perguntas que os reis da Dinastia Shang faziam aos seus ancestrais mortos. Ao longo do tempo, esses sinais foram sendo modificados e se transformaram nos primeiros ideogramas da língua chinesa.",
+      "pergunta": "Segundo o texto, qual foi a origem dos primeiros ideogramas da escrita chinesa?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Desenhos criados por comerciantes para registrar trocas de mercadorias entre províncias."
+        },
+        {
+          "letra": "B",
+          "texto": "Sinais usados em rituais de consulta aos ancestrais, inscritos em ossos e carapaças de tartaruga."
+        },
+        {
+          "letra": "C",
+          "texto": "Símbolos criados pelo filósofo Confúcio para registrar seus ensinamentos."
+        },
+        {
+          "letra": "D",
+          "texto": "Marcas utilizadas pelos soldados para identificar suas armas de bronze."
+        }
+      ],
+      "correta": "B"
+    },
+    {
+      "id": "his-08",
+      "materia": "História — China Antiga (ST2)",
+      "capitulo": "A invenção do papel e da impressão",
+      "texto": "O papel foi inventado pelos chineses durante a Dinastia Han, e a invenção é atribuída ao oficial chinês Cai Lun. Foi alguns séculos após o desenvolvimento do papel, durante a Dinastia Sui, que se registrou o uso de uma técnica de impressão pela primeira vez, feita com o auxílio de blocos de madeira: a xilogravura.",
+      "pergunta": "De acordo com o texto, em que ordem ocorreram esses acontecimentos?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Primeiro surgiu a técnica de xilogravura e, depois, o papel foi inventado por Cai Lun."
+        },
+        {
+          "letra": "B",
+          "texto": "O papel foi inventado durante a Dinastia Han e, séculos depois, passou a ser usada a técnica de impressão por xilogravura."
+        },
+        {
+          "letra": "C",
+          "texto": "A xilogravura e o papel foram inventados ao mesmo tempo, durante a Dinastia Qin."
+        },
+        {
+          "letra": "D",
+          "texto": "O papel só foi inventado depois que a técnica de impressão já existia havia muitos séculos."
+        }
+      ],
+      "correta": "B"
+    },
+    {
+      "id": "his-09",
+      "materia": "História — China Antiga (ST2)",
+      "capitulo": "O segredo da produção da seda",
+      "texto": "A produção da seda era um verdadeiro segredo de Estado. Se alguém revelasse a estrangeiros o método de fabricação, poderia ser condenado à morte por tortura. Foi durante a Dinastia Han que a seda se tornou o principal artigo comercial da China.",
+      "pergunta": "Segundo o texto, o que poderia acontecer com uma pessoa que revelasse a estrangeiros o segredo da fabricação da seda?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Ela perderia apenas o direito de comercializar produtos dentro da China."
+        },
+        {
+          "letra": "B",
+          "texto": "Ela poderia ser condenada à morte por tortura."
+        },
+        {
+          "letra": "C",
+          "texto": "Ela seria expulsa do país, sem receber nenhuma outra punição."
+        },
+        {
+          "letra": "D",
+          "texto": "Ela teria que pagar uma multa em tecidos de seda ao imperador."
+        }
+      ],
+      "correta": "B"
+    },
+    {
+      "id": "his-10",
+      "materia": "História — China Antiga (ST2)",
+      "capitulo": "O cultivo em terraços",
+      "texto": "Um dos cultivos mais conhecidos da China é o de arroz, que necessita de água em abundância. Desde a Antiguidade, os chineses praticam o cultivo em terraços, faixas de plantação inseridas em áreas montanhosas. Graças aos sistemas de irrigação, é possível manter parte dessas terras alagadas, conforme as necessidades de cada cultivo.",
+      "pergunta": "De acordo com o texto, qual é a relação entre o cultivo em terraços e as áreas montanhosas da China?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "O cultivo em terraços substituiu totalmente o plantio nas áreas de planície da China."
+        },
+        {
+          "letra": "B",
+          "texto": "As faixas de plantação em terraços permitem cultivar arroz mesmo em áreas montanhosas, com o auxílio da irrigação."
+        },
+        {
+          "letra": "C",
+          "texto": "As montanhas impedem qualquer sistema de irrigação, por isso o cultivo em terraços não é usado na China."
+        },
+        {
+          "letra": "D",
+          "texto": "O cultivo em terraços é usado apenas em regiões planas, distantes das áreas montanhosas."
+        }
+      ],
+      "correta": "B"
+    },
+    {
+      "id": "his-11",
+      "materia": "História — China Antiga (ST2)",
+      "capitulo": "Da organização em clãs às sociedades patriarcais",
+      "pergunta": "Entre 5000 a.C. e 3000 a.C., os povoados às margens do Rio Amarelo eram liderados por mulheres, o que caracteriza essas sociedades como matriarcais. Com o tempo, a liderança passou para os homens e as sociedades se tornaram patriarcais, organizadas em clãs liderados por um ancião ou uma anciã.\n\nExplique, com suas palavras, o que era um clã na China Antiga e como a liderança das comunidades mudou ao longo do tempo.",
+      "imagem": null
+    },
+    {
+      "id": "his-12",
+      "materia": "História — China Antiga (ST2)",
+      "capitulo": "A unificação dos Estados chineses por Yü, o Grande",
+      "pergunta": "Por volta do ano 2200 a.C., o patriarca Yü, o Grande, liderou a unificação dos diversos Estados chineses independentes sob um único governo, tornando-se rei. Esse acontecimento marcou o início do governo de dinastias na China.\n\nExplique por que a unificação promovida por Yü, o Grande, é considerada o início do sistema de dinastias na China.",
+      "imagem": null
+    },
+    {
+      "id": "his-13",
+      "materia": "História — China Antiga (ST2)",
+      "capitulo": "Contribuições das dinastias Shang e Zhou",
+      "pergunta": "Durante a Dinastia Shang, os chineses desenvolveram um primeiro sistema de escrita. Já durante a Dinastia Zhou, houve amplo desenvolvimento da agricultura, com a invenção do arado, de sistemas de irrigação e o domínio da fundição do ferro.\n\na) Que contribuição importante a Dinastia Shang trouxe para a sociedade chinesa?\nb) Cite duas contribuições da Dinastia Zhou para a agricultura chinesa.",
+      "imagem": null
+    },
+    {
+      "id": "his-14",
+      "materia": "História — China Antiga (ST2)",
+      "capitulo": "O primeiro imperador da China",
+      "pergunta": "Ao conquistar o feito de reunir um território tão extenso, o governante do Reino Qin, Ying Zheng, autodeclarou-se imperador e adotou o nome de Shi Huangdi, que significa 'imperador inicial' ou 'primeiro imperador'.\n\nExplique por que Ying Zheng decidiu adotar o nome Shi Huangdi e o que essa escolha representava para a história da China.",
+      "imagem": null
+    },
+    {
+      "id": "his-15",
+      "materia": "História — China Antiga (ST2)",
+      "capitulo": "A construção da Muralha da China",
+      "pergunta": "Preocupado com a proteção do império e receando sofrer invasões dos povos da Mongólia e da Manchúria, Shi Huangdi ordenou a construção de fortificações nas fronteiras ao norte do território, dando início à Muralha da China.\n\nExplique, com suas próprias palavras, qual foi o motivo que levou Shi Huangdi a mandar construir a Muralha da China.",
+      "imagem": null
+    },
+    {
+      "id": "his-16",
+      "materia": "História — China Antiga (ST2)",
+      "capitulo": "A descoberta do mausoléu de Shi Huangdi",
+      "pergunta": "Em 1974, um grupo de camponeses cavava um buraco para a construção de um poço na cidade de Xian quando se deparou com partes de estátuas de soldados feitas em terracota. Eles haviam descoberto, sem saber, o mausoléu do Imperador Shi Huangdi.\n\nConte, com suas palavras, como e por quem o mausoléu de Shi Huangdi foi descoberto, e o que havia enterrado ali junto com as estátuas de soldados.",
+      "imagem": null
+    },
+    {
+      "id": "his-17",
+      "materia": "História — China Antiga (ST2)",
+      "capitulo": "As obrigações dos camponeses chineses",
+      "pergunta": "Na China Antiga, a maioria das terras cultiváveis pertencia aos nobres, e os camponeses arrendavam essas terras. Além de pagar pelo uso da terra, os camponeses deviam impostos ao governo e, todos os anos, por pelo menos um mês, prestavam serviços de manutenção e construção de obras públicas, como pontes, estradas e fortificações.\n\nDescreva as diferentes obrigações que os camponeses chineses tinham com os nobres e com o governo.",
+      "imagem": null
+    },
+    {
+      "id": "his-18",
+      "materia": "História — China Antiga (ST2)",
+      "capitulo": "A agricultura como base da economia chinesa",
+      "pergunta": "A economia chinesa dependia fortemente da agricultura, com destaque para o cultivo do arroz, que exige grande quantidade de água. O cultivo em terraços e os sistemas de irrigação permitiam o plantio mesmo em áreas montanhosas.\n\na) Por que o cultivo em terraços foi importante para a produção agrícola na China?\nb) Na sua opinião, por que essa técnica de cultivo continua sendo usada até hoje?",
+      "imagem": null
+    },
+    {
+      "id": "his-19",
+      "materia": "História — China Antiga (ST2)",
+      "capitulo": "As invenções da cultura chinesa",
+      "pergunta": "Os chineses foram responsáveis por importantes contribuições para a humanidade, como a escrita, o papel, a seda, a bússola e a pólvora.\n\nEscolha DUAS dessas invenções chinesas e explique, com suas palavras, por que cada uma delas foi importante — tanto para a própria sociedade chinesa quanto para outros povos.",
+      "imagem": null
+    },
+    {
+      "id": "his-20",
+      "materia": "História — China Antiga (ST2)",
+      "capitulo": "Confecção da seda",
+      "pergunta": "Os chineses descobriram que os fios do casulo produzido pela lagarta do Bombyx mori (o bicho-da-seda) eram excelentes para a fabricação de um tecido chamado seda. O processo envolvia mergulhar os casulos em água quente, desenrolar os fios e tecê-los.\n\nExplique, com suas palavras, como era feito o processo de fabricação da seda na China Antiga.",
+      "imagem": null
+    }
+  ]
+}
