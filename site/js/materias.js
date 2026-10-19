@@ -50,6 +50,14 @@ window.FOCOGENTIL_MATERIAS = [
     icone: "assets/icons/historia.jpg",
     examUrl: "data/exam6.json",
     descricao: "20 perguntas (10 de múltipla escolha e 10 dissertativas) sobre a China Antiga: rios, dinastias, Shi Huangdi e a cultura chinesa."
+  },
+  {
+    id: "lingua_portuguesa_3t",
+    nome: "Língua Portuguesa — 3º Trimestre",
+    emoji: "✍️",
+    icone: "assets/icons/lingua_portuguesa.jpg",
+    examUrl: "data/exam7.json",
+    descricao: "20 perguntas (10 de múltipla escolha e 10 dissertativas, alternadas) sobre verbo, modos indicativo, imperativo e subjuntivo, e advérbio."
   }
 ];
 

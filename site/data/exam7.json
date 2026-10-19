@@ -1,0 +1,357 @@
+{
+  "id": "exam7",
+  "titulo": "Simulado — Língua Portuguesa: Verbo e Advérbio (3º Trimestre)",
+  "descricao": "20 questões de Língua Portuguesa (10 de múltipla escolha e 10 dissertativas, alternadas) sobre verbo, modos indicativo, imperativo e subjuntivo, e advérbio.",
+  "questoes": [
+    {
+      "id": "lp3-01",
+      "materia": "Língua Portuguesa — 3º Trimestre",
+      "capitulo": "Cap. 08 — Verbo",
+      "texto": "Na feira de ciências, Beto explicou ao grupo: \"Eu medi a temperatura da água e anotei o resultado. Se a gente aquecesse mais um pouco, ela talvez fervesse, mas não fizemos isso.\"",
+      "pergunta": "Qual interpretação do uso dos verbos no relato de Beto está de acordo com o texto?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Beto apresenta duas hipóteses sobre o experimento: medir a temperatura e anotar o resultado eram coisas que o grupo ainda poderia fazer."
+        },
+        {
+          "letra": "B",
+          "texto": "Beto conta o que fez (\"medi\", \"anotei\") e também o que a água fez depois: ela ferveu quando o grupo aqueceu mais um pouco, e por isso ele usa \"fervesse\"."
+        },
+        {
+          "letra": "C",
+          "texto": "Beto conta fatos que de fato aconteceram (\"medi\", \"anotei\") e levanta uma hipótese que não se realizou (\"aquecesse\", \"fervesse\")."
+        },
+        {
+          "letra": "D",
+          "texto": "Beto mostra certeza em tudo o que disse, já que todos os verbos do trecho estão no modo indicativo, o modo dos fatos reais."
+        }
+      ],
+      "correta": "C"
+    },
+    {
+      "id": "lp3-02",
+      "materia": "Língua Portuguesa — 3º Trimestre",
+      "capitulo": "Cap. 08 — Verbo",
+      "pergunta": "Observe o verbo \"cantávamos\", da frase \"Na festa junina, nós cantávamos quadrinhas\".\n\nSepare o verbo em radical, vogal temática e desinências, dizendo o que cada parte indica. Depois diga a qual conjugação (1ª, 2ª ou 3ª) ele pertence e explique como você descobriu.",
+      "imagem": null
+    },
+    {
+      "id": "lp3-03",
+      "materia": "Língua Portuguesa — 3º Trimestre",
+      "capitulo": "Cap. 08 — Verbo",
+      "texto": "Na reunião de pais, a diretora explicou: \"A escola tinha aceitado o convite da prefeitura, e o evento foi aceito por todos os professores. Os cartazes foram feitos pelos alunos do 6º ano.\"",
+      "pergunta": "Qual explicação sobre as formas de particípio usadas no texto está correta?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Em \"tinha aceitado\" aparece o particípio irregular, usado com \"ter\"; em \"foi aceito\" aparece o regular, usado com \"ser\". Por isso o verbo \"aceitar\" é chamado de defectivo."
+        },
+        {
+          "letra": "B",
+          "texto": "As formas \"aceitado\" e \"aceito\" são duas maneiras de escrever a mesma coisa, e a diretora poderia trocar uma pela outra em qualquer frase sem que a regra do texto fosse alterada."
+        },
+        {
+          "letra": "C",
+          "texto": "O verbo \"fazer\" tem dois particípios, \"fazido\" e \"feito\", e a diretora escolheu o irregular porque o auxiliar \"ser\" exige sempre o particípio regular."
+        },
+        {
+          "letra": "D",
+          "texto": "Em \"tinha aceitado\" aparece o particípio regular, que acompanha o auxiliar \"ter\"; em \"foi aceito\" aparece o irregular, que acompanha o auxiliar \"ser\". Já \"feitos\" é a única forma de particípio do verbo \"fazer\"."
+        }
+      ],
+      "correta": "D"
+    },
+    {
+      "id": "lp3-04",
+      "materia": "Língua Portuguesa — 3º Trimestre",
+      "capitulo": "Cap. 08 — Verbo",
+      "pergunta": "Leia a frase: \"Eu caibo nesse banco, mas a mala não cabe.\"\n\nExplique a diferença entre verbo regular e verbo irregular, usando o verbo \"caber\" como exemplo. Depois diga o que é um verbo defectivo e dê o exemplo \"doer\".",
+      "imagem": null
+    },
+    {
+      "id": "lp3-05",
+      "materia": "Língua Portuguesa — 3º Trimestre",
+      "capitulo": "Cap. 09 — Verbo: modo indicativo",
+      "texto": "Seu Tião contava que, quando era menino, pescava todo fim de semana no rio da fazenda. Certa vez, fisgou um peixe tão grande que a linha arrebentou. Até hoje ele jura que o bicho ainda está lá, esperando a próxima chance.",
+      "pergunta": "Qual interpretação dos tempos verbais do causo está de acordo com o texto?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "\"Pescava\" e \"fisgou\" indicam ações já acabadas no passado, e \"jura\" está no presente porque o narrador conta o que Seu Tião faz agora, durante a pescaria."
+        },
+        {
+          "letra": "B",
+          "texto": "\"Pescava\" indica um hábito repetido no passado; \"fisgou\" marca um fato único e já acabado; e \"jura\", no presente, mostra que a convicção do pescador continua até hoje."
+        },
+        {
+          "letra": "C",
+          "texto": "\"Pescava\" marca um fato único, ocorrido uma só vez; \"fisgou\" indica o hábito de pescar nos fins de semana; e \"jura\" está no presente para mostrar que a história é inventada."
+        },
+        {
+          "letra": "D",
+          "texto": "\"Pescava\" indica uma ação que ainda continua hoje; \"fisgou\" mostra o hábito de fisgar peixes grandes; e \"jura\" aparece no presente porque o peixe foi capturado."
+        }
+      ],
+      "correta": "B"
+    },
+    {
+      "id": "lp3-06",
+      "materia": "Língua Portuguesa — 3º Trimestre",
+      "capitulo": "Cap. 09 — Verbo: modo indicativo",
+      "pergunta": "Leia estas duas frases: \"Eu jogava bola todo dia depois da aula.\" e \"Eu joguei bola ontem à tarde.\"\n\nExplique a diferença entre o pretérito imperfeito e o pretérito perfeito do indicativo, usando as frases como exemplo. Depois escreva duas frases suas, contando algo de quando você era menor: uma com cada tempo.",
+      "imagem": null
+    },
+    {
+      "id": "lp3-07",
+      "materia": "Língua Portuguesa — 3º Trimestre",
+      "capitulo": "Cap. 09 — Verbo: modo indicativo",
+      "texto": "Quando a polícia chegou, o ladrão já fugira pela janela. Os vizinhos, que haviam ouvido o barulho, contaram o que viram.",
+      "pergunta": "Considerando os tempos verbais, qual é a sequência correta dos fatos narrados?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "A polícia chegou no mesmo momento em que o ladrão fugiu, e os vizinhos ouviram o barulho depois de contarem o que viram."
+        },
+        {
+          "letra": "B",
+          "texto": "O ladrão fugiu antes de a polícia chegar, mas os vizinhos só ouviram o barulho depois de contarem o que viram."
+        },
+        {
+          "letra": "C",
+          "texto": "O ladrão fugiu antes de a polícia chegar, e os vizinhos ouviram o barulho antes de contarem o que viram."
+        },
+        {
+          "letra": "D",
+          "texto": "A polícia chegou antes de o ladrão fugir, e os vizinhos contaram o que viram antes de ouvirem o barulho."
+        }
+      ],
+      "correta": "C"
+    },
+    {
+      "id": "lp3-08",
+      "materia": "Língua Portuguesa — 3º Trimestre",
+      "capitulo": "Cap. 09 — Verbo: modo indicativo",
+      "pergunta": "Leia as duas frases: \"Amanhã a turma cantará o hino da escola.\" e \"Quando o professor chegou, a turma já cantara o hino.\"\n\nExplique a diferença de sentido entre \"cantará\" e \"cantara\" (tempo verbal de cada um) e diga por que apenas uma das formas leva acento gráfico.",
+      "imagem": null
+    },
+    {
+      "id": "lp3-09",
+      "materia": "Língua Portuguesa — 3º Trimestre",
+      "capitulo": "Cap. 09 — Verbo: modo indicativo",
+      "texto": "\"O museu abre às 9h. Amanhã eu vou ao museu com a turma. Todo sábado minha avó visita a exposição. A água ferve a 100 °C ao nível do mar.\"",
+      "pergunta": "Qual alternativa relaciona corretamente cada verbo ao valor que o presente do indicativo assume no texto?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "\"Vou\" indica futuro próximo; \"visita\" expressa uma verdade universal; \"ferve\" indica hábito."
+        },
+        {
+          "letra": "B",
+          "texto": "\"Vou\" indica futuro próximo; \"visita\" indica hábito; \"ferve\" expressa uma verdade universal."
+        },
+        {
+          "letra": "C",
+          "texto": "\"Vou\" indica hábito; \"visita\" indica futuro próximo; \"ferve\" expressa uma verdade universal."
+        },
+        {
+          "letra": "D",
+          "texto": "\"Vou\" expressa uma verdade universal; \"visita\" indica hábito; \"ferve\" indica futuro próximo."
+        }
+      ],
+      "correta": "B"
+    },
+    {
+      "id": "lp3-10",
+      "materia": "Língua Portuguesa — 3º Trimestre",
+      "capitulo": "Cap. 09 — Verbo: modo indicativo",
+      "pergunta": "Leia: \"Ele disse que viria à festa, mas não apareceu.\"\n\nO verbo \"viria\" está no futuro do pretérito. Explique o que esse tempo expressa nesse caso, como ele se diferencia do futuro do presente (\"virá\") e escreva uma frase sua usando o futuro do pretérito.",
+      "imagem": null
+    },
+    {
+      "id": "lp3-11",
+      "materia": "Língua Portuguesa — 3º Trimestre",
+      "capitulo": "Cap. 10 — Verbo: modos imperativo e subjuntivo",
+      "texto": "Cartaz de campanha: \"Lugar de criança é na escola. Não deixe seu filho trabalhar. Se todos denunciassem, o trabalho infantil acabaria.\"",
+      "pergunta": "Qual afirmação explica corretamente como o cartaz tenta convencer o leitor?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Usa o subjuntivo (\"Não deixe\") para expressar dúvida do autor do cartaz e o imperativo (\"denunciassem\") para mandar o leitor denunciar de imediato."
+        },
+        {
+          "letra": "B",
+          "texto": "Usa apenas ordens ao leitor, pois \"Não deixe\" e \"denunciassem\" são formas do imperativo, e o verbo \"acabaria\" reforça a obrigação de agir."
+        },
+        {
+          "letra": "C",
+          "texto": "Usa o imperativo negativo (\"Não deixe\") para pedir uma ação direta e uma hipótese no subjuntivo (\"Se todos denunciassem\") para convidar o leitor a imaginar as consequências de uma atitude coletiva."
+        },
+        {
+          "letra": "D",
+          "texto": "Usa o imperativo afirmativo (\"Não deixe\") para proibir o leitor e o subjuntivo (\"denunciassem\") para afirmar que o trabalho infantil já acabou."
+        }
+      ],
+      "correta": "C"
+    },
+    {
+      "id": "lp3-12",
+      "materia": "Língua Portuguesa — 3º Trimestre",
+      "capitulo": "Cap. 10 — Verbo: modos imperativo e subjuntivo",
+      "pergunta": "Campanhas e receitas costumam usar o modo imperativo, como em \"Pule!\" e \"Não pule!\".\n\nExplique o que o imperativo expressa e qual a diferença entre o imperativo afirmativo e o negativo. Depois escreva duas frases de uma campanha contra o bullying, uma com cada tipo.",
+      "imagem": null
+    },
+    {
+      "id": "lp3-13",
+      "materia": "Língua Portuguesa — 3º Trimestre",
+      "capitulo": "Cap. 10 — Verbo: modos imperativo e subjuntivo",
+      "texto": "\"Quando você crescer, vai entender\", disse o pai. \"Se eu pudesse, já entenderia hoje\", respondeu Lia. \"Espero que o mundo seja mais justo até lá.\"",
+      "pergunta": "Qual afirmação sobre os verbos \"crescer\", \"pudesse\" e \"seja\" está correta?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "São formas do indicativo, pois os três verbos mostram fatos que os personagens consideram certos e reais, apenas em momentos diferentes."
+        },
+        {
+          "letra": "B",
+          "texto": "São formas do subjuntivo, mas os três estão no presente, porque todos falam do momento da conversa entre pai e filha."
+        },
+        {
+          "letra": "C",
+          "texto": "São formas do subjuntivo: \"crescer\" expressa um desejo, \"pudesse\" expressa certeza sobre o passado e \"seja\" expressa uma ordem dada ao mundo."
+        },
+        {
+          "letra": "D",
+          "texto": "São formas do subjuntivo: \"crescer\" (futuro) apresenta uma possibilidade, \"pudesse\" (pretérito imperfeito) uma hipótese e \"seja\" (presente) um desejo."
+        }
+      ],
+      "correta": "D"
+    },
+    {
+      "id": "lp3-14",
+      "materia": "Língua Portuguesa — 3º Trimestre",
+      "capitulo": "Cap. 10 — Verbo: modos imperativo e subjuntivo",
+      "pergunta": "Compare os dois slogans: (1) \"Rejeite o trabalho infantil!\" e (2) \"Se todos rejeitassem o trabalho infantil, ele acabaria.\"\n\nIdentifique o modo verbal de cada um e explique como cada modo tenta convencer o leitor de um jeito diferente (um convoca à ação, o outro convida à reflexão).",
+      "imagem": null
+    },
+    {
+      "id": "lp3-15",
+      "materia": "Língua Portuguesa — 3º Trimestre",
+      "capitulo": "Cap. 11 — Advérbio",
+      "texto": "\"Lamentavelmente, a biblioteca fechou cedo ontem. Marta esperava terminar a pesquisa rapidamente, mas teve de voltar para casa.\"",
+      "pergunta": "Qual interpretação dos advérbios do trecho está correta?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Todos os advérbios do trecho indicam tempo, já que a história se passa no passado e os advérbios acompanham o tempo dos verbos."
+        },
+        {
+          "letra": "B",
+          "texto": "\"Lamentavelmente\" revela a atitude de quem conta (modalizador); \"cedo\" e \"ontem\" indicam tempo; \"rapidamente\" indica modo."
+        },
+        {
+          "letra": "C",
+          "texto": "\"Lamentavelmente\" é modalizador; \"cedo\" e \"ontem\" indicam lugar, pois dizem onde Marta estava; \"rapidamente\" indica tempo."
+        },
+        {
+          "letra": "D",
+          "texto": "\"Lamentavelmente\" indica o modo como a biblioteca fechou; \"cedo\" e \"ontem\" indicam intensidade; \"rapidamente\" revela a atitude de quem conta."
+        }
+      ],
+      "correta": "B"
+    },
+    {
+      "id": "lp3-16",
+      "materia": "Língua Portuguesa — 3º Trimestre",
+      "capitulo": "Cap. 11 — Advérbio",
+      "pergunta": "Leia: \"Ontem, às pressas, Carlos saiu de casa muito cansado.\"\n\nExplique o que é um advérbio e o que é uma locução adverbial. Depois localize na frase um advérbio e uma locução adverbial e diga a circunstância que cada um indica (lugar, tempo, modo ou intensidade).",
+      "imagem": null
+    },
+    {
+      "id": "lp3-17",
+      "materia": "Língua Portuguesa — 3º Trimestre",
+      "capitulo": "Cap. 11 — Advérbio",
+      "texto": "Duas versões de uma notícia: (1) \"Infelizmente, Júlia perdeu o ônibus.\" (2) \"Júlia perdeu o ônibus, infelizmente.\"",
+      "pergunta": "O que a mudança de posição do advérbio provoca nas duas versões?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "O sentido muda: na versão (1) Júlia perdeu o ônibus por azar, e na versão (2) ela o perdeu por culpa própria, já que o advérbio vem depois da ação."
+        },
+        {
+          "letra": "B",
+          "texto": "Só na versão (1) o advérbio expressa lamento; na versão (2), \"infelizmente\" passa a indicar o modo como Júlia perdeu o ônibus."
+        },
+        {
+          "letra": "C",
+          "texto": "O sentido de lamento permanece nas duas, mas, no início, a atitude de quem fala fica em destaque desde o começo; no fim, o advérbio soa como um comentário conclusivo."
+        },
+        {
+          "letra": "D",
+          "texto": "Não há diferença nenhuma entre elas, porque a posição do advérbio nunca altera o foco da informação; o que muda é só a pontuação."
+        }
+      ],
+      "correta": "C"
+    },
+    {
+      "id": "lp3-18",
+      "materia": "Língua Portuguesa — 3º Trimestre",
+      "capitulo": "Cap. 11 — Advérbio",
+      "pergunta": "Compare as frases: (1) \"Eu dormi bem.\" e (2) \"Estou bem contente.\"\n\nO advérbio \"bem\" tem o mesmo valor nas duas frases? Explique que circunstância ele indica em cada uma (modo ou intensidade) e a que palavra se refere.",
+      "imagem": null
+    },
+    {
+      "id": "lp3-19",
+      "materia": "Língua Portuguesa — 3º Trimestre",
+      "capitulo": "Cap. 11 — Advérbio",
+      "texto": "\"Pedro chegou muito cedo à escola. Ana chegou mais cedo que Pedro. Lia chegou cedíssimo.\"",
+      "pergunta": "Qual alternativa classifica corretamente os graus do advérbio \"cedo\" no texto?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "\"Muito cedo\" é superlativo sintético; \"mais cedo que\" é comparativo de igualdade; \"cedíssimo\" é superlativo analítico."
+        },
+        {
+          "letra": "B",
+          "texto": "\"Muito cedo\" e \"cedíssimo\" são superlativos sintéticos, pois ambos reforçam a ideia; \"mais cedo que\" é comparativo de inferioridade."
+        },
+        {
+          "letra": "C",
+          "texto": "\"Muito cedo\" é comparativo de superioridade; \"mais cedo que\" é superlativo analítico; \"cedíssimo\" é comparativo de inferioridade."
+        },
+        {
+          "letra": "D",
+          "texto": "\"Muito cedo\" é superlativo analítico; \"mais cedo que\" é comparativo de superioridade; \"cedíssimo\" é superlativo sintético."
+        }
+      ],
+      "correta": "D"
+    },
+    {
+      "id": "lp3-20",
+      "materia": "Língua Portuguesa — 3º Trimestre",
+      "capitulo": "Cap. 11 — Advérbio",
+      "pergunta": "Leia o começo de uma história de mistério: \"A casa estava vazia. Júlia abriu a porta e entrou...\"\n\nContinue a história em 3 ou 4 linhas usando pelo menos três advérbios que criem suspense (por exemplo: cuidadosamente, silenciosamente, inesperadamente). Depois sublinhe os advérbios e explique o efeito de cada um.",
+      "imagem": null
+    }
+  ]
+}
