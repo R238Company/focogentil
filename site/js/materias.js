@@ -4,54 +4,6 @@
 // 3. Adicione uma entrada aqui.
 window.FOCOGENTIL_MATERIAS = [
   {
-    id: "geografia",
-    nome: "Geografia",
-    emoji: "🌎",
-    icone: "assets/icons/geografia.jpg",
-    examUrl: "data/exam1.json",
-    descricao: "20 perguntas sobre água, clima e vegetação."
-  },
-  {
-    id: "lingua_portuguesa",
-    nome: "Língua Portuguesa",
-    emoji: "📖",
-    icone: "assets/icons/lingua_portuguesa.jpg",
-    examUrl: "data/exam2.json",
-    descricao: "20 perguntas sobre adjetivos, artigos e pronomes."
-  },
-  {
-    id: "livro_eugenia",
-    nome: "As Memórias de Eugênia",
-    emoji: "🌳",
-    icone: "assets/icons/livro_eugenia.jpg",
-    examUrl: "data/exam3.json",
-    descricao: "8 perguntas sobre o livro As Memórias de Eugênia."
-  },
-  {
-    id: "ciencias_solo",
-    nome: "Ciências — Solo",
-    emoji: "🌱",
-    icone: "assets/icons/ciencias_solo.jpg",
-    examUrl: "data/exam4.json",
-    descricao: "20 perguntas sobre formação, tipos e conservação do solo."
-  },
-  {
-    id: "ingles",
-    nome: "Inglês — ST2 Review (Unit 4)",
-    emoji: "🇬🇧",
-    icone: "assets/icons/ingles.jpg",
-    examUrl: "data/exam5.json",
-    descricao: "10 perguntas (8 de múltipla escolha e 2 dissertativas) revisando preposições, must/mustn't, vocabulário escolar e leitura de horários."
-  },
-  {
-    id: "historia",
-    nome: "História — China Antiga",
-    emoji: "🏛️",
-    icone: "assets/icons/historia.jpg",
-    examUrl: "data/exam6.json",
-    descricao: "20 perguntas (10 de múltipla escolha e 10 dissertativas) sobre a China Antiga: rios, dinastias, Shi Huangdi e a cultura chinesa."
-  },
-  {
     id: "lingua_portuguesa_3t",
     nome: "Língua Portuguesa — 3º Trimestre",
     emoji: "✍️",
