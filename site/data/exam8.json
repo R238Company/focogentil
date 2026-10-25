@@ -1,0 +1,357 @@
+{
+  "id": "exam8",
+  "titulo": "Simulado — História (3º Trimestre)",
+  "descricao": "20 questões de História (10 de múltipla escolha e 10 dissertativas, alternadas) sobre o Império Bizantino, os árabes, os povos germânicos, o feudalismo e as Cruzadas.",
+  "questoes": [
+    {
+      "id": "his3-01",
+      "materia": "História — 3º Trimestre",
+      "capitulo": "Cap. 13 — O Império Romano do Oriente e a formação do Império Bizantino",
+      "texto": "Constantinopla era um grande entreposto comercial entre a Europa e a Ásia. Muitos comerciantes podiam permanecer na cidade por, no máximo, três meses e, nesse período, deviam ficar hospedados em um alojamento oficial, o mitaton. Funcionários imperiais controlavam toda mercadoria que entrava e saía do Império e cobravam impostos sobre os produtos. A marinha bizantina vigiava os navios e os produtos que circulavam pelo Mediterrâneo. A seda, por sua vez, era monopólio do governo.",
+      "pergunta": "Qual conclusão sobre o comércio bizantino está de acordo com o texto?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "O Império aproveitava sua posição de entreposto para enriquecer, mas mantinha comerciantes e mercadorias sob vigilância, o que dificultava a fuga do pagamento de tributos."
+        },
+        {
+          "letra": "B",
+          "texto": "O limite de três meses de permanência existia para impedir que os comerciantes estrangeiros se tornassem cidadãos bizantinos e passassem a disputar cargos no governo."
+        },
+        {
+          "letra": "C",
+          "texto": "O controle dos produtos era feito principalmente por exércitos terrestres nas rotas do interior, já que a marinha apenas transportava as mercadorias imperiais."
+        },
+        {
+          "letra": "D",
+          "texto": "Apenas a seda era fiscalizada pelo governo, pois tinha valor muito alto; os demais produtos circulavam livremente pelo Império, sem cobrança de impostos."
+        }
+      ],
+      "correta": "A"
+    },
+    {
+      "id": "his3-02",
+      "materia": "História — 3º Trimestre",
+      "capitulo": "Cap. 13 — O Império Romano do Oriente e a formação do Império Bizantino",
+      "pergunta": "Leia: \"Justiniano governou o Império Bizantino entre 527 e 565. Nesse período, o Império viveu seu auge: conquistou territórios, construiu obras como a Basílica de Santa Sofia e organizou o Código de Justiniano. Mesmo assim, o aumento dos impostos para financiar o exército provocou a Revolta de Nika, que começou no Hipódromo de Constantinopla.\"\n\nExplique o que foi o Código de Justiniano e por que ele é importante até hoje. Depois, explique por que aconteceu a Revolta de Nika e como Justiniano reagiu a ela.",
+      "imagem": null
+    },
+    {
+      "id": "his3-03",
+      "materia": "História — 3º Trimestre",
+      "capitulo": "Cap. 13 — O Império Romano do Oriente e a formação do Império Bizantino",
+      "texto": "O mosaico da Basílica de San Vitale, em Ravena, mostra o imperador Justiniano no centro da cena, coroado e cercado por uma auréola. Ele segura uma pátena de ouro, espécie de prato usado nas missas. De um lado da imagem aparecem a cruz e a Bíblia; do outro, as armas e o escudo com um emblema imperial. O imperador bizantino, chamado de basileu, comandava o exército, elaborava as leis, fixava os impostos e escolhia o líder da Igreja no Império.",
+      "pergunta": "O que a composição do mosaico revela sobre o poder do imperador bizantino?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Que o poder era dividido igualmente entre o imperador e a Igreja, pois os símbolos religiosos e militares aparecem cada um de um lado da imagem."
+        },
+        {
+          "letra": "B",
+          "texto": "Que o poder político, religioso e militar estava concentrado em uma só pessoa, o imperador, apresentado como figura sagrada, escolhida por Deus."
+        },
+        {
+          "letra": "C",
+          "texto": "Que a Igreja estava acima do imperador, já que ele aparece segurando um objeto usado nas missas, como se fosse um sacerdote subordinado ao patriarca."
+        },
+        {
+          "letra": "D",
+          "texto": "Que o poder militar era mais importante que o religioso, pois as armas e o escudo aparecem em destaque na imagem e a cruz ocupa apenas um canto."
+        }
+      ],
+      "correta": "B"
+    },
+    {
+      "id": "his3-04",
+      "materia": "História — 3º Trimestre",
+      "capitulo": "Cap. 13 — O Império Romano do Oriente e a formação do Império Bizantino",
+      "pergunta": "Em 1054, o papa de Roma e o patriarca de Constantinopla excomungaram-se mutuamente. Esse evento ficou conhecido como Cisma do Oriente e deu origem à Igreja Ortodoxa Grega.\n\nCite duas razões que ajudam a entender por que a Igreja se dividiu e explique o que foi a questão iconoclasta (a proibição do culto às imagens, em 726). Depois, aponte duas diferenças entre a Igreja Católica Romana e a Ortodoxa.",
+      "imagem": null
+    },
+    {
+      "id": "his3-05",
+      "materia": "História — 3º Trimestre",
+      "capitulo": "Cap. 14 — Origens e expansão da cultura árabe",
+      "texto": "Meca era um dos principais destinos dos peregrinos árabes, pois ali ficava a Caaba, santuário onde eram venerados mais de 300 deuses. A cidade enriqueceu com as caravanas e com a venda de objetos religiosos, e uma pequena elite de comerciantes, os coraixitas, ganhou poder. Quando Maomé passou a pregar que existia apenas um deus, atacou os ídolos de Meca e criticou o acúmulo de riquezas. Para os coraixitas, a defesa do monoteísmo representava um perigo para a economia local, pois poderia afastar os peregrinos da cidade.",
+      "pergunta": "Por que a elite coraixita de Meca reagiu contra as pregações de Maomé?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Porque as pregações atacavam os deuses cultuados na Caaba, o que ameaçava os lucros que a elite obtinha com os peregrinos e com o comércio religioso."
+        },
+        {
+          "letra": "B",
+          "texto": "Porque Maomé vinha de Iatrebe e pretendia tomar Meca à força para fazer dela a capital de um novo reino, ameaçando o poder político dos coraixitas."
+        },
+        {
+          "letra": "C",
+          "texto": "Porque Maomé aproximou-se de judeus e cristãos e negou a religião dos antepassados, o que os coraixitas viam como traição, ainda que isso não afetasse a economia da cidade."
+        },
+        {
+          "letra": "D",
+          "texto": "Porque Maomé defendia o acúmulo de riquezas por poucos comerciantes e os coraixitas, mais pobres, queriam dividir esses lucros com toda a população."
+        }
+      ],
+      "correta": "A"
+    },
+    {
+      "id": "his3-06",
+      "materia": "História — 3º Trimestre",
+      "capitulo": "Cap. 14 — Origens e expansão da cultura árabe",
+      "pergunta": "Leia: \"Em setembro de 622, ameaçado e perseguido em Meca, Maomé fugiu para a cidade de Iatrebe. Essa viagem recebeu o nome de Hégira, que significa 'migração'. Ali, ele criou a primeira comunidade regida por princípios islâmicos e assumiu o controle político e religioso do local. Iatrebe passou a se chamar Medina, 'cidade do profeta'.\"\n\nExplique por que a Hégira é um acontecimento tão importante para o Islã e qual a sua relação com o calendário muçulmano. Depois, cite os cinco pilares do islamismo.",
+      "imagem": null
+    },
+    {
+      "id": "his3-07",
+      "materia": "História — 3º Trimestre",
+      "capitulo": "Cap. 14 — Origens e expansão da cultura árabe",
+      "texto": "Maomé morreu em 632 sem deixar orientação sobre quem deveria sucedê-lo. Os líderes reunidos escolheram Abu Bakr, o primeiro califa. Mais tarde, as disputas se intensificaram, e Ali, primo e genro de Maomé, passou a reivindicar o cargo, defendendo que o califa deveria ser descendente do profeta. Seus apoiadores foram chamados de xiitas. Outros defendiam que o líder deveria ser escolhido pela comunidade, conforme a Suna, a segunda lei islâmica depois do Alcorão. Esses foram os sunitas. A disputa levou à primeira guerra civil islâmica.",
+      "pergunta": "Qual alternativa relaciona corretamente cada grupo ao critério de escolha do líder?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Os sunitas defendiam que o califa fosse indicado pelo próprio Maomé antes de morrer, e os xiitas defendiam que fosse escolhido pelos líderes coraixitas."
+        },
+        {
+          "letra": "B",
+          "texto": "Os xiitas defendiam que o califa fosse descendente de Maomé e, por isso, sem função religiosa, enquanto os sunitas defendiam que ele fosse também um guia espiritual."
+        },
+        {
+          "letra": "C",
+          "texto": "Os xiitas defendiam um líder parente de Maomé, como Ali, e os sunitas defendiam um líder escolhido pela comunidade, de acordo com a Suna."
+        },
+        {
+          "letra": "D",
+          "texto": "Os sunitas defendiam um líder parente de Maomé, como Ali, e os xiitas defendiam um líder escolhido pela comunidade, de acordo com a Suna."
+        }
+      ],
+      "correta": "C"
+    },
+    {
+      "id": "his3-08",
+      "materia": "História — 3º Trimestre",
+      "capitulo": "Cap. 14 — Origens e expansão da cultura árabe",
+      "pergunta": "Leia: \"Ao entrar em contato com o legado dos gregos por meio dos persas e dos bizantinos, os árabes traduziram textos clássicos, como os de Aristóteles e Platão, para o árabe. Em Bagdá, a Casa da Sabedoria reunia intelectuais que traduziam obras escritas em persa, grego, latim e sânscrito. Esses textos chegaram depois à Europa, onde foram traduzidos para o latim.\"\n\nExplique por que o trabalho dos tradutores árabes foi importante para a preservação do conhecimento. Depois, cite duas outras contribuições da cultura árabe (por exemplo, na Matemática, na Astronomia ou na produção de papel).",
+      "imagem": null
+    },
+    {
+      "id": "his3-09",
+      "materia": "História — 3º Trimestre",
+      "capitulo": "Cap. 15 — Povos germânicos: sociedade e cultura",
+      "texto": "Originalmente, na Grécia Antiga, a palavra \"bárbaro\" descrevia os povos que falavam idiomas que os gregos não compreendiam, ou seja, os estrangeiros. Com o tempo, o termo ganhou um tom depreciativo e passou a ser associado a uma visão etnocêntrica, que considerava selvagens e incultas as pessoas que não tinham os hábitos dos povos dominantes. Os romanos chamaram de bárbaros os povos que viviam fora do Império, mas os germânicos tinham classes sociais, assembleias de homens livres e chefes guerreiros.",
+      "pergunta": "Qual interpretação do uso da palavra \"bárbaro\" é coerente com o texto?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "O termo sempre teve sentido negativo, pois os próprios gregos já consideravam violentos todos os povos de língua diferente da sua e assim passaram essa ideia aos romanos."
+        },
+        {
+          "letra": "B",
+          "texto": "O termo foi usado só para os germânicos, pois os demais povos de fora do Império, como celtas, eslavos e hunos, eram chamados de romanos por falarem latim."
+        },
+        {
+          "letra": "C",
+          "texto": "O termo mudou de sentido: de \"estrangeiro\" passou a ser uma ofensa, e a imagem de povos violentos e desorganizados refletia o preconceito romano, não a realidade germânica."
+        },
+        {
+          "letra": "D",
+          "texto": "Os romanos usaram o termo de forma correta, já que os germânicos não tinham nenhuma organização política e viviam apenas da guerra e dos saques."
+        }
+      ],
+      "correta": "C"
+    },
+    {
+      "id": "his3-10",
+      "materia": "História — 3º Trimestre",
+      "capitulo": "Cap. 15 — Povos germânicos: sociedade e cultura",
+      "pergunta": "Leia: \"A relação entre germânicos e romanos foi marcada por guerras, mas também por acordos. No século IV, as invasões se intensificaram e Roma construiu o Limes Germanicus, uma muralha fortificada. Em 375, os hunos avançaram sobre os territórios germânicos, e muitos germânicos se aproximaram das fronteiras romanas. Ao mesmo tempo, soldados germânicos serviam no exército romano e alguns grupos viraram colonos agrícolas dentro do Império.\"\n\nDê um exemplo de relação entre germânicos e romanos gerada pela guerra e outro gerada por acordos ou trocas. Depois, explique qual foi a relação entre o avanço dos hunos e a entrada dos germânicos no território romano.",
+      "imagem": null
+    },
+    {
+      "id": "his3-11",
+      "materia": "História — 3º Trimestre",
+      "capitulo": "Cap. 15 — Povos germânicos: sociedade e cultura",
+      "texto": "Em 496, o rei franco Clóvis converteu-se ao cristianismo. A Igreja passou a legitimar seu poder, afirmando que ele era rei diante dos homens e de Deus. Com o apoio da Igreja, Clóvis ampliou o território dos francos e, em troca, os francos difundiram a fé cristã. Apesar disso, o paganismo não desapareceu: o culto à natureza e a vários deuses continuou existindo entre muitas famílias, e a Igreja precisou aproximar os deuses pagãos dos santos católicos.",
+      "pergunta": "O que o texto permite concluir sobre a aliança entre os francos e a Igreja?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Apenas a Igreja saiu fortalecida, pois ao ser coroado pelo papa o rei franco perdeu autoridade e passou a obedecer às ordens da Igreja em tudo."
+        },
+        {
+          "letra": "B",
+          "texto": "A conversão de Clóvis eliminou rapidamente as crenças germânicas, pois todos os francos passaram a seguir apenas a religião católica depois de 496."
+        },
+        {
+          "letra": "C",
+          "texto": "A conversão foi imposta pelo papa, que invadiu o Reino Franco com um exército, e Clóvis aceitou o batismo para evitar a perda de seu trono."
+        },
+        {
+          "letra": "D",
+          "texto": "Foi uma aliança de benefício mútuo: a Igreja deu legitimidade ao rei e o rei expandiu o território e a fé cristã, embora as crenças germânicas tenham resistido."
+        }
+      ],
+      "correta": "D"
+    },
+    {
+      "id": "his3-12",
+      "materia": "História — 3º Trimestre",
+      "capitulo": "Cap. 15 — Povos germânicos: sociedade e cultura",
+      "pergunta": "Carlos Magno reinou entre 768 e 814. Em seu governo, o Reino Franco alcançou o apogeu e passou a se chamar Império Carolíngio. No Natal do ano 800, o Papa Leão III o coroou imperador.\n\nExplique quais foram as principais medidas culturais e administrativas tomadas por Carlos Magno (pense nas escolas palatinas e episcopais e nos condes e missi dominici). Depois, explique o que aconteceu com o Império após a sua morte e qual foi o papel do Tratado de Verdun.",
+      "imagem": null
+    },
+    {
+      "id": "his3-13",
+      "materia": "História — 3º Trimestre",
+      "capitulo": "Cap. 16 — A formação do feudalismo e a sociedade feudal",
+      "texto": "A expressão \"Idade das Trevas\" foi criada séculos depois da Idade Média. A partir do século XVI, estudiosos e artistas renascentistas passaram a valorizar demais a arte e a cultura da Grécia e de Roma e a olhar com desprezo para o período medieval. No século XVIII, os iluministas reforçaram essa ideia. Hoje, os historiadores sabem que na Idade Média surgiram universidades, como a de Bolonha, em 1088, e técnicas agrícolas como a rotação trienal, além dos moinhos e da charrua de ferro.",
+      "pergunta": "Qual afirmação sobre a expressão \"Idade das Trevas\" é coerente com o texto?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Foi uma expressão criada pelos próprios europeus medievais para criticar o poder da Igreja e o atraso das cidades em relação ao campo."
+        },
+        {
+          "letra": "B",
+          "texto": "Foi uma expressão criada depois do período por quem valorizava a Antiguidade; ela é depreciativa e não corresponde à realidade, pois houve avanços culturais e técnicos."
+        },
+        {
+          "letra": "C",
+          "texto": "A expressão está correta, porque o predomínio da religião cristã impediu qualquer inovação científica, artística ou técnica durante os mil anos do período."
+        },
+        {
+          "letra": "D",
+          "texto": "A expressão foi criada pelos iluministas, que valorizavam a Idade Média, e depois foi rejeitada pelos renascentistas, que preferiam a cultura clássica."
+        }
+      ],
+      "correta": "B"
+    },
+    {
+      "id": "his3-14",
+      "materia": "História — 3º Trimestre",
+      "capitulo": "Cap. 16 — A formação do feudalismo e a sociedade feudal",
+      "pergunta": "Leia: \"Os feudos eram unidades agrícolas autossuficientes. Eles eram divididos em três espaços: o manso senhorial, o manso servil e o manso comunal. Os camponeses pagavam diversos tributos ao senhor feudal, como a corveia, a talha e a banalidade.\"\n\nExplique o que significava um feudo ser autossuficiente. Depois, diga o que era produzido em cada um dos três espaços do feudo e a quem pertencia essa produção. Por fim, explique o que eram a corveia e a banalidade.",
+      "imagem": null
+    },
+    {
+      "id": "his3-15",
+      "materia": "História — 3º Trimestre",
+      "capitulo": "Cap. 16 — A formação do feudalismo e a sociedade feudal",
+      "texto": "Os camponeses dividiam-se em servos e vilões. Os servos viviam nas terras do senhor feudal, entregavam a ele parte da colheita e prestavam serviços, mas estavam presos à terra: se mudassem de feudo, teriam de se sujeitar ao novo proprietário. Os vilões possuíam pequenos lotes e não estavam presos às terras do senhor, mas também deviam tributos e podiam ser julgados por ele. Os servos não podiam ser vendidos nem forçados ao trabalho como as pessoas escravizadas, que eram vistas como bens.",
+      "pergunta": "Qual conclusão sobre a servidão está de acordo com o texto?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "O servo era livre para deixar o feudo quando quisesse, e é isso que diferencia a servidão da escravidão, na qual a pessoa não podia mudar de local."
+        },
+        {
+          "letra": "B",
+          "texto": "O vilão era isento de tributos por possuir um pequeno lote de terra, o que o diferenciava do servo, que pagava ao senhor a talha, a corveia e a banalidade."
+        },
+        {
+          "letra": "C",
+          "texto": "O servo podia ser vendido junto com a terra, o que o aproximava do escravizado, mas, ao contrário deste, ele pagava tributos ao senhor feudal."
+        },
+        {
+          "letra": "D",
+          "texto": "O servo tinha obrigações e não era plenamente livre, pois estava preso à terra, mas, diferentemente do escravizado, não podia ser vendido como um bem."
+        }
+      ],
+      "correta": "D"
+    },
+    {
+      "id": "his3-16",
+      "materia": "História — 3º Trimestre",
+      "capitulo": "Cap. 16 — A formação do feudalismo e a sociedade feudal",
+      "pergunta": "A sociedade feudal era estamental, ou seja, dividida em camadas rígidas, em que a posição de cada pessoa era definida pelo nascimento. Entre os nobres, havia ainda as relações de suserania e vassalagem.\n\nExplique como era a divisão da sociedade medieval em estamentos e por que era quase impossível mudar de camada social. Depois, explique o que era a relação entre suserano e vassalo e o que cada um se comprometia a fazer.",
+      "imagem": null
+    },
+    {
+      "id": "his3-17",
+      "materia": "História — 3º Trimestre",
+      "capitulo": "Cap. 17 — A cultura medieval e as cruzadas",
+      "texto": "Na Idade Média, boa parte da população não aprendia a ler nem a escrever. As grandes catedrais eram decoradas com estátuas, rosáceas, vitrais e pinturas que representavam passagens da Bíblia. Os afrescos das igrejas tinham intenção pedagógica, pois a Igreja buscava educar e catequizar os fiéis por meio das imagens. A Igreja também fundava escolas para preparar religiosos e universidades, voltadas principalmente para os nobres.",
+      "pergunta": "Por que a Igreja investia tanto em vitrais, pinturas e afrescos nas catedrais?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Porque as imagens tinham apenas função decorativa, já que a Igreja cuidava da educação dos fiéis exclusivamente por meio das escolas e das universidades."
+        },
+        {
+          "letra": "B",
+          "texto": "Porque as imagens eram destinadas aos nobres letrados, os únicos que conseguiam interpretar as cenas bíblicas, enquanto o povo recebia a instrução somente nas missas."
+        },
+        {
+          "letra": "C",
+          "texto": "Porque as imagens substituíam as escolas, já que a Igreja não fundava instituições de ensino e preferia transmitir sua doutrina apenas pela arte e pela arquitetura."
+        },
+        {
+          "letra": "D",
+          "texto": "Porque as imagens funcionavam como instrumento de instrução, permitindo que fiéis que não sabiam ler conhecessem as passagens bíblicas e a grandiosidade da fé."
+        }
+      ],
+      "correta": "D"
+    },
+    {
+      "id": "his3-18",
+      "materia": "História — 3º Trimestre",
+      "capitulo": "Cap. 17 — A cultura medieval e as cruzadas",
+      "pergunta": "Em 1095, o Papa Urbano II convocou os cristãos para uma \"guerra santa\" com o objetivo de expulsar os muçulmanos de Jerusalém. Era o início das Cruzadas, que aconteceram entre os séculos XI e XIII.\n\nExplique o que eram as Cruzadas e por que Jerusalém era tão importante para cristãos, muçulmanos e judeus. Depois, cite um motivo religioso, um econômico e um social que levaram diferentes grupos (a Igreja, os nobres, os comerciantes e os camponeses) a participar do movimento.",
+      "imagem": null
+    },
+    {
+      "id": "his3-19",
+      "materia": "História — 3º Trimestre",
+      "capitulo": "Cap. 17 — A cultura medieval e as cruzadas",
+      "texto": "Sobre a expedição liderada por Pedro, o Eremita, em 1096, um historiador escreveu que ele reuniu bandos de franceses e alemães que, sem plano e sem condições materiais, partiram separadamente para o Oriente. No caminho, tinham dificuldade para conseguir provisões, chegavam ao limite da fome e passavam a roubar e saquear. Boa parte dos peregrinos morreu na viagem. Os que chegaram ao Império Bizantino, famintos e desiludidos, maravilharam-se com a riqueza de Constantinopla, que, por sua vez, viu com susto aqueles bandos miseráveis.",
+      "pergunta": "O que esse relato revela sobre a expedição de Pedro, o Eremita?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Que a falta de provisões ocorreu apenas em terras muçulmanas, pois em território cristão os peregrinos eram bem abastecidos pelos senhores locais."
+        },
+        {
+          "letra": "B",
+          "texto": "Que era uma expedição popular, mal preparada e sem recursos, que sofreu fome e perdas pelo caminho e causou espanto até nos bizantinos."
+        },
+        {
+          "letra": "C",
+          "texto": "Que os bizantinos receberam os cruzados com festa e lhes forneceram provisões, pois Constantinopla era aliada da Igreja desde o Cisma do Oriente."
+        },
+        {
+          "letra": "D",
+          "texto": "Que era um exército bem organizado de cavaleiros nobres, que só recorreu aos saques depois de enfrentar os muçulmanos em território do Oriente."
+        }
+      ],
+      "correta": "B"
+    },
+    {
+      "id": "his3-20",
+      "materia": "História — 3º Trimestre",
+      "capitulo": "Cap. 17 — A cultura medieval e as cruzadas",
+      "pergunta": "Leia: \"A recuperação das ilhas do Mediterrâneo permitiu que as rotas de comércio fossem reabertas. Veneza foi a mais privilegiada, pois passou a negociar produtos orientais, como especiarias, tecidos finos e tapetes. Ao mesmo tempo, os europeus entraram em contato com a rica cultura do Oriente.\"\n\nExplique quais foram as consequências econômicas e culturais das Cruzadas para a Europa e por que essas mudanças colocaram em xeque a sociedade feudal. Depois, diga o que aconteceu na Quarta Cruzada (1202-1204), que se desviou de seu objetivo inicial.",
+      "imagem": null
+    }
+  ]
+}
