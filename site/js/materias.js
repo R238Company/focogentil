@@ -10,6 +10,14 @@ window.FOCOGENTIL_MATERIAS = [
     icone: "assets/icons/lingua_portuguesa.jpg",
     examUrl: "data/exam7.json",
     descricao: "20 perguntas (10 de múltipla escolha e 10 dissertativas, alternadas) sobre verbo, modos indicativo, imperativo e subjuntivo, e advérbio."
+  },
+  {
+    id: "historia_3t",
+    nome: "História — 3º Trimestre",
+    emoji: "🏰",
+    icone: "assets/icons/historia.jpg",
+    examUrl: "data/exam8.json",
+    descricao: "20 perguntas (10 de múltipla escolha e 10 dissertativas, alternadas) sobre o Império Bizantino, os árabes, os germânicos, o feudalismo e as Cruzadas."
   }
 ];
 
