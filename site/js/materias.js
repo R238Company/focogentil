@@ -18,6 +18,14 @@ window.FOCOGENTIL_MATERIAS = [
     icone: "assets/icons/historia.jpg",
     examUrl: "data/exam8.json",
     descricao: "20 perguntas (10 de múltipla escolha e 10 dissertativas, alternadas) sobre o Império Bizantino, os árabes, os germânicos, o feudalismo e as Cruzadas."
+  },
+  {
+    id: "historia_hfp",
+    nome: "História — Hebreus, fenícios e persas na Antiguidade",
+    emoji: "📜",
+    icone: "assets/icons/historia.jpg",
+    examUrl: "data/exam9.json",
+    descricao: "20 perguntas (10 de múltipla escolha e 10 dissertativas, alternadas) sobre os hebreus, os fenícios e os persas na Antiguidade."
   }
 ];
 
