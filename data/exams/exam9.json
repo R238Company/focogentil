@@ -1,0 +1,357 @@
+{
+  "id": "exam9",
+  "titulo": "Simulado — História: Hebreus, fenícios e persas na Antiguidade",
+  "descricao": "20 questões de História (10 de múltipla escolha e 10 dissertativas, alternadas) sobre os hebreus, os fenícios e os persas na Antiguidade.",
+  "questoes": [
+    {
+      "id": "hfp-01",
+      "materia": "História — Hebreus, fenícios e persas na Antiguidade",
+      "capitulo": "Hebreus: organização antes do Reino de Israel",
+      "texto": "Por volta do século XIII a.C., os hebreus se instalaram na Palestina, perto do Rio Jordão, onde criavam ovelhas e cultivavam oliveiras, figueiras e videiras. Eles se organizavam em pequenas tribos e tinham uma organização social comunitária: as terras eram de uso comum e não havia hierarquia entre as lideranças e as demais pessoas. As decisões do grupo eram tomadas por um conselho de anciãos, liderado por um juiz, que aconselhava a população e, em caso de guerra, também atuava como chefe militar.",
+      "pergunta": "Qual alternativa descreve corretamente a organização dos hebreus antes da criação do Reino de Israel?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "As terras pertenciam aos patriarcas e eram passadas de pai para filho, e as decisões do grupo eram tomadas apenas pelo juiz, que governava como um rei."
+        },
+        {
+          "letra": "B",
+          "texto": "As tribos eram organizadas em camadas sociais, com sacerdotes no topo e agricultores na base, e o juiz era escolhido por herança dentro da família do patriarca."
+        },
+        {
+          "letra": "C",
+          "texto": "As terras eram de uso comum, as decisões eram tomadas por um conselho de anciãos e o juiz era conselheiro, chefe militar e autoridade política e religiosa."
+        },
+        {
+          "letra": "D",
+          "texto": "As terras eram divididas em lotes individuais entre os anciãos, e o juiz tinha apenas função religiosa, deixando as questões militares para um rei escolhido pelas tribos."
+        }
+      ],
+      "correta": "C"
+    },
+    {
+      "id": "hfp-02",
+      "materia": "História — Hebreus, fenícios e persas na Antiguidade",
+      "capitulo": "Hebreus: origens",
+      "pergunta": "Leia: \"Segundo a tradição registrada na Torá, a história dos hebreus teria começado quando Abraão recebeu de Deus a orientação de conduzir seu povo, de pastores semi-nômades, de uma região da Mesopotâmia até Canaã, a Terra Prometida. Depois de um longo período de seca, os hebreus migraram para o Egito, onde foram escravizados.\"\n\nExplique quem foram os patriarcas e qual foi o papel de Moisés na história dos hebreus. Depois, explique o que foi o Êxodo e por que os Dez Mandamentos são importantes.",
+      "imagem": null
+    },
+    {
+      "id": "hfp-03",
+      "materia": "História — Hebreus, fenícios e persas na Antiguidade",
+      "capitulo": "Hebreus: religião e monoteísmo ético",
+      "texto": "Na sociedade hebraica, os profetas tornaram-se muito populares porque criticavam a realidade social. Em suas pregações, afirmavam que não bastava participar dos cultos: era preciso praticar a justiça, defender os órfãos, as viúvas e os pobres, ser humilde e não se envolver com subornos. Por isso, afirma-se que os hebreus desenvolveram a primeira religião guiada pelo monoteísmo ético.",
+      "pergunta": "O que o texto permite concluir sobre o monoteísmo ético dos hebreus?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Que a crença em um só deus vinha acompanhada de valores e regras de conduta, que deveriam orientar também a vida em sociedade, e não só os momentos de culto."
+        },
+        {
+          "letra": "B",
+          "texto": "Que as regras de justiça e de ajuda aos pobres valiam apenas para os governantes e sacerdotes, que eram os responsáveis por conduzir o povo."
+        },
+        {
+          "letra": "C",
+          "texto": "Que a crença em um só deus dispensava as regras de conduta, pois bastava participar dos cultos para ser considerado um bom fiel."
+        },
+        {
+          "letra": "D",
+          "texto": "Que os profetas defendiam o abandono dos cultos e dos sacerdotes, já que, para eles, a fé deveria ser praticada somente de forma individual."
+        }
+      ],
+      "correta": "A"
+    },
+    {
+      "id": "hfp-04",
+      "materia": "História — Hebreus, fenícios e persas na Antiguidade",
+      "capitulo": "Hebreus: Reino de Israel e diáspora",
+      "pergunta": "Leia: \"Por volta de 1030 a.C., as tribos hebraicas se uniram e formaram o Reino de Israel, governado por reis como Saul, Davi e Salomão. Após a morte de Salomão, em 935 a.C., o reino se dividiu em Israel e Judá. Israel foi dominado pelos assírios em 720 a.C. e Judá, pelos babilônios, em 586 a.C. Em 70 d.C., os romanos expulsaram os hebreus da Palestina.\"\n\nPor que as tribos hebraicas decidiram se unificar em um reino? Depois, explique por que o reino se dividiu após Salomão e o que foi a diáspora hebraica.",
+      "imagem": null
+    },
+    {
+      "id": "hfp-05",
+      "materia": "História — Hebreus, fenícios e persas na Antiguidade",
+      "capitulo": "Fenícios: geografia e vocação marítima",
+      "texto": "A Fenícia ficava em uma estreita faixa de terra de cerca de 200 km entre o Mar Mediterrâneo e as montanhas do Líbano. O litoral é recortado, o que favorece a formação de portos naturais, e o relevo montanhoso desde o litoral dificulta a agricultura. Nas montanhas crescia o cedro, madeira nobre e resistente usada na construção dos navios. Com os territórios vizinhos já ocupados por outros povos, os fenícios investiram na navegação.",
+      "pergunta": "Qual alternativa explica corretamente por que os fenícios se tornaram navegantes e comerciantes?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Porque as planícies férteis do litoral produziam tanto que os fenícios precisavam vender o excedente de trigo e de azeite em outras regiões."
+        },
+        {
+          "letra": "B",
+          "texto": "Porque a agricultura era sua principal atividade, e o comércio marítimo servia apenas para obter metais, já que o relevo da região favorecia bastante o cultivo."
+        },
+        {
+          "letra": "C",
+          "texto": "Porque o solo montanhoso limitava a agricultura, o litoral oferecia portos naturais, havia cedro para os navios e os vizinhos já ocupavam as terras próximas."
+        },
+        {
+          "letra": "D",
+          "texto": "Porque os vizinhos já ocupavam as terras próximas e, sem acesso ao mar, os fenícios tiveram de pedir madeira emprestada a outros povos para construir seus navios."
+        }
+      ],
+      "correta": "C"
+    },
+    {
+      "id": "hfp-06",
+      "materia": "História — Hebreus, fenícios e persas na Antiguidade",
+      "capitulo": "Fenícios: alfabeto",
+      "pergunta": "Leia: \"Quando surgiram as primeiras formas de escrita, era preciso conhecer milhares de sinais, os pictogramas, pois cada palavra ou ideia tinha um sinal diferente. O alfabeto fenício, criado por volta de 1500 a.C., tinha 22 sinais, todos de consoantes. Os gregos o adotaram e acrescentaram as vogais. Os romanos, com base na invenção grega, desenvolveram o alfabeto latino.\"\n\nExplique por que o alfabeto fenício facilitou a escrita e o comércio. Depois, explique o caminho do alfabeto dos fenícios até o alfabeto que usamos hoje no Brasil.",
+      "imagem": null
+    },
+    {
+      "id": "hfp-07",
+      "materia": "História — Hebreus, fenícios e persas na Antiguidade",
+      "capitulo": "Fenícios: comércio cartaginês",
+      "texto": "O historiador grego Heródoto, por volta de 430 a.C., descreveu uma forma de comércio dos cartagineses numa região da África. Eles descarregavam suas mercadorias na praia, voltavam aos navios e davam um sinal de fumaça. Os nativos desciam até a praia, deixavam uma quantia de ouro e se afastavam. Os cartagineses desembarcavam de novo e examinavam o ouro: se achassem o valor justo, recolhiam-no; se não, voltavam aos navios e esperavam que os nativos deixassem mais. Segundo o relato, nenhuma parte enganava a outra.",
+      "pergunta": "O que esse relato revela sobre as transações comerciais dos cartagineses?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Que os nativos decidiam sozinhos o valor das mercadorias e os cartagineses eram obrigados a aceitar o ouro oferecido, mesmo quando consideravam o valor injusto."
+        },
+        {
+          "letra": "B",
+          "texto": "Que o comércio era feito sem contato direto, com base na confiança mútua, e a troca só se completava quando os dois lados consideravam o valor adequado."
+        },
+        {
+          "letra": "C",
+          "texto": "Que os cartagineses tomavam o ouro à força depois de dar o sinal de fumaça, pois os nativos se afastavam por medo dos navios."
+        },
+        {
+          "letra": "D",
+          "texto": "Que o comércio era feito diretamente, com intérpretes que negociavam o preço das mercadorias, e o rei de Cartago cobrava um tributo em cada troca."
+        }
+      ],
+      "correta": "B"
+    },
+    {
+      "id": "hfp-08",
+      "materia": "História — Hebreus, fenícios e persas na Antiguidade",
+      "capitulo": "Fenícios: colônias",
+      "pergunta": "Leia: \"Com as regiões vizinhas já ocupadas, os fenícios fundaram colônias na costa do Mediterrâneo. Em muitos lugares onde paravam para descansar ou se abastecer, construíam acampamentos e armazéns, que depois viravam vilas e colônias. A mais famosa foi Cartago, fundada em 814 a.C. no norte da África. Em 64 a.C., a Fenícia foi dominada pelos romanos.\"\n\nExplique de que forma o comércio levou à fundação das colônias fenícias. Depois, explique por que Cartago se tornou tão importante e como terminou a civilização fenícia.",
+      "imagem": null
+    },
+    {
+      "id": "hfp-09",
+      "materia": "História — Hebreus, fenícios e persas na Antiguidade",
+      "capitulo": "Persas: administração de Dario I",
+      "texto": "Sob Dario I, o Império Persa chegou a ter cerca de 8 milhões de km² e 10 milhões de habitantes. Ele dividiu o território em satrapias, administradas por sátrapas escolhidos entre os povos conquistados, e manteve um rígido sistema de vigilância sobre eles. Fiscais reais, chamados \"os olhos e ouvidos do rei\", viajavam pelo império escrevendo relatórios. Dario construiu estradas, com hospedarias e um serviço de correios, e manteve o sistema judiciário local dos povos dominados, exigindo tributos calculados conforme as condições de cada região.",
+      "pergunta": "Qual conclusão sobre o modo de governar de Dario I está de acordo com o texto?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Ele combinava respeito às tradições locais e uso de administradores da própria região com controle central, feito por fiscais e facilitado por estradas e correios."
+        },
+        {
+          "letra": "B",
+          "texto": "Ele abolia os tributos nas regiões dominadas para ganhar a simpatia dos povos conquistados, e sustentava o império apenas com o exército de 100 mil soldados."
+        },
+        {
+          "letra": "C",
+          "texto": "Ele deixava os sátrapas livres para governar como quisessem e confiava apenas na distância e nas estradas para manter a ordem sobre as regiões dominadas."
+        },
+        {
+          "letra": "D",
+          "texto": "Ele impunha a língua, a religião e as leis persas a todos os povos conquistados para garantir a unidade, e punia os sátrapas que respeitassem costumes locais."
+        }
+      ],
+      "correta": "A"
+    },
+    {
+      "id": "hfp-10",
+      "materia": "História — Hebreus, fenícios e persas na Antiguidade",
+      "capitulo": "Persas: Ciro II",
+      "pergunta": "Leia: \"Ciro II unificou os medos e os persas e iniciou uma política de conquistas, vencendo os medos em 550 a.C. e dominando a Babilônia em 539 a.C. Ele respeitava a cultura e as tradições dos povos conquistados, mas exigia o pagamento de altos tributos. Aproveitou o apoio dos hebreus escravizados na Babilônia e permitiu que eles retornassem à Palestina.\"\n\nExplique quais foram as principais conquistas de Ciro II. Depois, explique por que respeitar as tradições dos povos conquistados era uma estratégia inteligente para os persas.",
+      "imagem": null
+    },
+    {
+      "id": "hfp-11",
+      "materia": "História — Hebreus, fenícios e persas na Antiguidade",
+      "capitulo": "Persas: zoroastrismo",
+      "texto": "O zoroastrismo, religião dos persas, acredita em Ahura Mazda, deus da luz e da verdade, criador do céu e da Terra. A tradição persa também fala de Arimã, divindade do mal e das trevas, em eterno combate com Ahura Mazda. Os fiéis acreditam que quem é bom em vida terá uma boa vida após a morte, e quem age mal sofrerá tormentos. O símbolo da religião, o Faravahar, tem asas que representam bons pensamentos, boas palavras e boas ações, e uma cauda que representa os maus pensamentos, as más palavras e as más ações.",
+      "pergunta": "Qual é a ideia central do dualismo religioso do zoroastrismo?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "O bem e o mal são dois deuses de igual valor, que devem ser adorados juntos para que o equilíbrio do universo seja mantido."
+        },
+        {
+          "letra": "B",
+          "texto": "O mal é uma força inevitável, que domina a vida humana, e por isso as pessoas não podem fazer escolhas capazes de mudar seu destino."
+        },
+        {
+          "letra": "C",
+          "texto": "Existem vários deuses, cada um responsável por um aspecto da natureza, como a colheita e a guerra, e o bem e o mal dependem da vontade deles."
+        },
+        {
+          "letra": "D",
+          "texto": "O bem e o mal estão em luta permanente, e as escolhas de cada pessoa em vida definem o que ela encontrará depois da morte."
+        }
+      ],
+      "correta": "D"
+    },
+    {
+      "id": "hfp-12",
+      "materia": "História — Hebreus, fenícios e persas na Antiguidade",
+      "capitulo": "Persas: tecnologia e economia",
+      "pergunta": "Leia: \"Dario I criou a moeda dárico, unificou o sistema de pesos e medidas, melhorou a infraestrutura com canais e aquedutos e fundou Persépolis, centro administrativo do império. Ele também enviou funcionários às várias regiões para promover o intercâmbio de técnicas agrícolas.\"\n\nExplique por que o uso de uma moeda única e de um sistema único de pesos e medidas foi importante para o Império Persa. Depois, cite duas outras realizações de Dario I que ajudaram a manter o império estável.",
+      "imagem": null
+    },
+    {
+      "id": "hfp-13",
+      "materia": "História — Hebreus, fenícios e persas na Antiguidade",
+      "capitulo": "Hebreus: fontes históricas",
+      "texto": "A principal fonte para o estudo da história dos hebreus são as narrativas bíblicas, mas os estudiosos as utilizam com cuidado, porque os registros podem misturar interpretações ligadas a crenças e debates religiosos com relatos sobre acontecimentos históricos. Outros recursos ajudam a localizar os hebreus em territórios do Oriente Médio, como os achados arqueológicos e os relatos de pessoas que viveram na época e que foram transmitidos por gerações, os quais também podem apresentar variações, de acordo com o ponto de vista de quem narra.",
+      "pergunta": "Qual conclusão sobre o estudo da história dos hebreus é coerente com o texto?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Os achados arqueológicos confirmam todos os relatos bíblicos, e por isso os historiadores podem usá-los sem nenhuma interpretação ou análise crítica."
+        },
+        {
+          "letra": "B",
+          "texto": "As narrativas bíblicas são a principal fonte, mas precisam ser analisadas com cuidado e combinadas com outras fontes, como a arqueologia, que também exigem interpretação."
+        },
+        {
+          "letra": "C",
+          "texto": "As narrativas bíblicas devem ser descartadas pelos historiadores, porque são textos religiosos e, por isso, não trazem nenhuma informação sobre acontecimentos reais."
+        },
+        {
+          "letra": "D",
+          "texto": "A Bíblia é a única fonte disponível, já que os relatos orais das pessoas da época foram transmitidos sem mudanças e por isso não precisam ser comparados."
+        }
+      ],
+      "correta": "B"
+    },
+    {
+      "id": "hfp-14",
+      "materia": "História — Hebreus, fenícios e persas na Antiguidade",
+      "capitulo": "Hebreus: migrações e Jerusalém",
+      "pergunta": "Leia: \"A história dos hebreus foi marcada por migrações e pela ligação religiosa com a região da Palestina. Davi transformou Jerusalém em capital do reino e centro de culto a Javé, e Salomão construiu ali o Templo de Jerusalém. O Templo foi destruído pelos babilônios em 586 a.C., reconstruído e destruído de novo pelos romanos em 70 d.C.\"\n\nPor que se considera que a história do povo hebreu ficou marcada por migrações? Depois, explique por que Jerusalém e o Templo de Salomão são tão importantes para os hebreus.",
+      "imagem": null
+    },
+    {
+      "id": "hfp-15",
+      "materia": "História — Hebreus, fenícios e persas na Antiguidade",
+      "capitulo": "Fenícios: política e religião",
+      "texto": "A sociedade fenícia se organizava em cidades-Estado, como Ugarit, Biblos, Sídon e Tiro, cada uma com seu rei e com um Conselho dos Anciãos. Eram politicamente independentes, mas os fenícios eram politeístas e compartilhavam muitos deuses. Cada cidade, porém, tinha seu deus protetor: em Biblos, o baal se chamava Adônis, e a baalat, Astarte. O que permite identificar as populações dessas cidades como um povo são as características religiosas e culturais muito próximas.",
+      "pergunta": "Por que os habitantes das cidades fenícias podem ser identificados como um só povo, apesar de viverem em cidades-Estado independentes?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Porque todas as cidades cultuavam exatamente os mesmos deuses protetores, o que tornava desnecessário que cada uma tivesse seus próprios templos."
+        },
+        {
+          "letra": "B",
+          "texto": "Porque compartilhavam características religiosas e culturais muito próximas, apesar de cada cidade ter seu próprio governo e seu deus protetor."
+        },
+        {
+          "letra": "C",
+          "texto": "Porque todas as cidades eram governadas por um único rei, que vivia em Tiro e dividia o poder com o Conselho dos Anciãos de cada cidade."
+        },
+        {
+          "letra": "D",
+          "texto": "Porque todas dependiam da agricultura das planícies do interior, o que as obrigava a manter uma união política permanente em defesa das colheitas."
+        }
+      ],
+      "correta": "B"
+    },
+    {
+      "id": "hfp-16",
+      "materia": "História — Hebreus, fenícios e persas na Antiguidade",
+      "capitulo": "Fenícios: navegação e cultura",
+      "pergunta": "Leia: \"Os fenícios se localizavam em suas viagens por cartas cartográficas que eles mesmos desenvolveram e aprenderam a se orientar pela observação das estrelas. Eles comercializavam tecidos tingidos com o corante púrpura, retirado do molusco múrice: eram necessários cerca de 60 mil moluscos para produzir 250 ml de corante.\"\n\nExplique como o contato com outros povos ajudou os fenícios a aprimorar a navegação e a produzir uma cultura própria. Depois, explique por que os tecidos de púrpura eram tão valiosos e qual foi uma consequência dessa procura para o múrice.",
+      "imagem": null
+    },
+    {
+      "id": "hfp-17",
+      "materia": "História — Hebreus, fenícios e persas na Antiguidade",
+      "capitulo": "Persas: formação do império",
+      "texto": "No Planalto Iraniano, destacaram-se os medos, ao norte, e os persas, ao sul. Os medos, com grande desenvolvimento militar, dominaram vários povos e, em 612 a.C., colocaram fim ao Império Assírio. Os persas iniciaram um lento processo de unificação, que se consolidou em meados do século VI a.C., sob o comando de Ciro II. Em 550 a.C., Ciro II venceu os medos e deu início ao Império Persa, também chamado de Império Aquemênida.",
+      "pergunta": "Qual alternativa relaciona corretamente os acontecimentos descritos no texto?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Os medos e os persas lutaram juntos contra os assírios em 550 a.C., e Ciro II unificou os dois povos em 612 a.C., formando o Império Persa."
+        },
+        {
+          "letra": "B",
+          "texto": "Os assírios venceram os medos em 612 a.C., e Ciro II, líder dos persas, derrotou os assírios em 550 a.C., dando início ao Império Aquemênida."
+        },
+        {
+          "letra": "C",
+          "texto": "Os medos acabaram com o Império Assírio em 612 a.C., e depois Ciro II, líder dos persas, venceu os medos em 550 a.C. e deu início ao Império Persa."
+        },
+        {
+          "letra": "D",
+          "texto": "Os persas acabaram com o Império Assírio em 612 a.C., e depois os medos, sob o comando de Ciro II, venceram os persas em 550 a.C. e formaram o Império Aquemênida."
+        }
+      ],
+      "correta": "C"
+    },
+    {
+      "id": "hfp-18",
+      "materia": "História — Hebreus, fenícios e persas na Antiguidade",
+      "capitulo": "Persas: Cambises e Dario I",
+      "pergunta": "Leia: \"Após a morte de Ciro II, em 529 a.C., seu filho Cambises II conquistou o Egito, em 525 a.C. Cambises morreu sem deixar herdeiros, e Dario I, primo de Ciro II, assumiu o império. Sob Dario I, o território chegou à sua maior extensão. Ele construiu a Estrada Real Persa, com cerca de 2,7 mil km, ligando o litoral oeste do império à região central.\"\n\nExplique o que cada um desses governantes (Ciro II, Cambises II e Dario I) fez para formar o Império Persa. Depois, explique por que as estradas eram tão importantes para administrar um território tão grande.",
+      "imagem": null
+    },
+    {
+      "id": "hfp-19",
+      "materia": "História — Hebreus, fenícios e persas na Antiguidade",
+      "capitulo": "Persas: hebreus sob domínio persa",
+      "texto": "Em 539 a.C., Ciro, imperador dos persas, conquistou a Babilônia, onde os hebreus viviam escravizados, no chamado cativeiro da Babilônia. Aproveitando-se da invasão, Ciro buscou o apoio dos hebreus, o que facilitou o domínio do local. Depois, permitiu que os hebreus retornassem à Palestina, desde que pagassem tributos ao Império Persa. Os hebreus reconstruíram o Templo de Jerusalém e conservaram suas tradições religiosas.",
+      "pergunta": "O que a atitude de Ciro em relação aos hebreus revela sobre a política dos persas?",
+      "imagem": null,
+      "tipo": "alternativa",
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Que os persas libertaram os hebreus apenas para enfraquecer o Egito, que era o principal alvo das conquistas de Ciro, sem qualquer interesse na Babilônia."
+        },
+        {
+          "letra": "B",
+          "texto": "Que os persas aliavam o respeito às tradições dos povos conquistados à cobrança de tributos e à busca de apoio para facilitar suas conquistas."
+        },
+        {
+          "letra": "C",
+          "texto": "Que os persas obrigaram os hebreus a abandonar o judaísmo e a adotar o zoroastrismo como condição para voltar à Palestina."
+        },
+        {
+          "letra": "D",
+          "texto": "Que os persas libertaram os hebreus por gratidão e, por isso, dispensaram o pagamento de qualquer tributo ao império."
+        }
+      ],
+      "correta": "B"
+    },
+    {
+      "id": "hfp-20",
+      "materia": "História — Hebreus, fenícios e persas na Antiguidade",
+      "capitulo": "Hebreus, fenícios e persas: síntese",
+      "pergunta": "Os hebreus, os fenícios e os persas viveram na Antiguidade no continente asiático e deixaram marcas até hoje. Na abertura do capítulo, cada povo foi representado por um símbolo: a menorah, um barco a vela e uma águia.\n\nExplique o que cada um desses símbolos representa. Depois, escolha um legado deixado por cada povo (por exemplo, o monoteísmo ético, o alfabeto e a organização em satrapias) e explique por que ele ainda é importante hoje.",
+      "imagem": null
+    }
+  ]
+}
